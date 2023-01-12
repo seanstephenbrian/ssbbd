@@ -61,7 +61,7 @@ html {
                         width: $letter;
                         height: $letter;
                         display: flex;
-                        justify-content: flex-start;
+                        justify-content: center;
                         align-items: center;
                     }
 
@@ -114,28 +114,51 @@ html {
             main {
                 margin: 0 $letter;
                 display: grid;
-                grid-template-columns: 25vw 1fr;
-                grid-template-areas: "menu expansion-zone";
+                grid-template-columns: 1fr 1fr 2fr;
+                grid-template-areas: "menu expansion-zone expanded-content";
                 grid-column-gap: 10px;
+
+                .menu,
+                .expansion-zone,
+                .expanded-content {
+                    display: grid;
+                    grid-template-rows: repeat(4, $rvv);
+                }
 
                 .menu {
                     grid-area: menu;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    gap: $menu-gap;
-                    align-items: flex-end;
 
                     .page-link {
                         cursor: pointer;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
                     }
                 }
 
                 .expansion-zone {
                     grid-area: expansion-zone;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
+
+                    .expansion {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+
+                        .expansion-step {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                .expanded-content {
+                    grid-area: expanded-content;
+
+                    .expanded-line {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
                 }
             }
         }

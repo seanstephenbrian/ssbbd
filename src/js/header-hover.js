@@ -11,13 +11,10 @@ function showStudio() {
     hiddenD.textContent = 'd';
     const s3 = document.querySelector('#s3');
     s3.textContent = 's';
-    s3.classList.add('faded');
     const b1 = document.querySelector('#b1');
     b1.textContent = 't';
-    b1.classList.add('faded');
     const b2 = document.querySelector('#b2');
     b2.textContent = 'u';
-    b2.classList.add('faded');
     const i = document.querySelector('#i');
     i.textContent = 'i';
     const o = document.querySelector('#o');
@@ -40,13 +37,10 @@ function removeStudio() {
     hiddenD.textContent = '';
     const s3 = document.querySelector('#s3');
     s3.textContent = '';
-    s3.classList.remove('faded');
     const b1 = document.querySelector('#b1');
     b1.textContent = 'b';
-    b1.classList.remove('faded');
     const b2 = document.querySelector('#b2');
     b2.textContent = 'b';
-    b2.classList.remove('faded');
     const i = document.querySelector('#i');
     i.textContent = '';
     const o = document.querySelector('#o');
