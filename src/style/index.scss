@@ -8,6 +8,7 @@ $font-stack: 'Helvetica';
 $green: #20C20E;
 
 // dimensions:
+$body-margin: calc(0.6*$rvv) calc(0.4*$rvv);
 $letter: calc(0.8*$rvv);
 $ssbbd-font-size: $letter;
 
@@ -31,17 +32,21 @@ html {
         .wrapper {
             width: 100%;
             height: 100%;
+            margin: $body-margin;
     
             header {
+                min-width: 100%;
+                min-height: 5vh;
                 display: flex;
                 justify-content: flex-start;
 
                 .ssbbd {
+                    cursor: pointer;
                     font-size: $ssbbd-font-size;
                     width: fit-content;
                     display: grid;
                     grid-template-areas: 
-                        ". s1 s2 . . ."
+                        ". s1 s2 hidden-b1 hidden-b2 hidden-d"
                         "s3 b1 b2 d i o";
 
                     .letter {
@@ -52,6 +57,10 @@ html {
                         align-items: center;
                     }
 
+                    .letter.faded {
+                        color: rgba(0, 0, 0, 0.349);
+                    }
+
                     #s1 {
                         grid-area: s1;
                     }
@@ -60,6 +69,18 @@ html {
                         grid-area: s2;
                     }
 
+                    #hidden-b1 {
+                        grid-area: hidden-b1;
+                    }
+
+                    #hidden-b2 {
+                        grid-area: hidden-b2;
+                    }
+
+                    #hidden-d {
+                        grid-area: hidden-d;
+                    }
+ 
                     #s3 {
                         grid-area: s3;
                     }
@@ -95,7 +116,6 @@ html {
         .wrapper {
             header {
                 .ssbbd {
-
                 }
             }
         }
