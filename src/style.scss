@@ -1,0 +1,34 @@
+$green: #20C20E;
+$rvv: calc(1rem + 1vh + 1vw);
+
+html {
+    overflow-x: hidden;
+
+    body {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+        .wrapper {
+            width: fit-content;
+    
+            .email {
+                font-size: calc(0.5*$rvv);
+                padding: 2px 4px;
+                border-radius: 3px;
+                border: 3px double $green;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
+
+            .email:hover {
+                border-color: red;
+                background-color: black;
+                color: $green;
+            }
+        }
+    }
+}
