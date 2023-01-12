@@ -1,10 +1,23 @@
 @use 'meyer';
-
-$green: #20C20E;
 $rvv: calc(1rem + 1vh + 1vw);
+
+// fonts:
+$font-stack: 'Helvetica';
+
+// colors:
+$green: #20C20E;
+
+// dimensions:
+$letter: calc(0.8*$rvv);
+$ssbbd-font-size: $letter;
+
+.hide {
+    display: none;
+}
 
 html {
     overflow-x: hidden;
+    font-family: $font-stack;
 
     body {
         width: 100vw;
@@ -24,12 +37,20 @@ html {
                 justify-content: flex-start;
 
                 .ssbbd {
-                    font-size: calc(1*$rvv);
+                    font-size: $ssbbd-font-size;
                     width: fit-content;
                     display: grid;
                     grid-template-areas: 
                         ". s1 s2 . . ."
-                        ". b1 b2 d . .";
+                        "s3 b1 b2 d i o";
+
+                    .letter {
+                        width: $letter;
+                        height: $letter;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
 
                     #s1 {
                         grid-area: s1;
@@ -37,6 +58,10 @@ html {
 
                     #s2 {
                         grid-area: s2;
+                    }
+
+                    #s3 {
+                        grid-area: s3;
                     }
 
                     #b1 {
@@ -49,6 +74,14 @@ html {
 
                     #d {
                         grid-area: d;
+                    }
+
+                    #i {
+                        grid-area: i;
+                    }
+
+                    #o {
+                        grid-area: o;
                     }
                 }
             }
