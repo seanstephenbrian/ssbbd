@@ -1,7 +1,8 @@
 const delay = '50';
 
 function renderWork() {
-    if (localStorage.getItem('menuExpansion') === 'work') return;
+    const stepOne = document.querySelector('.work-expansion-step-1');
+    if (stepOne.innerHTML === '<span>=</span>') return;
     insertSpan('=', '.work-expansion-step-1');
     setTimeout(() => {
         insertSpan('=', '.work-expansion-step-2');
