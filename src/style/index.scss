@@ -12,6 +12,7 @@ $body-margin: calc(0.6*$rvv) calc(0.4*$rvv);
 $header-margin-bottom: calc(0.6*$rvv);
 $letter: calc(0.8*$rvv);
 $menu-gap: calc(0.3*$rvv);
+$mid-page-gap: calc(2*$rvv);
 $ssbbd-font-size: $letter;
 
 .hide {
@@ -20,6 +21,10 @@ $ssbbd-font-size: $letter;
 
 .faded {
     color: rgba(0, 0, 0, 0.349);
+}
+
+.link {
+    cursor: pointer;
 }
 
 html {
@@ -112,52 +117,58 @@ html {
             }
 
             main {
-                margin: 0 $letter;
-                display: grid;
-                grid-template-columns: 1fr 1fr 2fr;
-                grid-template-areas: "menu expansion-zone expanded-content";
-                grid-column-gap: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: $mid-page-gap;
 
-                .menu,
-                .expansion-zone,
-                .expanded-content {
+                .menu-section {
+                    margin: 0 $letter;
                     display: grid;
-                    grid-template-rows: repeat(4, $rvv);
-                }
+                    grid-template-columns: 1fr 1fr 2fr;
+                    grid-template-areas: "menu expansion-zone expanded-content";
+                    grid-column-gap: 10px;
 
-                .menu {
-                    grid-area: menu;
-
-                    .page-link {
-                        cursor: pointer;
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                    }
-                }
-
-                .expansion-zone {
-                    grid-area: expansion-zone;
-
-                    .expansion {
+                    .menu,
+                    .expansion-zone,
+                    .expanded-content {
                         display: grid;
-                        grid-template-columns: repeat(5, 1fr);
+                        grid-template-rows: repeat(4, $rvv);
+                    }
 
-                        .expansion-step {
+                    .menu {
+                        grid-area: menu;
+
+                        .page-link {
+                            cursor: pointer;
                             display: flex;
-                            justify-content: center;
+                            justify-content: flex-end;
                             align-items: center;
                         }
                     }
-                }
 
-                .expanded-content {
-                    grid-area: expanded-content;
+                    .expansion-zone {
+                        grid-area: expansion-zone;
 
-                    .expanded-line {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
+                        .expansion {
+                            display: grid;
+                            grid-template-columns: repeat(5, 1fr);
+
+                            .expansion-step {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+
+                    .expanded-content {
+                        grid-area: expanded-content;
+
+                        .expanded-line {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
                     }
                 }
             }
@@ -167,24 +178,9 @@ html {
 
 // desktop rules:
 @media (min-width: 600px) {
-    body {
-        .wrapper {
-            header {
-                .ssbbd {
-                }
-            }
-            main {
-                .menu {
-                    .page-link {
-                    }
-                    .page-link:hover {
-                        font-style: italic;
-                    }
-                }
-                .expansion-zone {
-
-                }
-            }
-        }
-    }   
+    
+    .link:hover {
+        font-style: italic;
+    }           
+ 
 }

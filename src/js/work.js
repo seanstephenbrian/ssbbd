@@ -1,26 +1,22 @@
 const delay = '50';
 
 function renderWork() {
+    if (localStorage.getItem('menuExpansion') === 'work') return;
     insertSpan('=', '.work-expansion-step-1');
     setTimeout(() => {
-
         insertSpan('=', '.work-expansion-step-2');
         setTimeout(() => {
-
             insertSpan('=', '.work-expansion-step-3');
             setTimeout(() => {
-
                 insertSpan('>', '.work-expansion-step-4');
                 setTimeout(() => {
-
                     insertSpan('{', '.work-expansion-step-5');
                     renderWebLink();
-
                 }, delay);
-                
             }, delay);
         }, delay);
     }, delay);
+    localStorage.setItem('menuExpansion', 'work');
 }
 
 function insertSpan(textContent, parentSelector) {
@@ -32,7 +28,7 @@ function insertSpan(textContent, parentSelector) {
 
 function renderWebLink() {
     const webLink = document.querySelector('.expanded-line-1');
-    webLink.textContent = 'web';
+    webLink.innerHTML = `<span class="link web-link">web</span>`;
     setTimeout(() => {
         renderCookingLink();
     }, delay);
@@ -40,7 +36,7 @@ function renderWebLink() {
 
 function renderCookingLink() {
     const cookingLink = document.querySelector('.expanded-line-2');
-    cookingLink.textContent = 'cooking';
+    cookingLink.innerHTML = `<span class="link cooking-link">cooking</span>`;
     setTimeout(() => {
         renderVisualLink();
     }, delay);
@@ -48,7 +44,7 @@ function renderCookingLink() {
 
 function renderVisualLink() {
     const visualLink = document.querySelector('.expanded-line-3');
-    visualLink.textContent = 'visual';
+    visualLink.innerHTML = `<span class="link visual-link">visual</span>`;
     setTimeout(() => {
         renderWritingLink();
     }, delay);
@@ -56,7 +52,7 @@ function renderVisualLink() {
 
 function renderWritingLink() {
     const writingLink = document.querySelector('.expanded-line-4');
-    writingLink.textContent = 'writing';
+    writingLink.innerHTML = `<span class="link writing-link">writing</span>`;
 }
 
 export default renderWork;

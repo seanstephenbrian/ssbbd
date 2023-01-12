@@ -23,14 +23,14 @@ function addHeaderEffect() {
 
 function addMenuListeners() {
     const work = document.querySelector('.work-link');
-    work.addEventListener('click', renderWork, {once: true});
+    work.addEventListener('click', renderWork);
 
     const background = document.querySelector('.background-link');
-    background.addEventListener('click', renderBackground, {once: true});
+    background.addEventListener('click', renderBackground);
 
     const contact = document.querySelector('.contact-link');
-    contact.addEventListener('click', renderContact, {once: true});
+    contact.addEventListener('click', renderContact);
 
     const extras = document.querySelector('.extras-link');
-    extras.addEventListener('click', renderExtras, {once: true});
+    extras.addEventListener('click', renderExtras);
 }
