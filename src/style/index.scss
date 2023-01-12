@@ -9,11 +9,17 @@ $green: #20C20E;
 
 // dimensions:
 $body-margin: calc(0.6*$rvv) calc(0.4*$rvv);
+$header-margin-bottom: calc(0.6*$rvv);
 $letter: calc(0.8*$rvv);
+$menu-gap: calc(0.3*$rvv);
 $ssbbd-font-size: $letter;
 
 .hide {
     display: none;
+}
+
+.faded {
+    color: rgba(0, 0, 0, 0.349);
 }
 
 html {
@@ -25,20 +31,22 @@ html {
         max-width: 100vw;
         height: 100vh;
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
+        
         overflow: hidden;
     
         .wrapper {
             width: 100%;
             height: 100%;
             margin: $body-margin;
+            display: flex;
+            flex-direction: column;
     
             header {
                 min-width: 100%;
                 min-height: 5vh;
                 display: flex;
                 justify-content: flex-start;
+                margin-bottom: $header-margin-bottom;
 
                 .ssbbd {
                     cursor: pointer;
@@ -53,12 +61,8 @@ html {
                         width: $letter;
                         height: $letter;
                         display: flex;
-                        justify-content: center;
+                        justify-content: flex-start;
                         align-items: center;
-                    }
-
-                    .letter.faded {
-                        color: rgba(0, 0, 0, 0.349);
                     }
 
                     #s1 {
@@ -106,6 +110,34 @@ html {
                     }
                 }
             }
+
+            main {
+                margin: 0 $letter;
+                display: grid;
+                grid-template-columns: 25vw 1fr;
+                grid-template-areas: "menu expansion-zone";
+                grid-column-gap: 10px;
+
+                .menu {
+                    grid-area: menu;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: $menu-gap;
+                    align-items: flex-end;
+
+                    .page-link {
+                        cursor: pointer;
+                    }
+                }
+
+                .expansion-zone {
+                    grid-area: expansion-zone;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
         }
     }
 }
@@ -116,6 +148,18 @@ html {
         .wrapper {
             header {
                 .ssbbd {
+                }
+            }
+            main {
+                .menu {
+                    .page-link {
+                    }
+                    .page-link:hover {
+                        font-style: italic;
+                    }
+                }
+                .expansion-zone {
+
                 }
             }
         }
