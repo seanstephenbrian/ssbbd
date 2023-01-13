@@ -11,7 +11,7 @@ function renderWork() {
     clearExpansion();
     const workExpansion = document.querySelector('.work-expansion');
     workExpansion.innerHTML = returnExpansionHtml('work');
-    animateExpansion('work', renderWebLink, '50');
+    animateExpansion('work', renderWebLink, '50', '===>{');
 }
 
 function renderWebLink(delay) {

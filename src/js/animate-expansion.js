@@ -1,21 +1,21 @@
 import insertSpan from "./insert-span";
 
-function animateExpansion(keyword, firstStep, delay) {
+function animateExpansion(keyword, firstStep, delay, chars) {
     // clear the lower contents:
     const lower = document.querySelector('.lower-section');
     lower.innerHTML = '';
 
     const stepOne = document.querySelector(`.${keyword}-expansion-step-1`);
     if (stepOne.innerHTML === '<span>=</span>') return;
-    insertSpan('=', `.${keyword}-expansion-step-1`);
+    insertSpan(chars[0], `.${keyword}-expansion-step-1`);
     setTimeout(() => {
-        insertSpan('=', `.${keyword}-expansion-step-2`);
+        insertSpan(chars[1], `.${keyword}-expansion-step-2`);
         setTimeout(() => {
-            insertSpan('=', `.${keyword}-expansion-step-3`);
+            insertSpan(chars[2], `.${keyword}-expansion-step-3`);
             setTimeout(() => {
-                insertSpan('>', `.${keyword}-expansion-step-4`);
+                insertSpan(chars[3], `.${keyword}-expansion-step-4`);
                 setTimeout(() => {
-                    insertSpan('{', `.${keyword}-expansion-step-5`);
+                    insertSpan(chars[4], `.${keyword}-expansion-step-5`);
                     firstStep(delay);
                 }, delay);
             }, delay);

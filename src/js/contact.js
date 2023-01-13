@@ -6,7 +6,7 @@ function renderContact() {
     clearExpansion();
     const contactExpansion = document.querySelector('.contact-expansion');
     contactExpansion.innerHTML = returnExpansionHtml('contact');
-    animateExpansion('contact', test, '50');
+    animateExpansion('contact', test, '50', '====>');
 }
 
 function test() {

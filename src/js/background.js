@@ -7,11 +7,20 @@ function renderBackground() {
     const backgroundExpansion = document.querySelector('.background-expansion');
     backgroundExpansion.innerHTML = returnExpansionHtml('background');
 
-    animateExpansion('background', test, '50');
-    
+    animateExpansion('background', continueBackgroundAnimation, '100', '=====');
 }
 
-function test() {
+function continueBackgroundAnimation() {
+    const firstStep = document.querySelector('.expanded-line-2');
+    firstStep.textContent = '▪';
+    const secondStep = document.querySelector('.expanded-line-3');
+    const thirdStep = document.querySelector('.expanded-line-4');
+    setTimeout(() => {
+        secondStep.textContent = '||';
+        setTimeout(() => {
+            thirdStep.textContent = 'V';
+        }, '200');
+    }, '200');
 }
 
 export default renderBackground;

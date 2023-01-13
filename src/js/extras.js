@@ -6,7 +6,7 @@ function renderExtras() {
     clearExpansion();
     const extrasExpansion = document.querySelector('.extras-expansion');
     extrasExpansion.innerHTML = returnExpansionHtml('extras');
-    animateExpansion('extras', test, '50');
+    animateExpansion('extras', test, '50', '↓!↓!↓');
 }
 
 function test() {
