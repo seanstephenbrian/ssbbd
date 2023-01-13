@@ -1,59 +1,65 @@
-const delay = '50';
+import renderWeb from "./web";
+import renderCooking from './cooking';
+import renderPhoto from "./photo";
+import renderOther from "./other";
+import insertSpan from "./insert-span";
+import clearExpansion from "./clear-expansion";
+import returnExpansionHtml from "./expansion-steps";
+import animateExpansion from "./animate-expansion";
 
 function renderWork() {
-    const stepOne = document.querySelector('.work-expansion-step-1');
-    if (stepOne.innerHTML === '<span>=</span>') return;
-    insertSpan('=', '.work-expansion-step-1');
-    setTimeout(() => {
-        insertSpan('=', '.work-expansion-step-2');
-        setTimeout(() => {
-            insertSpan('=', '.work-expansion-step-3');
-            setTimeout(() => {
-                insertSpan('>', '.work-expansion-step-4');
-                setTimeout(() => {
-                    insertSpan('{', '.work-expansion-step-5');
-                    renderWebLink();
-                }, delay);
-            }, delay);
-        }, delay);
-    }, delay);
-    localStorage.setItem('menuExpansion', 'work');
+    clearExpansion();
+    const workExpansion = document.querySelector('.work-expansion');
+    workExpansion.innerHTML = returnExpansionHtml('work');
+    animateExpansion('work', renderWebLink, '50');
 }
 
-function insertSpan(textContent, parentSelector) {
-    const parent = document.querySelector(parentSelector);
-    const span = document.createElement('span');
-    span.textContent = textContent;
-    parent.appendChild(span);
-}
-
-function renderWebLink() {
-    const webLink = document.querySelector('.expanded-line-1');
-    webLink.innerHTML = `<span class="link web-link">web</span>`;
+function renderWebLink(delay) {
+    const expansion1 = document.querySelector('.expanded-line-1');
+    const webLink = document.createElement('span');
+    webLink.classList.add('link', 'web-link');
+    webLink.textContent = 'web';
+    expansion1.appendChild(webLink);
+    webLink.addEventListener('click', renderWeb);
     setTimeout(() => {
-        renderCookingLink();
+        renderCookingLink(delay);
     }, delay);
 }
 
-function renderCookingLink() {
-    const cookingLink = document.querySelector('.expanded-line-2');
-    cookingLink.innerHTML = `<span class="link cooking-link">cooking</span>`;
+function renderCookingLink(delay) {
+    const expansion2 = document.querySelector('.expanded-line-2');
+    const cookingLink = document.createElement('span');
+    cookingLink.classList.add('link', 'cooking-link');
+    cookingLink.textContent = 'cooking';
+    expansion2.appendChild(cookingLink);
+    cookingLink.addEventListener('click', renderCooking);
     setTimeout(() => {
-        renderVisualLink();
+        renderPhotoLink(delay);
     }, delay);
 }
 
-function renderVisualLink() {
-    const visualLink = document.querySelector('.expanded-line-3');
-    visualLink.innerHTML = `<span class="link visual-link">visual</span>`;
+function renderPhotoLink(delay) {
+    const expansion3 = document.querySelector('.expanded-line-3');
+    const photoLink = document.createElement('span');
+    photoLink.classList.add('link', 'photo-link');
+    photoLink.textContent = 'photo';
+    expansion3.appendChild(photoLink);
+    photoLink.addEventListener('click', renderPhoto);
     setTimeout(() => {
-        renderWritingLink();
+        renderOtherLink(delay);
     }, delay);
 }
 
-function renderWritingLink() {
-    const writingLink = document.querySelector('.expanded-line-4');
-    writingLink.innerHTML = `<span class="link writing-link">writing</span>`;
+function renderOtherLink() {
+    const expansion4 = document.querySelector('.expanded-line-4');
+    const otherLink = document.createElement('span');
+    otherLink.classList.add('link', 'other-link');
+    otherLink.textContent = 'other';
+    expansion4.appendChild(otherLink);
+    otherLink.addEventListener('click', renderOther);
 }
+
+
 
 export default renderWork;
+export { renderWebLink };
