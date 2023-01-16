@@ -1,0 +1,24 @@
+.tags {
+    margin: 0 calc(1.4*($body-left-margin + $letter)) 0 calc($body-left-margin + $letter);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: calc(0.5*$rvv);
+}
+
+.tag {
+    border: 1px solid black;
+    padding: calc(0.15*$rvv);
+    clip-path: polygon(
+        0 10%,
+        10% 0,
+        90% 0,
+        100% 10%,
+        100% 90%,
+        90% 100%,
+        10% 100%,
+        0% 90%,
+        0% 10%)
+    ;
+}

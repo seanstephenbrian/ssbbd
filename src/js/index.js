@@ -8,8 +8,9 @@ import indexBody from '../html/index.html';
 import renderBackground from './background';
 import renderContact from './contact';
 import renderExtras from './extras';
-import renderWork from './work';
+import renderWork, { renderWebLink } from './work';
 import showStudio from './header-hover';
+import renderWeb from './web';
 
 document.body.innerHTML = indexBody;
 
@@ -34,3 +35,6 @@ function addMenuListeners() {
     const extras = document.querySelector('.extras-link');
     extras.addEventListener('click', renderExtras);
 }
+
+renderWork();
+renderWeb();

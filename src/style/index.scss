@@ -1,4 +1,3 @@
-@use 'meyer';
 $rvv: calc(1rem + 1vh + 1vw);
 
 // fonts:
@@ -8,12 +7,16 @@ $font-stack: 'Helvetica';
 $green: #20C20E;
 
 // dimensions:
-$body-margin: calc(0.6*$rvv) calc(0.4*$rvv);
+$body-left-margin: calc(0.4*$rvv);
+$body-top-margin: calc(0.6*$rvv);
 $header-margin-bottom: calc(0.6*$rvv);
 $letter: calc(0.8*$rvv);
 $menu-gap: calc(0.3*$rvv);
 $mid-page-gap: calc(2*$rvv);
 $ssbbd-font-size: $letter;
+
+@import 'meyer';
+@import './web.scss';
 
 .hide {
     display: none;
@@ -43,7 +46,7 @@ html {
         .wrapper {
             width: 100%;
             height: 100%;
-            margin: $body-margin;
+            margin: $body-top-margin $body-left-margin;
             display: flex;
             flex-direction: column;
     
