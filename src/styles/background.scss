@@ -1,7 +1,47 @@
-.first-div {
-    height: 100px;
-}
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 
-.second-div {
-    height: 100px
+    .hadrian {
+        background-image: url('../img/villa.jpg');
+        background-size: cover;
+        height: 569px;
+    }
+
+    .axes {
+        z-index: 1;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+
+        .axis {
+            position: absolute;
+        }
+
+        .axis-1 {
+            width: 1.5%;
+            height: 23%;
+            left: 35.1%;
+            top: 55%;
+            transform: rotate(6.8deg);
+        }
+
+        .axis-2 {
+            width: 1%;
+            height: 25%;
+            left: 15%;
+            top: 44.3%;
+            transform: rotate(91.7deg);
+        }
+
+        .axis-3 {
+            width: 0.5%;
+            height: 10%;
+            top: 43%;
+            left: 4%;
+            transform: rotate(48deg);
+        }
+    }
 }

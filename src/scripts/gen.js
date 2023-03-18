@@ -11,16 +11,27 @@ function generateHex() {
     return hex;
 }
 
-const generatedStyles = () => ({
+const backgroundStyles = () => ({
     backgroundElement: {
         backgroundColor: generateHex()
     },
-    firstDiv: {
-        backgroundColor: generateHex()
-    },
-    secondDiv: {
-        backgroundColor: generateHex()
-    }
+    axes: [
+        {
+            backgroundColor: generateHex(),
+        }
+        // axis1: {
+        //     backgroundColor: generateHex()
+        // },
+        // axis2: {
+        //     backgroundColor: generateHex()
+        // },
+        // axis3: {
+        //     backgroundColor: generateHex()
+        // },
+        // axis4: {
+        //     backgroundColor: generateHex()
+        // }
+    ]
 });
 
-export default generatedStyles;
+export { backgroundStyles }

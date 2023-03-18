@@ -1,4 +1,4 @@
-import generatedStyles from '../scripts/gen';
+import { backgroundStyles } from '../scripts/gen';
 
 import Background from './Background';
 
@@ -8,7 +8,7 @@ function Site() {
     return (
         <div className='site-wrapper'>
             <Background
-                variableStyles={generatedStyles()}
+                variableStyles={backgroundStyles()}
             />
         </div>
     );
