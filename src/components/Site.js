@@ -8,7 +8,7 @@ function Site() {
     return (
         <div className='site-wrapper'>
             <Background
-                variableStyles={backgroundStyles()}
+                variableStyles={backgroundStyles}
             />
         </div>
     );
