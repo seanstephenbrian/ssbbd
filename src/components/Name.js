@@ -8,6 +8,7 @@ export default function Name() {
     if (!expanded) {
         return (
             <div
+                aria-hidden='true'
                 className='name name-not-expanded'
                 onMouseOver={() => {
                     setExpanded(true);
@@ -23,6 +24,7 @@ export default function Name() {
     } else {
         return (
             <div
+                aria-hidden='true'
                 className='name name-expanded'
                 onMouseLeave={() => {
                     setExpanded(false);
