@@ -1,4 +1,9 @@
-import { backgroundStyles } from '../scripts/gen';
+import React from 'react';
+
+import { 
+    backgroundStyles, 
+    generateHoverSpin 
+} from '../scripts/gen';
 
 import Background from './Background';
 

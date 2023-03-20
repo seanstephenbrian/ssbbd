@@ -6,12 +6,19 @@ import '../styles/background.scss';
 
 export default function Background(props) {
 
-    const { variableStyles } = props;
+    const {
+        variableStyles 
+    } = props;
 
     const axes = (
         <div className='axes'>
             {variableStyles.axes.map((axis, index) => 
-                <div className={'axis ' + 'axis-' + index} key={uniqid()} style={axis}></div>
+                <div 
+                    className={'axis axis-' + index} 
+                    key={uniqid()}
+                    style={axis}
+                >
+                </div>
             )}
         </div>
     );
@@ -21,8 +28,6 @@ export default function Background(props) {
             className="background"
             style={variableStyles.backgroundElement}
         >
-            {/* <div className='hadrian'></div> */}
-
             {axes}
         </div>
     )
