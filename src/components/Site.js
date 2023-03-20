@@ -1,9 +1,8 @@
 import React from 'react';
 
 import { 
-    backgroundStyles, 
-    generateHoverSpin 
-} from '../scripts/gen';
+    backgroundStyles
+} from '../js/variable-styles';
 
 import Background from './Background';
 
