@@ -2,30 +2,27 @@ import * as Generate from "./gen";
 
 function createAxis(width, height, left, top, transform) {
     return {
-        backgroundColor: Generate.hex(Generate.randomNum(100), Generate.randomNum(5)),
+        backgroundColor: Generate.hex(),
         width: width,
         height: height,
         left: left,
         top: top,
         transform: transform,
         filter: 
-            Generate.grayscale(Generate.randomNum(50)) + 
+            Generate.grayscale() + 
             ' ' + 
-            Generate.dropShadow(
-                Generate.randomNum(5), 
-                Generate.randomNum(5), 
-                Generate.randomNum(25), 
-                Generate.hex(Generate.randomNum(100), Generate.randomNum(5))
-                ) + 
+            Generate.dropShadow() + 
             ' ' + 
-            Generate.sepia(Generate.randomNum(15))
+            Generate.sepia(),
+        border: Generate.border()
     }
 }
 
 const backgroundStyles = {
 
     backgroundElement: {
-        backgroundColor: '#ffffff'
+        background: Generate.backgroundGradient(),
+        filter: Generate.backgroundFilter()
     },
 
     axes: [
