@@ -153,6 +153,80 @@ const backgroundStyles = {
             top: '31%',
             transform: 'rotate(77deg)'
         },
+        {
+            // 15
+            backgroundColor: generateHex(),
+            width: '0.6%',
+            height: '70%',
+            left: '70%',
+            top: '31%',
+            transform: 'rotate(40deg)'
+        },
+        {
+            // 16
+            backgroundColor: generateHex(),
+            width: '0.7%',
+            height: '40%',
+            left: '70%',
+            top: '11%',
+            transform: 'rotate(54deg)'
+        },
+        {
+            // 17
+            backgroundColor: generateHex(),
+            width: '0.7%',
+            height: '60%',
+            left: '70%',
+            top: '5%',
+            transform: 'rotate(73deg)'
+        },
+        {
+            // 18
+            backgroundColor: generateHex(),
+            width: '0.9%',
+            height: '30%',
+            left: '83%',
+            top: '20%',
+            transform: 'rotate(160deg)'
+        },
+        {
+            // 19
+            backgroundColor: generateHex(),
+            width: '0.6%',
+            height: '40%',
+            left: '86%',
+            top: '10%',
+            transform: 'rotate(50deg)'
+        },
+        {
+            // 20
+            backgroundColor: generateHex(),
+            width: '0.6%',
+            height: '40%',
+            left: '86%',
+            top: '10%',
+            transform: 'rotate(50deg)'
+        },
+        {
+            // 21
+            backgroundColor: generateHex(),
+            width: '0.6%',
+            height: '20%',
+            left: '92%',
+            top: '17%',
+            transform: 'rotate(133deg)'
+        },
+        {
+            // 22
+            backgroundColor: generateHex(),
+            width: '0.6%',
+            height: '15%',
+            left: '94%',
+            top: '28%',
+            transform: 'rotate(44deg)'
+        }
+
+
 
 
 

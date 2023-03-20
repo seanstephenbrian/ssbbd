@@ -21,7 +21,7 @@ export default function Background(props) {
             className="background"
             style={variableStyles.backgroundElement}
         >
-            <div className='hadrian'></div>
+            {/* <div className='hadrian'></div> */}
 
             {axes}
         </div>
