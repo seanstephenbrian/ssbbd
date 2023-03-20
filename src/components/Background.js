@@ -6,13 +6,13 @@ import '../styles/background.scss';
 
 export default function Background(props) {
 
-    const {
-        variableStyles 
-    } = props;
+    const { createBackground } = props;
+
+    const [backgroundStyles, setBackgroundStyles] = useState(createBackground());
 
     const axes = (
         <div className='axes'>
-            {variableStyles.axes.map((axis, index) => 
+            {backgroundStyles.axes.map((axis, index) => 
                 <div 
                     className={'axis axis-' + index} 
                     key={uniqid()}
@@ -26,7 +26,10 @@ export default function Background(props) {
     return (
         <div 
             className="background"
-            style={variableStyles.backgroundElement}
+            onClick={() => {
+                setBackgroundStyles(createBackground());
+            }}
+            style={backgroundStyles.backgroundElement}
         >
             {axes}
         </div>

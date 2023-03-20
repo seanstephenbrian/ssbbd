@@ -1,5 +1,5 @@
 function backgroundFilter() {
-    return `brightness(${randomNum(90, 80)}%) opacity(${randomNum(90, 60)}%)`;
+    return `brightness(${randomNum(90, 80)}%) opacity(${randomNum(90, 80)}%) contrast(${randomNum(200, 50)}%)`;
 }
 
 function backgroundGradient() {
@@ -25,9 +25,17 @@ function hex() {
     // get first 6 numbers from time string:
     const hexNumbers = (time / randomNum(100)).toString().slice(0, 6);
 
-    const index = randomNum(5)
-    // create hex string, randomly replacing one of the numbers with 'f':
-    const hexString = '#' + hexNumbers.substring(0, index) + 'f' + hexNumbers.substring(index + 1);
+    let hexString;
+    if (randomNum(3) === 2) {
+        const index = randomNum(5);
+        // create hex string, randomly replacing two of the numbers with 'ff':
+        hexString = '#' + hexNumbers.substring(0, index) + 'ff' + hexNumbers.substring(index + 2);
+    } else {
+        const index = randomNum(5);
+        // create hex string, randomly replacing one of the numbers with 'f':
+        hexString = '#' + hexNumbers.substring(0, index) + 'f' + hexNumbers.substring(index + 1);
+    }
+    
 
     return hexString;
 }

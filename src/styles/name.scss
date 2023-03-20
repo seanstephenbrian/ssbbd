@@ -1,0 +1,20 @@
+.name {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .letter {
+        height: calc(3*var(--rvv));
+        width: calc(3*var(--rvv));
+        font-family: 'Helico';
+        font-size: calc(2*var(--rvv));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.name-expanded {
+    color: #16da00;
+    text-shadow: 5px 5px 0 red;
+}
