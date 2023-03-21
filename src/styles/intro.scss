@@ -1,0 +1,14 @@
+.intro-text {
+    width: 45vw;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.2*var(--rvv));
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.741);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: calc(0.8*var(--rvv));
+}
