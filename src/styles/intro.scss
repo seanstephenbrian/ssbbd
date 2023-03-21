@@ -1,6 +1,16 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .intro-text {
     width: 45vw;
-    min-width: 450px;
+    min-width: 400px;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     gap: calc(0.3*var(--rvv));
@@ -11,4 +21,29 @@
     border-radius: 5px;
     padding: 20px;
     font-size: calc(0.8*var(--rvv));
+}
+
+.projects-link {
+    margin-top: calc(2*var(--rvv));
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out forwards;
+    font-family: 'Helico';
+    font-size: calc(1.5*var(--rvv));
+    background-color: #b3ff90e7;
+    padding: 20px;
+    padding-bottom: 5px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    text-decoration: none;
+    color: blue;
+    text-shadow: 3px 3px 0 #1aff00;
+    transition: transform 0.1s ease-in-out;
+}
+
+.projects-link:visited {
+    color: blue;
+}
+
+.projects-link:hover {
+    transform: scale(1.05);
 }

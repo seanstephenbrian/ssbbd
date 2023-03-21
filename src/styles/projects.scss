@@ -1,0 +1,12 @@
+.projects {
+    margin: calc(15*var(--rvv)) 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+
+    .project-card {
+        height: 100px;
+        width: 100px;
+        background-color: white;
+    }
+}

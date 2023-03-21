@@ -5,6 +5,7 @@ import { generateBackgroundStyles} from '../js/variable-styles';
 import Background from './Background';
 import Intro from './Intro';
 import Name from './Name';
+import Projects from './Projects';
 
 import '../styles/main.scss';
 
@@ -17,6 +18,7 @@ function Site() {
             <div className='site-wrapper'>
                 <Name />
                 <Intro />
+                <Projects />
             </div>
         </>
     );
