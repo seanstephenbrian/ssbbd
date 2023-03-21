@@ -1,17 +1,27 @@
 import React from 'react';
 
+import Typewriter from 'typewriter-effect';
+
 export default function Intro() {
+
+    // typewriter config:
+    const typewriterConfig = {
+        cursor: '',
+        delay: 100,
+        loop: false
+    }
+
     return (
         <section className='intro-text'>
-            <h1>
-                hello, my name is sean!
-            </h1>
-            <p>
-                i'm a software developer 
-            </p>
-            <p>
-                i'm still early in my journey, but there's already a lot that i'm excited to share!
-            </p>
+            <Typewriter
+                onInit={(typewriter) => {
+                    typewriter
+                        .typeString('hello, my name is sean!')
+                        .pauseFor(2500)
+                        .start();
+                }}
+                options={typewriterConfig}
+            />
         </section>
     )
 }

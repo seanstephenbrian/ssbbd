@@ -44,9 +44,9 @@
         @for $i from 0 through 22 {
             .axis-#{$i} {
                 opacity: ((random(1000) + 500) / 1000);
-                animation: 
-                    rotate ((random(1500) + 60) + s) linear infinite alternate,
-                    fade (random(1000) + s) linear infinite alternate;
+                // animation: 
+                //     rotate ((random(1500) + 60) + s) linear infinite alternate,
+                //     fade (random(1000) + s) linear infinite alternate;
             }
         }
     }
