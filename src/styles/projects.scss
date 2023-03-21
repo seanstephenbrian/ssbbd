@@ -1,5 +1,6 @@
 .projects {
-    margin: calc(15*var(--rvv)) 0;
+    margin: 100vh 0;
+    padding: calc(2*var(--rvv)) 0 0;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
