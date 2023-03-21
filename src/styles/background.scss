@@ -1,3 +1,19 @@
+@keyframes rotate {
+    from {
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    from {
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .background {
     min-height: 100vh;
     width: 100%;
@@ -23,6 +39,15 @@
         .axis {
             position: absolute;
             max-width: 15px;
+        }
+
+        @for $i from 0 through 22 {
+            .axis-#{$i} {
+                opacity: ((random(1000) + 500) / 1000);
+                animation: 
+                    rotate ((random(1500) + 60) + s) linear infinite alternate,
+                    fade (random(1000) + s) linear infinite alternate;
+            }
         }
     }
 }
