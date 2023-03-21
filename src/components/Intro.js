@@ -36,7 +36,7 @@ export default function Intro() {
                 onInit={(typewriter) => {
                     typewriter
                         .pauseFor(2500)
-                        .typeString(`i'm a software developer and creator specializing in dynamic digital experiences.`)
+                        .typeString(`i'm a software developer specializing in dynamic & artful digital experiences.`)
                         .start();
                 }}
                 options={typewriterConfig}
@@ -44,8 +44,8 @@ export default function Intro() {
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
-                        .pauseFor(7000)
-                        .typeString(`below you'll find links to my recent and noteworthy projects.`)
+                        .pauseFor(6000)
+                        .typeString(`i have also worked as a chef, farmer, and writer.`)
                         .start();
                 }}
                 options={typewriterConfig}
@@ -53,7 +53,16 @@ export default function Intro() {
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
-                        .pauseFor(11000)
+                        .pauseFor(9000)
+                        .typeString(`below you'll find links to my recent and noteworthy work on the web.`)
+                        .start();
+                }}
+                options={typewriterConfig}
+            />
+            <Typewriter
+                onInit={(typewriter) => {
+                    typewriter
+                        .pauseFor(12000)
                         .typeString(`thanks for stopping by!!!!!!!!`)
                         .start();
                 }}
