@@ -67,7 +67,8 @@ export default function Intro() {
                     onInit={(typewriter) => {
                         typewriter
                             .pauseFor(12000)
-                            .typeString(`thanks for stopping by!!!!!!!!`)
+                            .typeString(`thanks for stopping by!`)
+                            .pauseFor(200)
                             .callFunction(() => {
                                 setLinkVisible(true)
                             })
@@ -76,7 +77,17 @@ export default function Intro() {
                     options={typewriterConfig}
                 />
             </section>
-            {linkVisible ? <a className='projects-link' href='#projects'>GO TO PROJECTS</a> : ''}
+            {linkVisible ? 
+            <div 
+                className='projects-link'
+                onClick={() => {
+                    const projects = document.querySelector('#projects');
+                    projects.scrollIntoView({ behavior: 'smooth' });
+                }}
+            >
+                SCROLL TO PROJECTS
+            </div> : 
+            ''}
         </>
     )
 }

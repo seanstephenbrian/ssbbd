@@ -6,17 +6,17 @@ export default function Project(props) {
 
     return (
         <div className='project-card'>
-            <div className='title'>
+            <div className='project-title'>
                 {projectInfo.title}
             </div>
-            <div className='description'>
+            <div className='project-description'>
                 {projectInfo.description}
             </div>
-            <a href={projectInfo.liveUrl}>
-                live link
+            <a class='project-link live-link' href={projectInfo.liveUrl}>
+                LIVE DEMO
             </a>
-            <a href={projectInfo.gitUrl}>
-                git link
+            <a class='project-link gh-link' href={projectInfo.gitUrl}>
+                GITHUB REPO
             </a>
         </div>
     )

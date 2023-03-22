@@ -1,44 +1,44 @@
 {
     "projects": [
         {
-            "name": "project 1",
-            "description": "project 1 description",
+            "title": "project 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
             "liveUrl": "https://www.google.com/",
             "gitUrl": "https://www.google.com/"
         },
         {
-            "name": "project 2",
-            "description": "project 2 description",
+            "title": "project 2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
             "liveUrl": "https://www.google.com/",
             "gitUrl": "https://www.google.com/"
         },
         {
-            "name": "project 3",
-            "description": "project 3 description",
+            "title": "project 3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
             "liveUrl": "https://www.google.com/",
             "gitUrl": "https://www.google.com/"
         },
         {
-            "name": "project 4",
-            "description": "project 4 description",
+            "title": "project 4",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
             "liveUrl": "https://www.google.com/",
             "gitUrl": "https://www.google.com/"
         },
         {
-            "name": "project 5",
-            "description": "project 5 description",
+            "title": "project 5",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
             "liveUrl": "https://www.google.com/",
             "gitUrl": "https://www.google.com/"
         },
         {
-            "name": "project 6",
-            "description": "project 6 description",
+            "title": "project 6",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
             "liveUrl": "https://www.google.com/",
             "gitUrl": "https://www.google.com/"
         },
         {
-            "name": "project 7",
-            "description": "project 7 description",
+            "title": "project 7",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
             "liveUrl": "https://www.google.com/",
             "gitUrl": "https://www.google.com/"
         }

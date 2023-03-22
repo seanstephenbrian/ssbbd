@@ -24,6 +24,7 @@
 }
 
 .projects-link {
+    cursor: pointer;
     margin-top: calc(1.5*var(--rvv));
     opacity: 0;
     animation: fade-in 1.5s ease-in-out forwards;
@@ -38,10 +39,6 @@
     color: blue;
     text-shadow: 3px 3px 0 #1aff00;
     transition: transform 0.1s ease-in-out;
-}
-
-.projects-link:visited {
-    color: blue;
 }
 
 .projects-link:hover {
