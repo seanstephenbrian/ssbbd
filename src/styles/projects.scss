@@ -1,3 +1,14 @@
+.project-heading {
+    font-family: 'Helico';
+    font-size: calc(1.5*var(--rvv));
+    padding: 20px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    background-color: var(--transparent-white);
+}
+
 .projects {
     padding: calc(2*var(--rvv)) 0 0;
     width: 90vw;
@@ -10,11 +21,12 @@
     .project-card {
         min-width: 200px;
         max-width: 350px;
-        background-color: rgba(255, 255, 255, 0.908);
+        background-color: var(--transparent-white);
         padding: 20px;
         display: grid;
         grid-template-rows: fit-content 1fr 1fr fit-content;
         border: 2px solid black;
+        border-radius: 20px;
         row-gap: 20px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:

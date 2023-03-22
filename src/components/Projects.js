@@ -23,6 +23,7 @@ export default function Projects() {
     return (
         <>
             <Drawings />
+            <h1 className='project-heading'>PROJECTS</h1>
             <section className='projects' id='projects'>
                 {projectData.map((project) => {
                     return (
