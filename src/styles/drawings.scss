@@ -1,3 +1,54 @@
+@keyframes rotate {
+    from {
+    }
+    to {
+        transform: rotate(360deg);
+    } 
+}
+
+
+
 .drawings {
+    padding: calc(2*var(--rvv));
     margin: 500px 0 0;
+    width: 100%;
+    display: flex;
+    gap: 12vw;
+    justify-content: center;
+    align-items: center;
+
+    .drawing {
+        height: 120px;
+    }
+
+    .apple {
+        height: 90px;
+    }
+
+    .delicata {
+        filter: drop-shadow(0 0 15px blue);
+        animation: rotate (random(30) + s) linear infinite;
+    }
+
+    .apple-1 {
+        filter: drop-shadow(0 0 15px red);
+        animation: rotate (random(30) + s) linear infinite reverse;
+    }
+
+    .arugula {
+        height: 80px;
+        filter: drop-shadow(0 0 15px #1aff00);
+        animation: rotate (random(30) + s) linear infinite;
+    }
+
+    .apple-2 {
+        filter: drop-shadow(0 0 15px yellow);
+        animation: rotate (random(30) + s) linear infinite reverse;
+    }
+
+    .fennel {
+        filter: drop-shadow(0 0 15px violet);
+        animation: rotate (random(30) + s) linear infinite reverse;
+
+    }
 }
