@@ -81,8 +81,8 @@ export default function Intro() {
             <div 
                 className='projects-link'
                 onClick={() => {
-                    const projects = document.querySelector('#projects');
-                    projects.scrollIntoView({ behavior: 'smooth' });
+                    const drawings = document.querySelector('.drawings');
+                    drawings.scrollIntoView({ behavior: 'smooth' });
                 }}
             >
                 SCROLL TO PROJECTS

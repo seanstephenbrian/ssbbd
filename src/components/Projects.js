@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import uniqid from 'uniqid';
 
 import '../styles/projects.scss';
 
+import Drawings from './Drawings';
 import Project from './Project';
 
 export default function Projects() {
@@ -18,17 +20,16 @@ export default function Projects() {
         });
     }, []);
 
-    useEffect(() => {
-        console.log(projectData);
-    }, [projectData])
-
     return (
-        <section className='projects' id='projects'>
-            {projectData.map((project) => {
-                return (
-                    <Project projectInfo={project} />
-                )
-            })}
-        </section>
+        <>
+            <Drawings />
+            <section className='projects' id='projects'>
+                {projectData.map((project) => {
+                    return (
+                        <Project key={uniqid()} projectInfo={project} />
+                    )
+                })}
+            </section>
+        </>
     )
 }
