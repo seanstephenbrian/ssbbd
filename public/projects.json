@@ -3,6 +3,7 @@
         {
             "title": "project 1",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
+            "previewPath": "../video/portfolio.webm",
             "liveUrl": "https://www.google.com/",
             "gitUrl": "https://www.google.com/"
         },

@@ -21,6 +21,21 @@ export default function Project(props) {
             <div className='project-description'>
                 {projectInfo.description}
             </div>
+            <div className='project-preview'>
+                {
+                    projectInfo.previewPath ?
+                    <video 
+                        autoPlay
+                        className='preview-video' 
+                        loop
+                        muted
+                        src={projectInfo.previewPath}
+                    >
+
+                    </video> :
+                    '' 
+                }
+            </div>
             <a className='project-link live-link' href={projectInfo.liveUrl}>
                 LIVE DEMO
             </a>

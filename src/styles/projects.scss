@@ -45,6 +45,17 @@
             font-size: calc(0.4*var(--rvv));
         }
 
+        .project-preview {
+            grid-area: project-preview;
+
+            .preview-video {
+                border: 2px solid black;
+                width: 100%;
+            }
+        }
+
+        
+
         .project-link {
             font-size: calc(0.5*var(--rvv));
         }
