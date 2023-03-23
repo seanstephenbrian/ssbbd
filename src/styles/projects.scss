@@ -10,7 +10,7 @@
 }
 
 .projects {
-    padding: calc(2*var(--rvv)) 0 0;
+    padding: calc(1*var(--rvv)) 0;
     width: 90vw;
     max-width: 1300px;
     display: flex;
@@ -53,8 +53,6 @@
                 width: 100%;
             }
         }
-
-        
 
         .project-link {
             font-size: calc(0.5*var(--rvv));

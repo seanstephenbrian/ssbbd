@@ -6,10 +6,8 @@
     } 
 }
 
-
-
 .drawings {
-    padding: calc(2*var(--rvv));
+    padding: calc(2*var(--rvv)) 0 calc(3*var(--rvv));
     margin: 500px 0 0;
     width: 100%;
     display: flex;
