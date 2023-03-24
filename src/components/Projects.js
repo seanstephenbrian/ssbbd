@@ -25,7 +25,12 @@ export default function Projects() {
             <Drawings />
             <h1 className='project-heading'>PROJECTS</h1>
             <section className='projects' id='projects'>
-                {projectData.map((project) => {
+                {projectData.map((project, index) => {
+                    if (index === 0) {
+                        return (
+                            <Project portfolio={true} key={uniqid()} projectInfo={project} />
+                        )
+                    }
                     return (
                         <Project key={uniqid()} projectInfo={project} />
                     )

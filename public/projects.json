@@ -1,47 +1,120 @@
 {
     "projects": [
         {
-            "title": "project 1",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
+            "title": "ssbbd.dev",
+            "description": "portfolio site",
             "previewPath": "../video/portfolio.webm",
-            "liveUrl": "https://www.google.com/",
-            "gitUrl": "https://www.google.com/"
+            "liveUrl": "",
+            "gitUrl": "https://github.com/seanstephenbrian/ssbbd"
         },
         {
-            "title": "project 2",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
-            "liveUrl": "https://www.google.com/",
-            "gitUrl": "https://www.google.com/"
+            "title": "where's bosch?",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/wheres-bosch/",
+            "gitUrl": "https://github.com/seanstephenbrian/wheres-bosch"
         },
         {
-            "title": "project 3",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
-            "liveUrl": "https://www.google.com/",
-            "gitUrl": "https://www.google.com/"
+            "title": "ArtCart",
+            "description": "",
+            "liveUrl": "",
+            "gitUrl": "https://github.com/seanstephenbrian/art-cart"
         },
         {
-            "title": "project 4",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
-            "liveUrl": "https://www.google.com/",
-            "gitUrl": "https://www.google.com/"
+            "title": "campaign website",
+            "description": "",
+            "liveUrl": "https://www.johnmartin65.com/",
+            "gitUrl": "https://github.com/seanstephenbrian/campaign-website"
         },
         {
-            "title": "project 5",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
-            "liveUrl": "https://www.google.com/",
-            "gitUrl": "https://www.google.com/"
+            "title": "brassicaDB",
+            "description": "",
+            "liveUrl": "https://brassicadb.up.railway.app/",
+            "gitUrl": "https://github.com/seanstephenbrian/brassicas"
         },
         {
-            "title": "project 6",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
-            "liveUrl": "https://www.google.com/",
-            "gitUrl": "https://www.google.com/"
+            "title": "now // later",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/todo-list/",
+            "gitUrl": "https://github.com/seanstephenbrian/todo-list"
         },
         {
-            "title": "project 7",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum auctor congue. Maecenas scelerisque lacinia enim vel faucibus.",
-            "liveUrl": "https://www.google.com/",
-            "gitUrl": "https://www.google.com/"
+            "title": "graces",
+            "description": "",
+            "liveUrl": "https://graces.website/",
+            "gitUrl": "https://github.com/seanstephenbrian/graces"
+        },
+        {
+            "title": "lead block sports",
+            "description": "",
+            "liveUrl": "https://www.leadblocksports.blog/",
+            "gitUrl": "https://github.com/seanstephenbrian/lead-block"
+        },
+        {
+            "title": "battlesquares",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/battleship/",
+            "gitUrl": "https://github.com/seanstephenbrian/battleship"
+        },
+        {
+            "title": "memory game",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/memory-game/",
+            "gitUrl": "https://github.com/seanstephenbrian/memory-game"
+        },
+        {
+            "title": "CV generator",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/cv-project/",
+            "gitUrl": "https://github.com/seanstephenbrian/cv-project"
+        },
+        {
+            "title": "how's the weather?",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/weather-app/",
+            "gitUrl": "https://github.com/seanstephenbrian/weather-app"
+        },
+        {
+            "title": "apicius cafe",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/restaurant-page/",
+            "gitUrl": "https://github.com/seanstephenbrian/restaurant-page"
+        },
+        {
+            "title": "admin dashboard",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/admin-dashboard/",
+            "gitUrl": "https://github.com/seanstephenbrian/admin-dashboard"
+        },
+        {
+            "title": "tic-tac-toe",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/tic-tac-toe/",
+            "gitUrl": "https://github.com/seanstephenbrian/tic-tac-toe"
+        },
+        {
+            "title": "book log",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/book-log/",
+            "gitUrl": "https://github.com/seanstephenbrian/book-log"
+        },
+        {
+            "title": "oeuf frit cafe",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/sign-up-form/",
+            "gitUrl": "https://github.com/seanstephenbrian/sign-up-form"
+        },
+        {
+            "title": "pointillist etch-a-sketch",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/etch-a-sketch/",
+            "gitUrl": "https://github.com/seanstephenbrian/etch-a-sketch"
+        },
+        {
+            "title": "calculator",
+            "description": "",
+            "liveUrl": "https://seanstephenbrian.github.io/calculator/",
+            "gitUrl": "https://github.com/seanstephenbrian/calculator"
         }
     ]
 }
+
