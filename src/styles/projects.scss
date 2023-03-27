@@ -19,7 +19,8 @@
     gap: 30px;
 
     .project-card {
-        min-width: 200px;
+        min-width: 350px;
+        width: 350px;
         max-width: 350px;
         background-color: var(--transparent-white);
         padding: 20px;
@@ -33,11 +34,20 @@
             "project-title project-title"
             "project-description project-description"
             "project-preview project-preview"
-            "live-link gh-link";
+            "project-links project-links";
 
         .project-title {
             grid-area: project-title;
             font-size: calc(0.6*var(--rvv));
+        }
+
+        .project-title-link {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .project-title-link:visited {
+            color: black;
         }
 
         .project-description {
@@ -54,25 +64,23 @@
             }
         }
 
+        .project-links {
+            grid-area: project-links;
+            display: flex;
+            gap: 5px;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
         .project-link {
             font-size: calc(0.5*var(--rvv));
             text-align: center;
+            display: flex;
+            justify-content: center;
         }
 
         .project-link:hover {
             font-style: italic;
-        }
-
-        .live-link {
-            grid-area: live-link;
-            display: flex;
-            justify-content: center;
-        }
-
-        .gh-link {
-            grid-area: gh-link;
-            display: flex;
-            justify-content: center;
         }
     }
 }

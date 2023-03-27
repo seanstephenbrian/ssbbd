@@ -1,22 +1,19 @@
 import React from 'react';
 
-import { hex as generateHex } from '../js/gen';
-
 export default function Project(props) {
     // receive project info as props from Projects component:
-    const { projectInfo, portfolio } = props;
-
-    const boxShadowStyle = `0 0 calc(1*var(--rvv)) ${generateHex()}`;
+    const { projectInfo } = props;
 
     return (
-        <div 
-            className='project-card'
-            style={{
-                boxShadow: boxShadowStyle
-            }}
-        >
+        <div className='project-card'>
             <div className='project-title'>
-                {projectInfo.title}
+            {
+                projectInfo.liveUrl ?
+                <a className='project-title-link' href={projectInfo.liveUrl} target='_blank' rel='noopener noreferrer'>
+                    {projectInfo.title}
+                </a> :
+                projectInfo.title
+            }
             </div>
             <div className='project-description'>
                 {projectInfo.description}
@@ -35,16 +32,18 @@ export default function Project(props) {
                     '' 
                 }
             </div>
-            {
-                portfolio ?
-                '' :
-                <a className='project-link live-link' href={projectInfo.liveUrl} target='_blank' rel='noopener noreferrer'>
-                    LIVE DEMO
-                 </a>
-            }
-            <a className='project-link gh-link' href={projectInfo.gitUrl} target='_blank' rel='noopener noreferrer'>
-                GITHUB REPO
-            </a>
+            <div className='project-links'>
+                {
+                    projectInfo.liveUrl ?
+                    <a className='project-link live-link' href={projectInfo.liveUrl} target='_blank' rel='noopener noreferrer'>
+                        LIVE DEMO
+                    </a> :
+                    ''
+                }
+                <a className='project-link gh-link' href={projectInfo.gitUrl} target='_blank' rel='noopener noreferrer'>
+                    GITHUB REPO
+                </a>
+            </div>
         </div>
     )
 }
