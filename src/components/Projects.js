@@ -47,23 +47,27 @@ export default function Projects() {
                 </h2>
             </section>
             <section className='stack-tags'>
-                {stackTags.map((tag) => {
-                    let selectedStatus = '';
-                    if (tag === selectedTag) {
-                        selectedStatus = 'selected';
-                    }
-                    return (
-                        <button
-                            className={`stack-tag-sort-btn ${selectedStatus}`}
-                            onClick={(e) => {
-                                setSelectedTag(e.target.innerText);
-                            }}
-                            style={{ backgroundColor: `var(--${tag}-tag-bg)` }}
-                        >
-                            {tag}
-                        </button>
-                    )
-                })}
+                <h2>filter projects by tag:</h2>
+                <section className='tag-list'>
+                    {stackTags.map((tag) => {
+                        let selectedStatus = '';
+                        if (tag === selectedTag) {
+                            selectedStatus = 'selected';
+                        }
+                        return (
+                            <button
+                                className={`stack-tag-sort-btn ${selectedStatus}`}
+                                key={uniqid()}
+                                onClick={(e) => {
+                                    setSelectedTag(e.target.innerText);
+                                }}
+                                style={{ backgroundColor: `var(--${tag}-tag-bg)` }}
+                            >
+                                {tag}
+                            </button>
+                        )
+                    })}
+                </section>
             </section>
             <section className='projects' id='projects'>
                 {projectData.map((project, index) => {

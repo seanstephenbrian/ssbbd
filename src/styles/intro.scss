@@ -20,7 +20,7 @@
     border: 2px solid black;
     border-radius: 20px;
     padding: 20px;
-    font-size: calc(0.8*var(--rvv));
+    font-size: calc(0.7*var(--rvv));
 }
 
 .projects-link {
@@ -31,7 +31,7 @@
     opacity: 0;
     animation: fade-in 1.5s ease-in-out forwards;
     font-family: 'Helico';
-    font-size: calc(1.5*var(--rvv));
+    font-size: calc(1.4*var(--rvv));
     background-color: var(--transparent-green);
     padding: 20px;
     padding-bottom: 5px;

@@ -16,32 +16,41 @@
 }
 
 .stack-tags {
+    max-width: 650px;
     margin: calc(1*var(--rvv)) 5vw 0;
-    background-color: var(--transparent-white);
+    background-color: var(--stack-tags-bg);
+    border: 2px solid black;
     padding: 10px;
-    border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
+    
+    .tag-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
 
-    .stack-tag-sort-btn {
-        font-family: 'Fira Code';
-        cursor: pointer;
-        padding: 5px;
-        border: none;
-        outline: none;
-        border-radius: 3px;
-        transition: transform 0.1s ease-in-out;
-    }
-
-    .stack-tag-sort-btn:hover {
-        transform: scale(1.075);
-    }
-
-    .stack-tag-sort-btn.selected {
-        border: 1.5px solid black;
-        transform: scale(1.05);
+        .stack-tag-sort-btn {
+            font-family: 'Fira Code';
+            cursor: pointer;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            transition: transform 0.1s ease-in-out;
+        }
+    
+        .stack-tag-sort-btn:hover {
+            transform: scale(1.075);
+        }
+    
+        .stack-tag-sort-btn.selected {
+            border: 1.5px solid black;
+            transform: scale(1.05);
+        }
     }
 }
 
