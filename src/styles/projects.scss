@@ -1,18 +1,15 @@
 .projects-section-label {
     padding: 20px;
+    padding-bottom: 5px;
     border-radius: 20px;
     color: black;
     text-align: center;
     background-color: var(--transparent-white);
-
-    .project-heading {
-        font-family: 'Helico';
-        font-size: calc(1.5*var(--rvv));
-    }
-
-    .project-subheading {
-        font-style: italic;
-    }
+    font-family: 'Helico';
+    font-size: calc(1.5*var(--rvv));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .stack-tags {
@@ -67,7 +64,7 @@
         min-width: 350px;
         width: 350px;
         max-width: 350px;
-        background-color: var(--transparent-white);
+        background-color: var(--project-card-bg);
         padding: 20px;
         display: grid;
         grid-template-rows: fit-content 1fr 1fr fit-content;
@@ -122,7 +119,7 @@
         .project-link {
             border: 1.5px solid black;
             border-radius: 5px;
-            width: 30%;
+            width: fit-content;
             padding: 10px;
             background-color: rgba(198, 198, 255, 0.678);
             font-size: calc(0.4*var(--rvv));

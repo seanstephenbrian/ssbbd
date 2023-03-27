@@ -41,10 +41,7 @@ export default function Projects() {
         <>
             <Drawings />
             <section className='projects-section-label'>
-                <h1 className='project-heading'>PROJECTS</h1>
-                <h2 className='project-subheading'>
-                    (preview videos play on hover)
-                </h2>
+                PROJECTS
             </section>
             <section className='stack-tags'>
                 <h2>filter projects by tag:</h2>
