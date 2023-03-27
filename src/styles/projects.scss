@@ -1,12 +1,18 @@
-.project-heading {
-    font-family: 'Helico';
-    font-size: calc(1.5*var(--rvv));
+.projects-section-label {
     padding: 20px;
-    padding-bottom: 5px;
     border-radius: 20px;
     color: black;
     text-align: center;
     background-color: var(--transparent-white);
+
+    .project-heading {
+        font-family: 'Helico';
+        font-size: calc(1.5*var(--rvv));
+    }
+
+    .project-subheading {
+        font-style: italic;
+    }
 }
 
 .projects {
@@ -76,10 +82,11 @@
 
         .project-link {
             border: 1.5px solid black;
+            border-radius: 5px;
             width: 30%;
             padding: 10px;
             background-color: rgba(198, 198, 255, 0.678);
-            font-size: calc(0.5*var(--rvv));
+            font-size: calc(0.4*var(--rvv));
             text-align: center;
             display: flex;
             justify-content: center;
@@ -90,7 +97,7 @@
             color: black;
 
             .link-icon {
-                height: 25px;
+                height: 23px;
             }
         }
 

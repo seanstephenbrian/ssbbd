@@ -1,5 +1,7 @@
 import React from 'react';
 
+import uniqid from 'uniqid';
+
 import LinkIcon from '../img/icons/go-to-link.svg';
 
 export default function Project(props) {
@@ -24,10 +26,15 @@ export default function Project(props) {
                 {
                     projectInfo.previewPath ?
                     <video 
-                        autoPlay
                         className='preview-video' 
                         loop
                         muted
+                        onMouseEnter={(e) => {
+                            e.target.play();
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.pause();
+                        }}
                         src={projectInfo.previewPath}
                     >
                     </video> :
@@ -53,6 +60,7 @@ export default function Project(props) {
                     return (
                         <div 
                             className={`stack-item ${item}-tag`}
+                            key={uniqid()}
                             style={{
                                 backgroundColor: `var(--${item}-tag-bg)`
                             }}

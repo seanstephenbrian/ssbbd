@@ -23,7 +23,13 @@ export default function Projects() {
     return (
         <>
             <Drawings />
-            <h1 className='project-heading'>PROJECTS</h1>
+            <section className='projects-section-label'>
+                <h1 className='project-heading'>PROJECTS</h1>
+                <h2 className='project-subheading'>
+                    (preview videos play on hover)
+                </h2>
+            </section>
+            
             <section className='projects' id='projects'>
                 {projectData.map((project, index) => {
                     return (
