@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Project(props) {
     // receive project info as props from Projects component:
@@ -43,6 +43,15 @@ export default function Project(props) {
                 <a className='project-link gh-link' href={projectInfo.gitUrl} target='_blank' rel='noopener noreferrer'>
                     GITHUB REPO
                 </a>
+            </div>
+            <div className='project-stack'>
+                {projectInfo.stack.map((item) => {
+                    return (
+                        <div className='stack-item'>
+                            {item}
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

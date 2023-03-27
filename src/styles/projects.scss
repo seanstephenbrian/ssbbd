@@ -34,7 +34,8 @@
             "project-title project-title"
             "project-description project-description"
             "project-preview project-preview"
-            "project-links project-links";
+            "project-links project-links"
+            "project-stack project-stack";
 
         .project-title {
             grid-area: project-title;
@@ -81,6 +82,14 @@
 
         .project-link:hover {
             font-style: italic;
+        }
+
+        .project-stack {
+            grid-area: project-stack;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
         }
     }
 }
