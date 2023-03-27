@@ -6,7 +6,7 @@ import LinkIcon from '../img/icons/go-to-link.svg';
 
 export default function Project(props) {
     // receive project info as props from Projects component:
-    const { projectInfo } = props;
+    const { currentFilter, projectInfo, updateFilter } = props;
 
     return (
         <div className='project-card'>
@@ -57,10 +57,17 @@ export default function Project(props) {
             </div>
             <div className='project-stack'>
                 {projectInfo.stack.map((item) => {
+                    let selectedStatus = '';
+                    if (item === currentFilter) {
+                        selectedStatus = 'selected';
+                    }
                     return (
                         <div 
-                            className={`stack-item ${item}-tag`}
+                            className={`stack-item ${item}-tag ${selectedStatus}`}
                             key={uniqid()}
+                            onClick={(e) => {
+                                updateFilter(e.target.innerText);
+                            }}
                             style={{
                                 backgroundColor: `var(--${item}-tag-bg)`
                             }}

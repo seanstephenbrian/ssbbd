@@ -69,11 +69,20 @@ export default function Projects() {
                 {projectData.map((project, index) => {
                     if (selectedTag === 'all') {
                         return (
-                            <Project key={uniqid()} projectInfo={project} />
+                            <Project 
+                                key={uniqid()} 
+                                projectInfo={project}
+                                updateFilter={setSelectedTag}
+                            />
                         )
                     } else if (project.stack.includes(selectedTag)) {
                         return (
-                            <Project key={uniqid()} projectInfo={project} />
+                            <Project
+                                currentFilter={selectedTag}
+                                key={uniqid()}
+                                projectInfo={project} 
+                                updateFilter={setSelectedTag}
+                            />
                         )
                     }
                 })}

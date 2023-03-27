@@ -158,5 +158,10 @@
         .stack-item:hover {
             transform: scale(1.075);
         }
+
+        .stack-item.selected {
+            border: 1.5px solid black;
+            transform: scale(1.05);
+        }
     }
 }
