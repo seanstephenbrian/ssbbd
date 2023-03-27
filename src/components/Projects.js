@@ -10,6 +10,23 @@ export default function Projects() {
 
     // store project data in state:
     const [projectData, setProjectData] = useState([]);
+    // store reference to all possible tags:
+    const [stackTags, setStackTags] = useState([
+        'all',
+        'css',
+        'express',
+        'firebase',
+        'html',
+        'javascript',
+        'jest',
+        'mongoose',
+        'node',
+        'pug',
+        'react',
+        'sass',
+        'webpack'
+    ]);
+    const [selectedTag, setSelectedTag] = useState('all');
 
     // fetch project info from local json file on component mount:
     useEffect(() => {
@@ -29,12 +46,36 @@ export default function Projects() {
                     (preview videos play on hover)
                 </h2>
             </section>
-            
+            <section className='stack-tags'>
+                {stackTags.map((tag) => {
+                    let selectedStatus = '';
+                    if (tag === selectedTag) {
+                        selectedStatus = 'selected';
+                    }
+                    return (
+                        <button
+                            className={`stack-tag-sort-btn ${selectedStatus}`}
+                            onClick={(e) => {
+                                setSelectedTag(e.target.innerText);
+                            }}
+                            style={{ backgroundColor: `var(--${tag}-tag-bg)` }}
+                        >
+                            {tag}
+                        </button>
+                    )
+                })}
+            </section>
             <section className='projects' id='projects'>
                 {projectData.map((project, index) => {
-                    return (
-                        <Project key={uniqid()} projectInfo={project} />
-                    )
+                    if (selectedTag === 'all') {
+                        return (
+                            <Project key={uniqid()} projectInfo={project} />
+                        )
+                    } else if (project.stack.includes(selectedTag)) {
+                        return (
+                            <Project key={uniqid()} projectInfo={project} />
+                        )
+                    }
                 })}
             </section>
         </>

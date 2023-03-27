@@ -15,6 +15,36 @@
     }
 }
 
+.stack-tags {
+    margin: calc(1*var(--rvv)) 5vw 0;
+    background-color: var(--transparent-white);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .stack-tag-sort-btn {
+        font-family: 'Fira Code';
+        cursor: pointer;
+        padding: 5px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .stack-tag-sort-btn:hover {
+        transform: scale(1.075);
+    }
+
+    .stack-tag-sort-btn.selected {
+        border: 1.5px solid black;
+        transform: scale(1.05);
+    }
+}
+
 .projects {
     padding: calc(1*var(--rvv)) 0;
     width: 90vw;
