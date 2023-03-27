@@ -7,12 +7,12 @@ module.exports = {
   devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      title: "ssbbd.studio",
+      title: "ssbbd.dev",
       minify: true,
       favicon: './src/img/favicon.png',
       meta: {
-        'description': 'ssbbd.studio',
-        'og:title': { property: 'og:title', content: 'ssbbd.studio'},
+        'description': 'ssbbd.dev',
+        'og:title': { property: 'og:title', content: 'ssbbd.dev'},
         // 'og:url': { property: 'og:url', content: ''},
         // 'og:type': { property: 'og:type', content: ''}
       },
