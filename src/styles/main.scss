@@ -32,7 +32,23 @@ time, mark, audio, video {
 
 :root {
     --rvv: calc(1rem + 1vmin + 1vmax);
+
+    --transparent-green: #b3ff90e7;
     --transparent-white: rgba(255, 255, 255, 0.777);
+
+    --firebase-tag-bg: orange;
+    --javascript-tag-bg: rgba(255, 255, 165, 0.897);
+    --react-tag-bg: rgba(0, 0, 255, 0.23);
+    --sass-tag-bg: #ff69b4de;
+    --css-tag-bg: rgba(172, 220, 255, 0.825);
+    --html-tag-bg: rgba(255, 67, 67, 0.694);
+    --express-tag-bg: rgba(183, 183, 183, 0.577);
+    --node-tag-bg: rgba(127, 199, 127, 0.658);
+    --mongoose-tag-bg: #ff9189c6;
+    --pug-tag-bg: #a86354af;
+    --webpack-tag-bg: #34637c71;
+    --jest-tag-bg: #16c213d3;
+
     box-sizing: border-box;
 }
 

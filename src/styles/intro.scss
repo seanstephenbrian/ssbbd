@@ -32,7 +32,7 @@
     animation: fade-in 1.5s ease-in-out forwards;
     font-family: 'Helico';
     font-size: calc(1.5*var(--rvv));
-    background-color: #b3ff90e7;
+    background-color: var(--transparent-green);
     padding: 20px;
     padding-bottom: 5px;
     border: 2px solid blue;

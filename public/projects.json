@@ -33,7 +33,7 @@
             "description": "",
             "liveUrl": "https://brassicadb.up.railway.app/",
             "gitUrl": "https://github.com/seanstephenbrian/brassicas",
-            "stack": ["express", "node.js", "mongoose", "pug", "css"]
+            "stack": ["express", "node", "mongoose", "pug", "css"]
         },
         {
             "title": "now // later",
