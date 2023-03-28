@@ -8,6 +8,7 @@ import Name from './Name';
 import Projects from './Projects';
 
 import '../styles/main.scss';
+import ContactForm from './ContactForm';
 
 function Site() {
     return (
@@ -19,6 +20,7 @@ function Site() {
                 <Name />
                 <Intro />
                 <Projects />
+                <ContactForm />
             </div>
         </>
     );
