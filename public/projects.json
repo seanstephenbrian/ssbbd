@@ -24,6 +24,7 @@
         {
             "title": "campaign website",
             "description": "real informational website for a local political candidate, built from scratch using vanilla js and custom css.",
+            "previewPath": "../video/campaign.webm",
             "liveUrl": "https://www.johnmartin65.com/",
             "gitUrl": "https://github.com/seanstephenbrian/campaign-website",
             "stack": ["javascript", "css", "html"]
@@ -31,13 +32,14 @@
         {
             "title": "brassicaDB",
             "description": "a fully searchable and editable vegetable-themed inventory site created with several back-end technologies.",
+            "previewPath": "../video/brassicadb.webm",
             "liveUrl": "https://brassicadb.up.railway.app/",
             "gitUrl": "https://github.com/seanstephenbrian/brassicas",
             "stack": ["express", "node", "mongoose", "pug", "css"]
         },
         {
             "title": "now // later",
-            "description": "a to-do list web app exemplifying key software design concepts; its simple, warm design is inspired by the aesthetic of architect frank lloyd wright.",
+            "description": "a streamlined to-do list web app with a clean, warm design inspired by the aesthetic of architect frank lloyd wright.",
             "liveUrl": "https://seanstephenbrian.github.io/todo-list/",
             "gitUrl": "https://github.com/seanstephenbrian/todo-list",
             "stack": ["javascript", "css", "webpack"]
