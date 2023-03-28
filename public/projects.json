@@ -2,21 +2,21 @@
     "projects": [
         {
             "title": "portfolio",
-            "description": "you're looking at it now! features a dynamically generated background graphic inspired by the layout of hadrian's villa.",
-            "previewPath": "../video/portfolio.webm",
+            "description": "you're looking at it now! features a dynamically generated background graphic inspired by the ground plan of hadrian's villa.",
+            "previewPath": "../video/ssbbd.webm",
             "gitUrl": "https://github.com/seanstephenbrian/ssbbd",
             "stack": ["react", "javascript", "sass"]
         },
         {
             "title": "where's bosch?",
-            "description": "'where's waldo?'-inspired web game built with react and google firebase. the project features the work of early netherlandish painter hieronymus bosch, most notably his 'garden of earthly delights' from ~1500.",
+            "description": "'where's waldo?'-type web game built with react and firebase. the project features the 'garden of earthly delights' by early netherlandish artist hieronymus bosch.",
             "liveUrl": "https://seanstephenbrian.github.io/wheres-bosch/",
             "gitUrl": "https://github.com/seanstephenbrian/wheres-bosch",
             "stack": ["react", "javascript", "sass", "firebase"]
         },
         {
             "title": "ArtCart",
-            "description": "a demo online store featuring shopping cart functionality, a searchable inventory, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
+            "description": "a demo online store featuring shopping cart functionality, a searchable catalog, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
             "liveUrl": "",
             "gitUrl": "https://github.com/seanstephenbrian/art-cart",
             "stack": ["react", "javascript", "sass"]
@@ -30,14 +30,14 @@
         },
         {
             "title": "brassicaDB",
-            "description": "a fully searchable and editable vegetable-themed inventory site created with leading back-end technologies.",
+            "description": "a fully searchable and editable vegetable-themed inventory site created with several back-end technologies.",
             "liveUrl": "https://brassicadb.up.railway.app/",
             "gitUrl": "https://github.com/seanstephenbrian/brassicas",
             "stack": ["express", "node", "mongoose", "pug", "css"]
         },
         {
             "title": "now // later",
-            "description": "a to-do list web app exemplifying key design concepts in object-oriented programming, and featuring a warm, refined design inspired by the aesthetic of architect frank lloyd wright.",
+            "description": "a to-do list web app exemplifying key software design concepts; its simple, warm design is inspired by the aesthetic of architect frank lloyd wright.",
             "liveUrl": "https://seanstephenbrian.github.io/todo-list/",
             "gitUrl": "https://github.com/seanstephenbrian/todo-list",
             "stack": ["javascript", "css", "webpack"]
@@ -79,35 +79,35 @@
         },
         {
             "title": "how's the weather?",
-            "description": "weather app powered by data from a third-party API; the unique, airy aesthetic features paintings by j.m.w. turner.",
+            "description": "weather app powered by data from a third-party API; the gentle, airy aesthetic features paintings by j.m.w. turner.",
             "liveUrl": "https://seanstephenbrian.github.io/weather-app/",
             "gitUrl": "https://github.com/seanstephenbrian/weather-app",
             "stack": ["javascript", "css", "html"]
         },
         {
             "title": "apicius cafe",
-            "description": "informational website for an imaginary restaurant featuring dynamic, event-driven DOM manipulation and a highly elaborated ancient rome-inspired theme",
+            "description": "informational website for an imaginary restaurant featuring dynamic, event-driven DOM manipulation and a highly elaborated ancient rome-inspired theme.",
             "liveUrl": "https://seanstephenbrian.github.io/restaurant-page/",
             "gitUrl": "https://github.com/seanstephenbrian/restaurant-page",
             "stack": ["javascript", "css", "webpack"]
         },
         {
             "title": "admin dashboard",
-            "description": "design concept for an imaginary admin dashboard page, laid out primarily using css grid",
+            "description": "design concept for an imaginary admin dashboard page, laid out primarily using css grid.",
             "liveUrl": "https://seanstephenbrian.github.io/admin-dashboard/",
             "gitUrl": "https://github.com/seanstephenbrian/admin-dashboard",
             "stack": ["javascript", "css", "html"]
         },
         {
             "title": "tic-tac-toe",
-            "description": "simple tic-tac-toe web game with a striking visual design; an early experiment in crafting a dynamic and unconventional user experience.",
+            "description": "simple tic-tac-toe web game with a striking visual design - an early experiment in crafting a dynamic and unconventional user experience.",
             "liveUrl": "https://seanstephenbrian.github.io/tic-tac-toe/",
             "gitUrl": "https://github.com/seanstephenbrian/tic-tac-toe",
             "stack": ["javascript", "css", "html"]
         },
         {
             "title": "book log",
-            "description": "web app to log a user's reading activity and annual reading goal; key focuses of the project include form validation, local storage of user-supplied data, and the dynamic rendering of data to the DOM.",
+            "description": "web app to log a user's reading activity and annual reading goal; key aspects of the project include form design/validation, local storage of user-supplied data, and dynamic re-rendering of page content.",
             "liveUrl": "https://seanstephenbrian.github.io/book-log/",
             "gitUrl": "https://github.com/seanstephenbrian/book-log",
             "stack": ["javascript", "css", "html"]
