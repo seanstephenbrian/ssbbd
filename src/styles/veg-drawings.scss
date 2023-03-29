@@ -8,9 +8,10 @@
 
 .drawings {
     padding: calc(2*var(--rvv)) 0 calc(3*var(--rvv));
-    margin: 500px 0 0;
     width: 100%;
+    margin: 0 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 12vw;
     justify-content: center;
     align-items: center;

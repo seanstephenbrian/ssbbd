@@ -3,7 +3,6 @@ import uniqid from 'uniqid';
 
 import '../styles/projects.scss';
 
-import Drawings from './Drawings';
 import Project from './Project';
 
 export default function Projects() {
@@ -39,10 +38,10 @@ export default function Projects() {
 
     return (
         <>
-            <Drawings />
-            <section className='projects-section-label'>
+            <div id='projects-anchor' aria-hidden={true}></div>
+            <h1 className='projects-section-label'>
                 PROJECTS
-            </section>
+            </h1>
             <section className='stack-tags'>
                 <h2>filter projects by tag:</h2>
                 <section className='tag-list'>

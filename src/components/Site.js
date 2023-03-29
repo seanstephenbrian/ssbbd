@@ -9,6 +9,8 @@ import Name from './Name';
 import Projects from './Projects';
 
 import '../styles/main.scss';
+import VegDrawings from './VegDrawings';
+import TopDrawings from './TopDrawings';
 
 function Site() {
 
@@ -19,10 +21,11 @@ function Site() {
             />
             <div className='site-wrapper'>
                 <Name />
-                <Contact />
-                <div style={{marginTop: '500px', height: '1000px'}}></div>
                 <Intro />
+                <TopDrawings />
                 <Projects />
+                <VegDrawings />
+                <Contact />
             </div>
         </>
     );

@@ -78,15 +78,15 @@ export default function Intro() {
                 />
             </section>
             {linkVisible ? 
-            <div 
+            <button 
                 className='projects-link'
                 onClick={() => {
-                    const drawings = document.querySelector('.drawings');
-                    drawings.scrollIntoView({ behavior: 'smooth' });
+                    const projects = document.querySelector('#projects-anchor');
+                    projects.scrollIntoView({ behavior: 'smooth' });
                 }}
             >
                 SCROLL TO PROJECTS
-            </div> : 
+            </button> : 
             ''}
         </>
     )

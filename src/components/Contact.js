@@ -26,7 +26,7 @@ export default function Contact() {
         return (
             <section className='contact'>
                 <h1 className='contact-heading'>
-                    contact me
+                    contact
                 </h1>
                 <h2 className='contact-subheading'>
                     whether you're interested in working together or just want to connect, please reach out! i'd love to hear from you.
