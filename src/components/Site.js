@@ -11,6 +11,7 @@ import Projects from './Projects';
 import '../styles/main.scss';
 
 function Site() {
+
     return (
         <>
             <Background
@@ -18,9 +19,10 @@ function Site() {
             />
             <div className='site-wrapper'>
                 <Name />
+                <Contact />
+                <div style={{marginTop: '500px', height: '1000px'}}></div>
                 <Intro />
                 <Projects />
-                <Contact />
             </div>
         </>
     );

@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import uniqid from 'uniqid';
 
 import LinkIcon from '../img/icons/go-to-link.svg';
 
 export default function Project(props) {
+
     // receive project info as props from Projects component:
     const { currentFilter, projectInfo, updateFilter } = props;
+
+    // track preview video loading status in state:
+    const [isLoading, setIsLoading] = useState(true);
 
     return (
         <div className='project-card'>
@@ -23,23 +27,26 @@ export default function Project(props) {
                 {projectInfo.description}
             </div>
             <div className='project-preview'>
-                {
-                    projectInfo.previewPath ?
-                    <video 
-                        className='preview-video' 
-                        loop
-                        muted
-                        onMouseEnter={(e) => {
-                            e.target.play();
-                        }}
-                        onMouseLeave={(e) => {
-                            e.target.pause();
-                        }}
-                        src={projectInfo.previewPath}
-                    >
-                    </video> :
-                    '' 
-                }
+            {
+                projectInfo.previewPath ?
+                <video 
+                    className='preview-video' 
+                    loop
+                    muted
+                    onLoadedData={() => {
+                        setIsLoading(false);
+                    }}
+                    onMouseEnter={(e) => {
+                        e.target.play();
+                    }}
+                    onMouseLeave={(e) => {
+                        e.target.pause();
+                    }}
+                    src={projectInfo.previewPath}
+                >
+                </video> :
+                '' 
+            }
             </div>
             <div className='project-links'>
                 {
