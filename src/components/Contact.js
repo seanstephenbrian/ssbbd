@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import emailjs from '@emailjs/browser';
 
-import '../styles/contact-form.scss';
+import '../styles/contact.scss';
 
 export default function Contact() {
 
@@ -24,21 +24,21 @@ export default function Contact() {
 
     if (!formSubmitted) {
         return (
-            <section className='contact-form'>
+            <section className='contact'>
+                <h1 className='contact-heading'>
+                    contact me
+                </h1>
+                <h2 className='contact-subheading'>
+                    whether you're interested in working together or just want to connect, please reach out! i'd love to hear from you.
+                </h2>
                 <form ref={form} onSubmit={sendEmail}>
-                    <section className='form-section'>
-                        <label htmlFor='from_name'>your name:</label>
-                        <input type='text' name='from_name' required></input>
-                    </section>
-                    <section className='form-section'>
-                        <label htmlFor='from_email'>your email:</label>
-                        <input type='email' name='from_email'></input>
-                    </section>
-                    <section className='form-section'>
-                        <label htmlFor='message'>your message:</label>
-                        <textarea name='message'></textarea>
-                    </section>
-                    <input type='submit'></input>
+                    <label className='name-label' htmlFor='from_name'>name:</label>
+                    <input className='name-input' type='text' name='from_name' placeholder=' ' required></input>
+                    <label className='email-label' htmlFor='from_email'>email:</label>
+                    <input className='email-input' type='email' name='from_email' placeholder=' ' ></input>
+                    <label className='message-label' htmlFor='message'>message:</label>
+                    <textarea className='message-input' name='message' placeholder=' ' required></textarea>
+                    <button className='submit-button' type='submit'>send</button>
                 </form>
             </section>
         )
@@ -46,7 +46,7 @@ export default function Contact() {
 
     if (formSubmitted) {
         return (
-            <section className='contact-form submission-confirmation'>
+            <section className='contact submission-confirmation'>
                 thanks for reaching out!
             </section>
         )

@@ -1,0 +1,114 @@
+.contact {
+    width: 80vw;
+    max-width: 600px;
+    padding: 10px 20px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: var(--form-bg);
+
+    .contact-heading {
+        font-size: calc(1.8*var(--rvv));
+        font-family: 'Helico';
+        margin-bottom: -10px;
+    }
+
+    .contact-subheading {
+        font-size: calc(0.6*var(--rvv));
+        font-style: italic;
+    }
+
+    form {
+        margin-top: 20px;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        row-gap: 15px;
+        column-gap: 20px;
+        grid-template-areas:
+            "name-label name-input"
+            "email-label email-input"
+            "message-label message-input"
+            "submit-button submit-button";
+        font-size: calc(0.55*var(--rvv));
+
+        .name-label {
+            grid-area: name-label;
+        }
+
+        .name-input {
+            grid-area: name-input;
+        }
+
+        .email-label {
+            grid-area: email-label;
+        }
+
+        .email-input {
+            grid-area: email-input;
+        }
+
+        .message-label {
+            grid-area: message-label;
+            align-self: flex-start;
+            margin-top: 5px;
+        }
+
+        .message-input {
+            grid-area: message-input;
+            resize: none;
+            min-height: 100px;
+        }
+
+        .submit-button {
+            cursor: pointer;
+            font-size: calc(var(--rvv));
+            font-family: 'Helico';
+            padding: 7px 20px 0;
+            border-radius: 15px;
+            border: 1px solid black;
+            background-color: var(--transparent-green);
+            grid-area: submit-button;
+            max-width: fit-content;
+            margin: 10px auto;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .submit-button:hover {
+            transform: scale(1.05);
+        }
+
+        label {
+            font-weight: 550;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        input,
+        textarea {
+            border: none;
+            outline: none;
+            background-color: black;
+            border-radius: 5px;
+            border: 2px solid black;
+            color: #20C20E;
+            font-family: 'Fira Code';
+            padding: 10px;
+        }
+
+        input:focus,
+        textarea:focus {
+            border: 2px solid rgb(255, 200, 0);
+        }
+
+        input:invalid:not(:placeholder-shown),
+        textarea:invalid:not(:placeholder-shown) {
+            border: 2px solid red;
+        }
+
+        input:valid:not(:placeholder-shown),
+        textarea:valid:not(:placeholder-shown) {
+            border: 2px solid #20C20E;
+        }
+    }
+}
