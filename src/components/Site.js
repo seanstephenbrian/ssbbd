@@ -3,12 +3,12 @@ import React from 'react';
 import { generateBackgroundStyles} from '../js/variable-styles';
 
 import Background from './Background';
+import Contact from './Contact';
 import Intro from './Intro';
 import Name from './Name';
 import Projects from './Projects';
 
 import '../styles/main.scss';
-import ContactForm from './ContactForm';
 
 function Site() {
     return (
@@ -20,7 +20,7 @@ function Site() {
                 <Name />
                 <Intro />
                 <Projects />
-                <ContactForm />
+                <Contact />
             </div>
         </>
     );
