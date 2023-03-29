@@ -57,7 +57,7 @@
         },
         {
             "title": "lead block sports",
-            "description": "real, actively maintained sports blog website built entirely with vanilla js and custom css; this project will soon be refactored & expanded to allow the author to independently update site content.",
+            "description": "real, actively maintained sports blog website built entirely with vanilla js and custom css; this project will soon be refactored & expanded.",
             "previewPath": "../video/leadblock.webm",
             "liveUrl": "https://www.leadblocksports.blog/",
             "gitUrl": "https://github.com/seanstephenbrian/lead-block",
@@ -106,6 +106,7 @@
         {
             "title": "admin dashboard",
             "description": "design concept for an imaginary admin dashboard page, laid out primarily using css grid.",
+            "previewPath": "../video/dashboard.webm",
             "liveUrl": "https://seanstephenbrian.github.io/admin-dashboard/",
             "gitUrl": "https://github.com/seanstephenbrian/admin-dashboard",
             "stack": ["javascript", "css", "html"]
@@ -113,13 +114,15 @@
         {
             "title": "tic-tac-toe",
             "description": "simple tic-tac-toe web game with a striking visual design - an early experiment in crafting a dynamic and unconventional user experience.",
+            "previewPath": "../video/tictactoe.webm",
             "liveUrl": "https://seanstephenbrian.github.io/tic-tac-toe/",
             "gitUrl": "https://github.com/seanstephenbrian/tic-tac-toe",
             "stack": ["javascript", "css", "html"]
         },
         {
             "title": "book log",
-            "description": "web app to log a user's reading activity and annual reading goal; key aspects of the project include form design/validation, local storage of user-supplied data, and dynamic re-rendering of page content.",
+            "description": "web app to log a user's reading activity and annual reading goal.",
+            "previewPath": "../video/booklog.webm",
             "liveUrl": "https://seanstephenbrian.github.io/book-log/",
             "gitUrl": "https://github.com/seanstephenbrian/book-log",
             "stack": ["javascript", "css", "html"]
@@ -127,6 +130,7 @@
         {
             "title": "contact form",
             "description": "contact form for an imaginary restaurant, developed as an exercise in form design and client-side form validation.",
+            "previewPath": "../video/contactform.webm",
             "liveUrl": "https://seanstephenbrian.github.io/sign-up-form/",
             "gitUrl": "https://github.com/seanstephenbrian/sign-up-form",
             "stack": ["html", "css"]
@@ -134,6 +138,7 @@
         {
             "title": "pointillist etch-a-sketch",
             "description": "early javascript project using an art historical etch-a-sketch concept to explore event-driven DOM manipulation.",
+            "previewPath": "../video/etch.webm",
             "liveUrl": "https://seanstephenbrian.github.io/etch-a-sketch/",
             "gitUrl": "https://github.com/seanstephenbrian/etch-a-sketch",
             "stack": ["javascript", "css", "html"]
@@ -141,6 +146,7 @@
         {
             "title": "calculator",
             "description": "another early javascript project - a fully functional digital calculator with an experimental visual design.",
+            "previewPath": "../video/calc.webm",
             "liveUrl": "https://seanstephenbrian.github.io/calculator/",
             "gitUrl": "https://github.com/seanstephenbrian/calculator",
             "stack": ["javascript", "css", "html"]
