@@ -38,7 +38,7 @@ export default function Projects() {
 
     return (
         <>
-            <div id='projects-anchor' aria-hidden={true}></div>
+            <div id='projects-anchor' aria-hidden={true} style={{paddingTop: '50px'}}></div>
             <h1 className='projects-section-label'>
                 PROJECTS
             </h1>

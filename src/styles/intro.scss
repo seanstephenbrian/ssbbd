@@ -10,17 +10,19 @@
 .intro-text {
     width: 50vw;
     min-width: 400px;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    gap: calc(0.3*var(--rvv));
-    justify-content: center;
-    align-items: flex-start;
     background-color: var(--transparent-white);
     border: 2px solid black;
     border-radius: 20px;
     padding: 20px;
-    font-size: calc(0.7*var(--rvv));
+    font-size: calc(0.7*var(--rvv));  
+
+        .typewriter-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: calc(0.5*var(--rvv));
+            justify-content: center;
+            align-items: flex-start;
+        }
 }
 
 .projects-link {
