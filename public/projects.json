@@ -10,6 +10,7 @@
         {
             "title": "where's bosch?",
             "description": "'where's waldo?'-type web game built with react and firebase. the project features the 'garden of earthly delights' by early netherlandish artist hieronymus bosch.",
+            "previewPath": "../video/bosch.webm",
             "liveUrl": "https://seanstephenbrian.github.io/wheres-bosch/",
             "gitUrl": "https://github.com/seanstephenbrian/wheres-bosch",
             "stack": ["react", "javascript", "sass", "firebase"]
@@ -17,6 +18,7 @@
         {
             "title": "ArtCart",
             "description": "a demo online store featuring shopping cart functionality, a searchable catalog, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
+            "previewPath": "../video/artcart.webm",
             "liveUrl": "",
             "gitUrl": "https://github.com/seanstephenbrian/art-cart",
             "stack": ["react", "javascript", "sass"]
@@ -40,6 +42,7 @@
         {
             "title": "now // later",
             "description": "a streamlined to-do list web app with a clean, warm design inspired by the aesthetic of architect frank lloyd wright.",
+            "previewPath": "../video/nowlater.webm",
             "liveUrl": "https://seanstephenbrian.github.io/todo-list/",
             "gitUrl": "https://github.com/seanstephenbrian/todo-list",
             "stack": ["javascript", "css", "webpack"]
@@ -47,6 +50,7 @@
         {
             "title": "graces",
             "description": "simple informational website for my own seasonal food business, built with react with an eye toward ease of maintenance.",
+            "previewPath": "../video/graces.webm",
             "liveUrl": "https://graces.website/",
             "gitUrl": "https://github.com/seanstephenbrian/graces",
             "stack": ["react", "javascript", "sass"]
@@ -54,6 +58,7 @@
         {
             "title": "lead block sports",
             "description": "real, actively maintained sports blog website built entirely with vanilla js and custom css; this project will soon be refactored & expanded to allow the author to independently update site content.",
+            "previewPath": "../video/leadblock.webm",
             "liveUrl": "https://www.leadblocksports.blog/",
             "gitUrl": "https://github.com/seanstephenbrian/lead-block",
             "stack": ["javascript", "css", "html"]
@@ -61,6 +66,7 @@
         {
             "title": "battlesquares",
             "description": "'battleship'-inspired web game demonstrating key concepts of OOP and test-driven development.",
+            "previewPath": "../video/battlesquares.webm",
             "liveUrl": "https://seanstephenbrian.github.io/battleship/",
             "gitUrl": "https://github.com/seanstephenbrian/battleship",
             "stack": ["javascript", "jest", "css", "webpack"]
@@ -68,6 +74,7 @@
         {
             "title": "memory game",
             "description": "simple react-based memory card game highlighting component state and lifecycle methods.",
+            "previewPath": "../video/memory.webm",
             "liveUrl": "https://seanstephenbrian.github.io/memory-game/",
             "gitUrl": "https://github.com/seanstephenbrian/memory-game",
             "stack": ["react", "javascript", "css"]
@@ -75,6 +82,7 @@
         {
             "title": "cv generator",
             "description": "single-page react app for generating a fully formatted resume with user-chosen fonts and accent colors.",
+            "previewPath": "../video/cv.webm",
             "liveUrl": "https://seanstephenbrian.github.io/cv-project/",
             "gitUrl": "https://github.com/seanstephenbrian/cv-project",
             "stack": ["react", "javascript", "css"]
@@ -82,6 +90,7 @@
         {
             "title": "how's the weather?",
             "description": "weather app powered by data from a third-party API; the gentle, airy aesthetic features paintings by j.m.w. turner.",
+            "previewPath": "../video/weather.webm",
             "liveUrl": "https://seanstephenbrian.github.io/weather-app/",
             "gitUrl": "https://github.com/seanstephenbrian/weather-app",
             "stack": ["javascript", "css", "html"]
@@ -89,6 +98,7 @@
         {
             "title": "apicius cafe",
             "description": "informational website for an imaginary restaurant featuring dynamic, event-driven DOM manipulation and a highly elaborated ancient rome-inspired theme.",
+            "previewPath": "../video/apicius.webm",
             "liveUrl": "https://seanstephenbrian.github.io/restaurant-page/",
             "gitUrl": "https://github.com/seanstephenbrian/restaurant-page",
             "stack": ["javascript", "css", "webpack"]
