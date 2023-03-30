@@ -130,9 +130,9 @@
             font-size: calc(0.4*var(--rvv));
             text-align: center;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            gap: 5px;
             align-items: center;
-            gap: 4px;
             transition: transform 0.1s ease-in-out;
             text-decoration: none;
             color: black;

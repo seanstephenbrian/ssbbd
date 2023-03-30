@@ -36,8 +36,8 @@
 
 .projects-link {
     cursor: pointer;
-    width: fit-content;
-    min-width: 400px;
+    width: 400px;
+    max-width: 70vw;
     margin: calc(2*var(--rvv)) 10px 0;
     opacity: 0;
     animation: fade-in 1.5s ease-in-out forwards;

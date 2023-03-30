@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 
 import emailjs from '@emailjs/browser';
 
+import EmailIcon from '../img/icons/email.svg';
+
 import '../styles/contact.scss';
 
 export default function Contact(props) {
@@ -40,7 +42,10 @@ export default function Contact(props) {
                     <input className='email-input' type='email' name='from_email' placeholder=' ' ></input>
                     <label className='message-label' htmlFor='message'>message:</label>
                     <textarea className='message-input' name='message' placeholder=' ' required></textarea>
-                    <button className='submit-button' type='submit'>send</button>
+                    <button className='submit-button' type='submit'>
+                        <span>send</span>
+                        <img className='email-icon' src={EmailIcon} alt=''></img>
+                    </button>
                 </form>
             </section>
         )
