@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Intro from './Intro';
 import Name from './Name';
 import Projects from './Projects';
+import ToggleViewButton from './ToggleViewButton';
 
 import '../styles/main.scss';
 import VegDrawings from './VegDrawings';
@@ -17,22 +18,23 @@ import ContactButton from './ContactButton';
 function Site() {
 
     // track whether full view is permitted in state:
-    const [fullViewAllowed, setFullViewAllowed] = useState('loading');
+    const [fullViewAllowed, setFullViewAllowed] = useState('initializing');
+    // and whether the minimal view is currently enabled:
+    const [currentView, setCurrentView] = useState();
 
     useEffect(() => {
         if (window.screen.width > 500) {
             setFullViewAllowed(true);
+            setCurrentView('full');
         } else {
             setFullViewAllowed(false);
+            setCurrentView('minimal');
         }
     }, []);
 
-
-    if (fullViewAllowed === 'loading') {
-        return (
-            <></>
-        )
-    } else if (fullViewAllowed === true) {
+    if (fullViewAllowed === 'initializing') {
+        return;
+    } else if (fullViewAllowed === true && currentView === 'full') {
         return (
             <>
                 <Background
@@ -40,6 +42,13 @@ function Site() {
                 />
                 <div className='site-wrapper'>
                     <ContactButton />
+                    <ToggleViewButton 
+                        currentView={currentView} 
+                        handleClick={() => {
+                            console.log('clicked')
+                            setCurrentView('minimal');
+                        }}
+                    />
                     <Name />
                     <Intro />
                     <TopDrawings />
@@ -50,14 +59,31 @@ function Site() {
                 </div>
             </>
         );
+    } else if (fullViewAllowed === true && currentView === 'minimal') {
+        return (
+            <>
+                <div className='site-wrapper'>
+                    <ToggleViewButton 
+                        currentView={currentView}
+                        handleClick={() => {
+                            setCurrentView('full');
+                        }}
+                    />
+                    <Intro currentView={currentView} />
+                    <Projects currentView={currentView} />
+                    <Contact currentView={currentView} />
+                    <Footer currentView={currentView} />
+                </div>
+            </>
+        )
     } else if (fullViewAllowed === false) {
         return (
             <>
                 <div className='site-wrapper'>
-                    <Intro fullViewAllowed={false} minimalView={true} />
-                    <Projects fullViewAllowed={false} minimalView={true} />
-                    <Contact fullViewAllowed={false} minimalView={true} />
-                    <Footer fullViewAllowed={false} minimalView={true} />
+                    <Intro currentView={currentView} />
+                    <Projects currentView={currentView} />
+                    <Contact currentView={currentView} />
+                    <Footer currentView={currentView} />
                 </div>
             </>
         )
