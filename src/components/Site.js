@@ -17,13 +17,16 @@ import ContactButton from './ContactButton';
 
 function Site() {
 
-    // track whether full view is permitted in state:
+    // track whether full view is permitted:
     const [fullViewAllowed, setFullViewAllowed] = useState('initializing');
-    // track whether typewriter effect has run in state:
+    // track whether projects link button should be visible:
+    const [projectsLinkVisible, setProjectsLinkVisible] = useState(false);
+    // track whether typewriter effect has already run:
     const [ranTypewriter, setRanTypewriter] = useState(false);
-    // and whether the minimal view is currently enabled:
+    // and track whether the minimal view is currently enabled:
     const [currentView, setCurrentView] = useState();
 
+    // check screen width on initial render to see if full view should be allowed:
     useEffect(() => {
         if (window.screen.width > 500) {
             setFullViewAllowed(true);
@@ -34,9 +37,28 @@ function Site() {
         }
     }, []);
 
+    // toggle view button render conditions -- only show the button if full view is allowed:
+    let toggleViewButton;
+    if (fullViewAllowed) {
+        toggleViewButton = (
+            <ToggleViewButton 
+                currentView={currentView}
+                handleClick={() => {
+                    if (currentView === 'minimal') setCurrentView('full');
+                    if (currentView === 'full') setCurrentView('minimal');
+                }}
+            />
+        );
+    } else if (!fullViewAllowed) {
+        toggleViewButton = '';
+    }
+
+    // SITE RENDER CONDITIONS:
+    // don't show anything if initializing...
     if (fullViewAllowed === 'initializing') {
         return;
-    } else if (fullViewAllowed === true && currentView === 'full') {
+    // full view render conditions:
+    } else if (currentView === 'full') {
         return (
             <>
                 <Background
@@ -44,15 +66,12 @@ function Site() {
                 />
                 <div className='site-wrapper'>
                     <ContactButton />
-                    <ToggleViewButton 
-                        currentView={currentView} 
-                        handleClick={() => {
-                            setCurrentView('minimal');
-                        }}
-                    />
+                    {toggleViewButton}
                     <Name />
                     <Intro 
+                        alertProjectsLinkVisible={() => setProjectsLinkVisible(true)}
                         alertRanTypewriter={() => setRanTypewriter(true)} 
+                        linkVisible={projectsLinkVisible}
                         ranTypewriter={ranTypewriter} 
                     />
                     <TopDrawings />
@@ -63,35 +82,17 @@ function Site() {
                 </div>
             </>
         );
-    } else if (fullViewAllowed === true && currentView === 'minimal') {
+    // minimal view render conditions:
+    } else if (currentView === 'minimal') {
         return (
             <>
                 <div className='site-wrapper gradient-bg'>
-                    <ToggleViewButton 
-                        currentView={currentView}
-                        handleClick={() => {
-                            setCurrentView('full');
-                        }}
-                    />
+                    {toggleViewButton}
                     <Name currentView={currentView} />
                     <Intro 
+                        alertProjectsLinkVisible={() => setProjectsLinkVisible(true)}
                         alertRanTypewriter={() => setRanTypewriter(true)} 
-                        ranTypewriter={ranTypewriter} 
-                        currentView={currentView} 
-                    />
-                    <Projects currentView={currentView} />
-                    <Contact currentView={currentView} />
-                    <Footer currentView={currentView} />
-                </div>
-            </>
-        )
-    } else if (fullViewAllowed === false) {
-        return (
-            <>
-                <div className='site-wrapper gradient-bg'>
-                    <Name currentView={currentView} />
-                    <Intro 
-                        alertRanTypewriter={() => setRanTypewriter(true)} 
+                        linkVisible={projectsLinkVisible}
                         ranTypewriter={ranTypewriter} 
                         currentView={currentView} 
                     />
@@ -102,7 +103,6 @@ function Site() {
             </>
         )
     }
-
 }
 
 export default Site;

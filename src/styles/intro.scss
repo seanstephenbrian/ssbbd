@@ -25,13 +25,13 @@
         }
 }
 
-.intro-text-minimal {
+.intro-text.minimal {
     margin-top: 30px;
     width: 80vw;
     min-width: 0;
     max-width: 1000px;
     border-radius: 0;
-    box-shadow: 5px 5px 0 black;
+    box-shadow: 5px 5px 0 var(--minimal-box-shadow);
 }
 
 .projects-link {
@@ -53,10 +53,6 @@
     text-align: center;
     text-shadow: 3px 3px 0 #1aff00;
     transition: transform 0.1s ease-in-out;
-}
-
-.projects-link-minimal {
-    font-family: 'Fira Code';
 }
 
 .projects-link:hover {

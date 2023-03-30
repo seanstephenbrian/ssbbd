@@ -5,7 +5,9 @@ import '../styles/projects.scss';
 
 import Project from './Project';
 
-export default function Projects() {
+export default function Projects(props) {
+
+    const { currentView } = props;
 
     // store project data in state:
     const [projectData, setProjectData] = useState([]);
@@ -39,7 +41,7 @@ export default function Projects() {
     return (
         <>
             <div id='projects-anchor' aria-hidden={true} style={{paddingTop: '50px'}}></div>
-            <h1 className='projects-section-label'>
+            <h1 className={`projects-section-heading ${currentView}`}>
                 PROJECTS
             </h1>
             <section className='stack-tags'>

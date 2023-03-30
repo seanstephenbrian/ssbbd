@@ -8,12 +8,11 @@ export default function Intro(props) {
 
     // receive current view mode & typewriter effect tracking methods as props:
     const { 
-        alertRanTypewriter, 
+        alertRanTypewriter,
+        alertProjectsLinkVisible,
         currentView,
+        linkVisible,
         ranTypewriter } = props;
-
-    // state:
-    const [linkVisible, setLinkVisible] = useState(false);
 
     // typewriter config:
     const typewriterConfig = {
@@ -22,17 +21,6 @@ export default function Intro(props) {
         loop: false,
         skipAddStyles: true,
         wrapperClassName: 'typewriter-wrapper'
-    }
-
-    // variable class names:
-    let introClassName;
-    let projectsLinkClassName;
-    if (currentView === 'minimal') {
-        introClassName = 'intro-text intro-text-minimal';
-        projectsLinkClassName = 'projects-link projects-link-minimal';
-    } else {
-        introClassName = 'intro-text';
-        projectsLinkClassName = 'projects-link';
     }
 
     // conditions for intro text render...
@@ -56,7 +44,7 @@ export default function Intro(props) {
                         .typeString(`<p>thanks for stopping by!</p>`)
                         .pauseFor(900)
                         .callFunction(() => {
-                            setLinkVisible(true);
+                            alertProjectsLinkVisible();
                             alertRanTypewriter();
                         })
                         .start();
@@ -80,14 +68,13 @@ export default function Intro(props) {
 
     return (
         <>
-            <section className={introClassName}>
-                {ranTypewriter.toString()}
+            <section className={`intro-text ${currentView}`}>
                 {introText}
             </section>
 
             {linkVisible && currentView !== 'minimal' ? 
             <button 
-                className={projectsLinkClassName}   
+                className='projects-link'   
                 onClick={() => {
                     document.querySelector('#projects-anchor').scrollIntoView({ behavior: 'smooth' });
                 }}
