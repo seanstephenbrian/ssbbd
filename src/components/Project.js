@@ -48,7 +48,7 @@ export default function Project(props) {
                     onMouseLeave={(e) => {
                         e.target.pause();
                     }}
-                    src={`/video/${projectInfo.previewVideo}`}
+                    src={`./video/${projectInfo.previewVideo}`}
                 >
                 </video> :
                 '' 
