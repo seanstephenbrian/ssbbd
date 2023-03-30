@@ -34,7 +34,7 @@ export default function Project(props) {
             </div>
             <div className='project-preview'>
             {
-                projectInfo.previewPath && currentView === 'full' ?
+                projectInfo.previewVideo && currentView === 'full' ?
                 <video 
                     className='preview-video' 
                     loop
@@ -48,7 +48,7 @@ export default function Project(props) {
                     onMouseLeave={(e) => {
                         e.target.pause();
                     }}
-                    src={projectInfo.previewPath}
+                    src={`/video/${projectInfo.previewVideo}`}
                 >
                 </video> :
                 '' 
