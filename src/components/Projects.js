@@ -44,7 +44,7 @@ export default function Projects(props) {
             <h1 className={`projects-section-heading ${currentView}`}>
                 PROJECTS
             </h1>
-            <section className='stack-tags'>
+            <section className={`stack-tags ${currentView}`}>
                 <h2>filter projects by tag:</h2>
                 <section className='tag-list'>
                     {stackTags.map((tag) => {
@@ -54,7 +54,7 @@ export default function Projects(props) {
                         }
                         return (
                             <button
-                                className={`stack-tag-sort-btn ${selectedStatus}`}
+                                className={`stack-tag-btn ${selectedStatus} ${currentView}`}
                                 key={uniqid()}
                                 onClick={(e) => {
                                     setSelectedTag(e.target.innerText);
@@ -67,11 +67,12 @@ export default function Projects(props) {
                     })}
                 </section>
             </section>
-            <section className='projects' id='projects'>
+            <section className={`projects ${currentView}`} id='projects'>
                 {projectData.map((project, index) => {
                     if (selectedTag === 'all') {
                         return (
-                            <Project 
+                            <Project
+                                currentView={currentView} 
                                 key={uniqid()} 
                                 projectInfo={project}
                                 updateFilter={setSelectedTag}
@@ -81,6 +82,7 @@ export default function Projects(props) {
                         return (
                             <Project
                                 currentFilter={selectedTag}
+                                currentView={currentView}
                                 key={uniqid()}
                                 projectInfo={project} 
                                 updateFilter={setSelectedTag}

@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "portfolio",
-            "description": "you're looking at it now! features a dynamically generated background graphic inspired by the ground plan of hadrian's villa.",
+            "description": "you're looking at it now! the desktop version features a dynamically generated background graphic inspired by the ground plan of hadrian's villa.",
             "previewPath": "../video/ssbbd.webm",
             "gitUrl": "https://github.com/seanstephenbrian/ssbbd",
             "stack": ["react", "javascript", "sass"]

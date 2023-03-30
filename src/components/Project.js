@@ -9,13 +9,17 @@ export default function Project(props) {
     const cardRef = useRef(null);
 
     // receive project info as props from Projects component:
-    const { currentFilter, projectInfo, updateFilter } = props;
+    const { 
+        currentFilter,
+        currentView, 
+        projectInfo, 
+        updateFilter } = props;
 
     // track preview video loading status in state:
     const [isLoading, setIsLoading] = useState(true);
 
     return (
-        <div className='project-card' ref={cardRef}>
+        <div className={`project-card ${currentView}`} ref={cardRef}>
             <div className='project-title'>
             {
                 projectInfo.liveUrl ?
@@ -30,7 +34,7 @@ export default function Project(props) {
             </div>
             <div className='project-preview'>
             {
-                projectInfo.previewPath ?
+                projectInfo.previewPath && currentView === 'full' ?
                 <video 
                     className='preview-video' 
                     loop

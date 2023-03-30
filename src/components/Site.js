@@ -75,7 +75,7 @@ function Site() {
                         ranTypewriter={ranTypewriter} 
                     />
                     <TopDrawings />
-                    <Projects />
+                    <Projects currentView={currentView} />
                     <VegDrawings />
                     <Contact />
                     <Footer />

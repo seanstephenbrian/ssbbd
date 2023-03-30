@@ -13,22 +13,21 @@
     align-items: center;
 }
 
-.projects-section-heading.minimal {
-    border-radius: 0;
-    box-shadow: 3px 3px 0 var(--minimal-box-shadow);
-}
-
 .stack-tags {
     max-width: 650px;
     margin: calc(1*var(--rvv)) 5vw 0;
     background-color: var(--stack-tags-bg);
     border: 2px solid black;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    h2 {
+        font-size: calc(0.45*var(--rvv));
+    }
     
     .tag-list {
         display: flex;
@@ -36,8 +35,9 @@
         flex-wrap: wrap;
         gap: 20px;
 
-        .stack-tag-sort-btn {
+        .stack-tag-btn {
             font-family: 'Fira Code';
+            font-size: calc(0.5*var(--rvv));
             cursor: pointer;
             padding: 5px;
             border: none;
@@ -46,11 +46,11 @@
             transition: transform 0.1s ease-in-out;
         }
     
-        .stack-tag-sort-btn:hover {
+        .stack-tag-btn:hover {
             transform: scale(1.075);
         }
     
-        .stack-tag-sort-btn.selected {
+        .stack-tag-btn.selected {
             border: 1.5px solid black;
             transform: scale(1.05);
         }
@@ -120,9 +120,8 @@
             justify-content: center;
             gap: 25%;
             align-items: flex-end;
-        }
 
-        .project-link {
+            .project-link {
             border: 1.5px solid black;
             border-radius: 10px;
             width: fit-content;
@@ -138,17 +137,18 @@
             text-decoration: none;
             color: black;
 
-            .link-icon {
-                height: 23px;
+                .link-icon {
+                    height: 23px;
+                }
             }
-        }
 
-        .project-link:visited {
-            color: black;
-        }
+            .project-link:visited {
+                color: black;
+            }
 
-        .project-link:hover {
-            transform: scale(1.05);
+            .project-link:hover {
+                transform: scale(1.05);
+            }
         }
 
         .project-stack {
@@ -158,22 +158,81 @@
             justify-content: center;
             gap: 15px;
             align-items: center;
+
+            .stack-item {
+                font-size: calc(0.5*var(--rvv));
+                cursor: pointer;
+                padding: 5px;
+                border-radius: 3px;
+                transition: transform 0.1s ease-in-out;
+            }
+
+            .stack-item:hover {
+                transform: scale(1.075);
+            }
+
+            .stack-item.selected {
+                border: 1.5px solid black;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+// minimal view styles:
+
+.projects-section-heading.minimal {
+    border-radius: 0;
+    box-shadow: 3px 3px 0 var(--minimal-box-shadow);
+}
+
+.stack-tags.minimal {
+    max-width: 800px;
+    width: fit-content;
+
+    .tag-list {
+        .stack-tag-btn.minimal {
+            border-radius: 0;
+        }
+    }
+}
+
+.projects.minimal {
+    max-width: 100vw;
+    width: 1500px;
+    gap: 10px;
+
+    .project-card.minimal {
+        min-width: 0;
+        max-width: 80vw;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 0;
+        box-shadow: 3px 3px 0 var(--minimal-box-shadow);
+        row-gap: 10px;
+
+        .project-title {
+            font-size: calc(0.7*var(--rvv));
         }
 
-        .stack-item {
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 3px;
-            transition: transform 0.1s ease-in-out;
+        .project-description {
+            font-size: calc(0.5*var(--rvv));
         }
 
-        .stack-item:hover {
-            transform: scale(1.075);
+        .project-links {
+            margin-bottom: 10px;
+
+            .project-link {
+                border-radius: 0;
+            }
         }
 
-        .stack-item.selected {
-            border: 1.5px solid black;
-            transform: scale(1.05);
+        .project-stack {
+
+            .stack-item {
+                border-radius: 0;
+            }
         }
+
     }
 }
