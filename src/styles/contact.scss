@@ -25,9 +25,11 @@
 
     form {
         margin-top: 20px;
+        max-height: 1000px;
         padding: 0 20px;
         display: grid;
         grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
         row-gap: 15px;
         column-gap: 20px;
         grid-template-areas:
@@ -148,6 +150,15 @@
 
         .submit-button {
             border-radius: 0;
+        }
+    }
+}
+
+// mobile view:
+@media screen and (max-width: 1000) {
+    .contact {
+        .form {
+            padding: 0 5px;
         }
     }
 }
