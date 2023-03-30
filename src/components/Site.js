@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-import { generateBackgroundStyles} from '../js/variable-styles';
+import { generateFullBackground, generateMinimalBackground } from '../js/variable-styles';
 
 import Background from './Background';
 import Contact from './Contact';
 import Footer from './Footer';
+import Gradient from './Gradient';
 import Intro from './Intro';
 import Name from './Name';
 import Projects from './Projects';
@@ -26,6 +27,9 @@ function Site() {
     const [ranTypewriter, setRanTypewriter] = useState(false);
     // and track whether the minimal view is currently enabled:
     const [currentView, setCurrentView] = useState();
+
+    // minimal view background gradient:
+    const [minimalBackgroundStyles, setMinimalBackgroundStyles] = useState(generateMinimalBackground());
 
     // check screen width on initial render to see if full view should be allowed:
     useEffect(() => {
@@ -63,7 +67,7 @@ function Site() {
         return (
             <>
                 <Background
-                    createBackground={generateBackgroundStyles}
+                    createBackground={generateFullBackground}
                 />
                 <div className='site-wrapper'>
                     <ContactButton />
@@ -85,9 +89,18 @@ function Site() {
         );
     // minimal view render conditions:
     } else if (currentView === 'minimal') {
+
+        function updateBackgroundGradient(e) {
+            setMinimalBackgroundStyles(generateMinimalBackground());
+        }
+
         return (
             <>
-                <div className='site-wrapper gradient-bg'>
+                <Gradient backgroundStyles={minimalBackgroundStyles} />
+                <div 
+                    className='site-wrapper'
+                    onClick={updateBackgroundGradient}
+                >
                     {toggleViewButton}
                     <Name currentView={currentView} />
                     <Intro 

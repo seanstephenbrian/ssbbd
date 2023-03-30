@@ -14,7 +14,7 @@
     border: 2px solid black;
     border-radius: 20px;
     padding: 20px;
-    font-size: calc(0.7*var(--rvv));  
+    font-size: calc(0.55*var(--rvv));  
 
         .typewriter-wrapper {
             display: flex;
@@ -36,7 +36,7 @@
 
 .projects-link {
     cursor: pointer;
-    width: 400px;
+    width: fit-content;
     max-width: 70vw;
     margin: calc(2*var(--rvv)) 10px 0;
     opacity: 0;

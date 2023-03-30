@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Typewriter from 'typewriter-effect';
 
@@ -79,7 +79,7 @@ export default function Intro(props) {
                     document.querySelector('#projects-anchor').scrollIntoView({ behavior: 'smooth' });
                 }}
             >
-                SCROLL TO PROJECTS
+                JUMP TO PROJECTS
             </button> : 
             ''}
         </>

@@ -18,7 +18,7 @@ function createAxis(width, height, left, top, transform) {
     }
 }
 
-function generateBackgroundStyles() {
+function generateFullBackground() {
 
     return {
         backgroundElement: {
@@ -53,6 +53,14 @@ function generateBackgroundStyles() {
     }
 }
 
+function generateMinimalBackground() {
+    return {
+        background: Generate.backgroundGradient(),
+        filter: Generate.backgroundFilter()
+    }
+}
+
 export { 
-    generateBackgroundStyles
+    generateFullBackground,
+    generateMinimalBackground
 }
