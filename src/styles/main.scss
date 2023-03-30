@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Helico';
+    src: url('../fonts/helico-centrica/helico-centrica.ttf');
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('../fonts/fira-code/FiraCode-VariableFont_wght.ttf');
+    font-weight: 300 700;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+:root {
+    --rvv: calc(1rem + 1vmin + 1vmax);
+
+    --transparent-green: #b3ff90e7;
+    --transparent-red: rgba(255, 140, 140, 0.719);
+    --transparent-white: rgba(255, 255, 255, 0.777);
+
+    --minimal-box-shadow: rgba(0, 0, 0, 0.685);
+    --form-bg: rgba(255, 255, 255, 0.841);
+    --project-card-bg: rgba(255, 255, 255, 0.849);
+    --stack-tags-bg: #d3ffbef0;
+
+    --firebase-tag-bg: orange;
+    --javascript-tag-bg: rgba(255, 255, 165, 0.897);
+    --react-tag-bg: rgba(113, 111, 255, 0.694);
+    --sass-tag-bg: #ff69b4de;
+    --css-tag-bg: rgba(172, 220, 255, 0.825);
+    --html-tag-bg: rgba(255, 67, 67, 0.694);
+    --express-tag-bg: rgba(183, 183, 183, 0.577);
+    --node-tag-bg: rgba(127, 199, 127, 0.658);
+    --mongoose-tag-bg: #ff9189c6;
+    --pug-tag-bg: #a86354af;
+    --webpack-tag-bg: #34637c71;
+    --jest-tag-bg: #16c213d3;
+
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Fira Code';
+}
+
+.site-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gradient-bg {
+    background: rgb(96,184,184);
+    background: linear-gradient(146deg, rgba(96,184,184,0.7413559173669468) 0%, rgba(227,137,137,0.836594012605042) 100%);
+}

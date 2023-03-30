@@ -1,0 +1,17 @@
+.contact-button {
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: calc(0.3*var(--rvv));
+    background-color: var(--transparent-white);
+    font-family: 'Fira Code';
+}
+
+.contact-button:hover {
+    background-color: var(--transparent-green);
+}

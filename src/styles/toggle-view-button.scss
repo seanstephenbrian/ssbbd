@@ -1,0 +1,27 @@
+.toggle-view-button {
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: calc(0.3*var(--rvv));
+    background-color: var(--transparent-white);
+    font-family: 'Fira Code';
+}
+
+.toggle-view-button:hover {
+    background-color: var(--transparent-red);
+}
+
+.toggle-view-button-minimal {
+    border: 1px solid black;
+    border-radius: 0;
+    box-shadow: 3px 3px 0 black;
+}
+
+.toggle-view-button-minimal:hover {
+    background-color: var(--transparent-green);
+}

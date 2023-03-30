@@ -1,0 +1,32 @@
+@keyframes flash {
+    to {
+        visibility: hidden;
+    }
+}
+
+.name {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .letter {
+        height: calc(5*var(--rvv));
+        width: calc(4*var(--rvv));
+        font-family: 'Helico';
+        font-size: calc(2*var(--rvv));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.name-minimal {
+    animation: flash 3s steps(3, start) infinite;
+    margin-bottom: -40px;
+}
+
+.name-expanded {
+    color: #b3ff90d2;
+    text-shadow: 5px 5px 0 #9746438c;
+}

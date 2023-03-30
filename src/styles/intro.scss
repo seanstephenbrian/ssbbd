@@ -1,0 +1,60 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.intro-text {
+    width: 50vw;
+    min-width: 400px;
+    background-color: var(--transparent-white);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: calc(0.7*var(--rvv));  
+
+        .typewriter-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: calc(0.5*var(--rvv));
+            justify-content: center;
+            align-items: flex-start;
+        }
+}
+
+.intro-text.minimal {
+    margin-top: 30px;
+    width: 80vw;
+    min-width: 0;
+    max-width: 1000px;
+    border-radius: 0;
+    box-shadow: 5px 5px 0 var(--minimal-box-shadow);
+}
+
+.projects-link {
+    cursor: pointer;
+    width: 400px;
+    max-width: 70vw;
+    margin: calc(2*var(--rvv)) 10px 0;
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out forwards;
+    font-family: 'Helico';
+    font-size: calc(1.4*var(--rvv));
+    background-color: var(--transparent-green);
+    padding: 20px;
+    padding-bottom: 5px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    text-shadow: 3px 3px 0 #1aff00;
+    transition: transform 0.1s ease-in-out;
+}
+
+.projects-link:hover {
+    transform: scale(1.05);
+}
