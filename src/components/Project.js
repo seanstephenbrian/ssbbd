@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import uniqid from 'uniqid';
 
 import LinkIcon from '../img/icons/go-to-link.svg';
 
 export default function Project(props) {
+
+    const cardRef = useRef(null);
 
     // receive project info as props from Projects component:
     const { currentFilter, projectInfo, updateFilter } = props;
@@ -13,7 +15,7 @@ export default function Project(props) {
     const [isLoading, setIsLoading] = useState(true);
 
     return (
-        <div className='project-card'>
+        <div className='project-card' ref={cardRef}>
             <div className='project-title'>
             {
                 projectInfo.liveUrl ?
@@ -74,6 +76,7 @@ export default function Project(props) {
                             key={uniqid()}
                             onClick={(e) => {
                                 updateFilter(e.target.innerText);
+                                document.querySelector('#projects-anchor').scrollIntoView();
                             }}
                             style={{
                                 backgroundColor: `var(--${item}-tag-bg)`

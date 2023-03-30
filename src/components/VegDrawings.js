@@ -11,11 +11,11 @@ import Drawing5 from '../img/drawings/fennel.png';
 export default function VegDrawings() {
     return (
         <div className='drawings'>
-            <img className='drawing delicata' src={Drawing1} ></img>
-            <img className='drawing apple apple-1' src={Drawing2} ></img>
-            <img className='drawing arugula' src={Drawing3 }></img>
-            <img className='drawing apple apple-2' src={Drawing4} ></img>
-            <img className='drawing fennel' src={Drawing5} ></img>
+            <img className='drawing delicata' alt='' src={Drawing1} ></img>
+            <img className='drawing apple apple-1' alt='' src={Drawing2} ></img>
+            <img className='drawing arugula' alt='' src={Drawing3 }></img>
+            <img className='drawing apple apple-2' alt='' src={Drawing4} ></img>
+            <img className='drawing fennel' alt='' src={Drawing5} ></img>
         </div>
     )
 }
