@@ -11,6 +11,7 @@ import Projects from './Projects';
 import ToggleViewButton from './ToggleViewButton';
 
 import '../styles/main.scss';
+
 import VegDrawings from './VegDrawings';
 import TopDrawings from './TopDrawings';
 import ContactButton from './ContactButton';

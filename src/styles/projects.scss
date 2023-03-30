@@ -24,9 +24,10 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-size: calc(0.45*var(--rvv));
 
     h2 {
-        font-size: calc(0.45*var(--rvv));
+        text-decoration: underline;
     }
     
     .tag-list {
@@ -37,7 +38,6 @@
 
         .stack-tag-btn {
             font-family: 'Fira Code';
-            font-size: calc(0.5*var(--rvv));
             cursor: pointer;
             padding: 5px;
             border: none;
@@ -160,7 +160,7 @@
             align-items: center;
 
             .stack-item {
-                font-size: calc(0.5*var(--rvv));
+                font-size: calc(0.45*var(--rvv));
                 cursor: pointer;
                 padding: 5px;
                 border-radius: 3px;
@@ -214,6 +214,7 @@
 
         .project-title {
             font-size: calc(0.7*var(--rvv));
+            text-decoration: underline;
         }
 
         .project-description {

@@ -14,21 +14,20 @@
     .contact-heading {
         font-size: calc(1.5*var(--rvv));
         font-family: 'Helico';
-        margin-bottom: -10px;
-        align-self: flex-start;
+        margin-top: 10px;
     }
 
     .contact-subheading {
         font-size: calc(0.5*var(--rvv));
         font-style: italic;
+        text-align: center;
     }
 
     form {
-        margin-top: 20px;
         max-height: 1000px;
         padding: 0 20px;
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr 1fr 3fr 1fr;
         row-gap: 15px;
         column-gap: 20px;
@@ -100,6 +99,11 @@
             align-items: center;
         }
 
+        input {
+            max-height: 1rem;
+            margin: auto 0;
+        }
+
         input,
         textarea {
             border: none;
@@ -150,15 +154,6 @@
 
         .submit-button {
             border-radius: 0;
-        }
-    }
-}
-
-// mobile view:
-@media screen and (max-width: 1000) {
-    .contact {
-        .form {
-            padding: 0 5px;
         }
     }
 }

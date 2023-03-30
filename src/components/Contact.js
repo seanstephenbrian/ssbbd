@@ -30,7 +30,7 @@ export default function Contact(props) {
         return (
             <section className={`contact ${currentView}`}>
                 <h1 className='contact-heading'>
-                    contact
+                    CONTACT
                 </h1>
                 <h2 className='contact-subheading'>
                     whether you're interested in working together or just want to connect, please reach out! i'd love to hear from you.

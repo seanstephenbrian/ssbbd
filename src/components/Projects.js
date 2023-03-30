@@ -45,7 +45,7 @@ export default function Projects(props) {
                 PROJECTS
             </h1>
             <section className={`stack-tags ${currentView}`}>
-                <h2>filter projects by tag:</h2>
+                <h2>filter projects by tag</h2>
                 <section className='tag-list'>
                     {stackTags.map((tag) => {
                         let selectedStatus = '';
