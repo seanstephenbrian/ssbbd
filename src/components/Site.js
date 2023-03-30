@@ -19,6 +19,8 @@ function Site() {
 
     // track whether full view is permitted in state:
     const [fullViewAllowed, setFullViewAllowed] = useState('initializing');
+    // track whether typewriter effect has run in state:
+    const [ranTypewriter, setRanTypewriter] = useState(false);
     // and whether the minimal view is currently enabled:
     const [currentView, setCurrentView] = useState();
 
@@ -45,12 +47,14 @@ function Site() {
                     <ToggleViewButton 
                         currentView={currentView} 
                         handleClick={() => {
-                            console.log('clicked')
                             setCurrentView('minimal');
                         }}
                     />
                     <Name />
-                    <Intro />
+                    <Intro 
+                        alertRanTypewriter={() => setRanTypewriter(true)} 
+                        ranTypewriter={ranTypewriter} 
+                    />
                     <TopDrawings />
                     <Projects />
                     <VegDrawings />
@@ -62,14 +66,19 @@ function Site() {
     } else if (fullViewAllowed === true && currentView === 'minimal') {
         return (
             <>
-                <div className='site-wrapper'>
+                <div className='site-wrapper gradient-bg'>
                     <ToggleViewButton 
                         currentView={currentView}
                         handleClick={() => {
                             setCurrentView('full');
                         }}
                     />
-                    <Intro currentView={currentView} />
+                    <Name currentView={currentView} />
+                    <Intro 
+                        alertRanTypewriter={() => setRanTypewriter(true)} 
+                        ranTypewriter={ranTypewriter} 
+                        currentView={currentView} 
+                    />
                     <Projects currentView={currentView} />
                     <Contact currentView={currentView} />
                     <Footer currentView={currentView} />
@@ -79,8 +88,13 @@ function Site() {
     } else if (fullViewAllowed === false) {
         return (
             <>
-                <div className='site-wrapper'>
-                    <Intro currentView={currentView} />
+                <div className='site-wrapper gradient-bg'>
+                    <Name currentView={currentView} />
+                    <Intro 
+                        alertRanTypewriter={() => setRanTypewriter(true)} 
+                        ranTypewriter={ranTypewriter} 
+                        currentView={currentView} 
+                    />
                     <Projects currentView={currentView} />
                     <Contact currentView={currentView} />
                     <Footer currentView={currentView} />
