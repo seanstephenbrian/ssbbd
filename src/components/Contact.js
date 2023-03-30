@@ -4,7 +4,9 @@ import emailjs from '@emailjs/browser';
 
 import '../styles/contact.scss';
 
-export default function Contact() {
+export default function Contact(props) {
+
+    const { currentView } = props;
 
     // track form status in state:
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -24,7 +26,7 @@ export default function Contact() {
 
     if (!formSubmitted) {
         return (
-            <section className='contact'>
+            <section className={`contact ${currentView}`}>
                 <h1 className='contact-heading'>
                     contact
                 </h1>

@@ -124,3 +124,22 @@
     font-size: calc(0.8*var(--rvv));
     padding: 30px;
 }
+
+// minimal view:
+
+.contact.minimal {
+    border-radius: 0;
+    box-shadow: 5px 5px 0 var(--minimal-box-shadow);
+
+    form {
+
+        input,
+        textarea {
+            border-radius: 0;
+        }
+
+        .submit-button {
+            border-radius: 0;
+        }
+    }
+}
