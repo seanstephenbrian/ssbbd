@@ -33,6 +33,12 @@ function Site() {
 
     // check screen width on initial render to see if full view should be allowed:
     useEffect(() => {
+        // if ('performance' in window) {
+        //     window.addEventListener('load', () => {
+        //         const pageTime = performance.getEntriesByType('navigation')[0].toJSON();
+        //         console.log(pageTime.loadEventEnd);
+        //     }); 
+        // }
         if (window.screen.width > 500) {
             setFullViewAllowed(true);
             setCurrentView('full');
