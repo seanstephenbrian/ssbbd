@@ -34,7 +34,7 @@ export default function Project(props) {
             </div>
             <div className='project-preview'>
             {
-                projectInfo.previewVideo && currentView === 'full' ?
+                projectInfo.previewWebm && currentView === 'full' ?
                 <video 
                     className='preview-video' 
                     loop
@@ -48,8 +48,10 @@ export default function Project(props) {
                     onMouseLeave={(e) => {
                         e.target.pause();
                     }}
-                    src={`./video/${projectInfo.previewVideo}`}
+                    playsInline
                 >
+                    <source src={`./video/${projectInfo.previewWebm}`} type="video/webm" />
+                    <source src={`./video/${projectInfo.previewMp4}`} type="video/mp4" />
                 </video> :
                 '' 
             }

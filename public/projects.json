@@ -3,14 +3,16 @@
         {
             "title": "portfolio",
             "description": "you're looking at it now! the desktop version features a dynamically generated background graphic inspired by the ground plan of hadrian's villa.",
-            "previewVideo": "ssbbd.webm",
+            "previewWebm": "ssbbd.webm",
+            "previewMp4": "ssbbd.mp4",
             "gitUrl": "https://github.com/seanstephenbrian/ssbbd",
             "stack": ["react", "javascript", "sass"]
         },
         {
             "title": "where's bosch?",
             "description": "'where's waldo?'-type web game built with react and firebase. the project features the 'garden of earthly delights' by early netherlandish artist hieronymus bosch.",
-            "previewVideo": "bosch.webm",
+            "previewWebm": "bosch.webm",
+            "previewMp4": "bosch.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/wheres-bosch/",
             "gitUrl": "https://github.com/seanstephenbrian/wheres-bosch",
             "stack": ["react", "javascript", "sass", "firebase"]
@@ -18,7 +20,8 @@
         {
             "title": "ArtCart",
             "description": "a demo online store featuring shopping cart functionality, a searchable catalog, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
-            "previewVideo": "artcart.webm",
+            "previewWebm": "artcart.webm",
+            "previewMp4": "artcart.mp4",
             "liveUrl": "",
             "gitUrl": "https://github.com/seanstephenbrian/art-cart",
             "stack": ["react", "javascript", "sass"]
@@ -26,7 +29,8 @@
         {
             "title": "campaign website",
             "description": "real informational website for a local political candidate, built from scratch using vanilla js and custom css.",
-            "previewVideo": "campaign.webm",
+            "previewWebm": "campaign.webm",
+            "previewMp4": "campaign.mp4",
             "liveUrl": "https://www.johnmartin65.com/",
             "gitUrl": "https://github.com/seanstephenbrian/campaign-website",
             "stack": ["javascript", "css", "html"]
@@ -34,7 +38,8 @@
         {
             "title": "brassicaDB",
             "description": "a fully searchable and editable vegetable-themed inventory site created with several back-end technologies.",
-            "previewVideo": "brassicadb.webm",
+            "previewWebm": "brassicadb.webm",
+            "previewMp4": "brassicadb.mp4",
             "liveUrl": "https://brassicadb.up.railway.app/",
             "gitUrl": "https://github.com/seanstephenbrian/brassicas",
             "stack": ["express", "node", "mongoose", "pug", "css"]
@@ -42,7 +47,8 @@
         {
             "title": "now // later",
             "description": "a streamlined to-do list web app with a clean, warm design inspired by the aesthetic of architect frank lloyd wright.",
-            "previewVideo": "nowlater.webm",
+            "previewWebm": "nowlater.webm",
+            "previewMp4": "nowlater.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/todo-list/",
             "gitUrl": "https://github.com/seanstephenbrian/todo-list",
             "stack": ["javascript", "css", "webpack"]
@@ -50,7 +56,8 @@
         {
             "title": "graces",
             "description": "simple informational website for my own seasonal food business, built with react with an eye toward ease of maintenance.",
-            "previewVideo": "graces.webm",
+            "previewWebm": "graces.webm",
+            "previewMp4": "graces.mp4",
             "liveUrl": "https://graces.website/",
             "gitUrl": "https://github.com/seanstephenbrian/graces",
             "stack": ["react", "javascript", "sass"]
@@ -58,7 +65,8 @@
         {
             "title": "lead block sports",
             "description": "real, actively maintained sports blog website built entirely with vanilla js and custom css; this project will soon be refactored & expanded.",
-            "previewVideo": "leadblock.webm",
+            "previewWebm": "leadblock.webm",
+            "previewMp4": "leadblock.mp4",
             "liveUrl": "https://www.leadblocksports.blog/",
             "gitUrl": "https://github.com/seanstephenbrian/lead-block",
             "stack": ["javascript", "css", "html"]
@@ -66,7 +74,8 @@
         {
             "title": "battlesquares",
             "description": "'battleship'-inspired web game demonstrating key concepts of OOP and test-driven development.",
-            "previewVideo": "battlesquares.webm",
+            "previewWebm": "battlesquares.webm",
+            "previewMp4": "battlesquares.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/battleship/",
             "gitUrl": "https://github.com/seanstephenbrian/battleship",
             "stack": ["javascript", "jest", "css", "webpack"]
@@ -74,7 +83,8 @@
         {
             "title": "memory game",
             "description": "simple react-based memory card game highlighting component state and lifecycle methods.",
-            "previewVideo": "memory.webm",
+            "previewWebm": "memory.webm",
+            "previewMp4": "memory.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/memory-game/",
             "gitUrl": "https://github.com/seanstephenbrian/memory-game",
             "stack": ["react", "javascript", "css"]
@@ -82,7 +92,8 @@
         {
             "title": "cv generator",
             "description": "single-page react app for generating a fully formatted resume with user-chosen fonts and accent colors.",
-            "previewVideo": "cv.webm",
+            "previewWebm": "cv.webm",
+            "previewMp4": "cv.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/cv-project/",
             "gitUrl": "https://github.com/seanstephenbrian/cv-project",
             "stack": ["react", "javascript", "css"]
@@ -90,7 +101,8 @@
         {
             "title": "how's the weather?",
             "description": "weather app powered by data from a third-party API; the gentle, airy aesthetic features paintings by j.m.w. turner.",
-            "previewVideo": "weather.webm",
+            "previewWebm": "weather.webm",
+            "previewMp4": "weather.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/weather-app/",
             "gitUrl": "https://github.com/seanstephenbrian/weather-app",
             "stack": ["javascript", "css", "html"]
@@ -98,7 +110,8 @@
         {
             "title": "apicius cafe",
             "description": "informational website for an imaginary restaurant featuring dynamic, event-driven DOM manipulation and a highly elaborated ancient rome-inspired theme.",
-            "previewVideo": "apicius.webm",
+            "previewWebm": "apicius.webm",
+            "previewMp4": "apicius.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/restaurant-page/",
             "gitUrl": "https://github.com/seanstephenbrian/restaurant-page",
             "stack": ["javascript", "css", "webpack"]
@@ -106,7 +119,8 @@
         {
             "title": "admin dashboard",
             "description": "design concept for an imaginary admin dashboard page, laid out primarily using css grid.",
-            "previewVideo": "dashboard.webm",
+            "previewWebm": "dashboard.webm",
+            "previewMp4": "dashboard.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/admin-dashboard/",
             "gitUrl": "https://github.com/seanstephenbrian/admin-dashboard",
             "stack": ["javascript", "css", "html"]
@@ -114,7 +128,8 @@
         {
             "title": "tic-tac-toe",
             "description": "simple tic-tac-toe web game with a striking visual design - an early experiment in crafting a dynamic and unconventional user experience.",
-            "previewVideo": "tictactoe.webm",
+            "previewWebm": "tictactoe.webm",
+            "previewMp4": "tictactoe.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/tic-tac-toe/",
             "gitUrl": "https://github.com/seanstephenbrian/tic-tac-toe",
             "stack": ["javascript", "css", "html"]
@@ -122,7 +137,8 @@
         {
             "title": "book log",
             "description": "web app to log a user's reading activity and annual reading goal.",
-            "previewVideo": "booklog.webm",
+            "previewWebm": "booklog.webm",
+            "previewMp4": "booklog.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/book-log/",
             "gitUrl": "https://github.com/seanstephenbrian/book-log",
             "stack": ["javascript", "css", "html"]
@@ -130,7 +146,8 @@
         {
             "title": "contact form",
             "description": "contact form for an imaginary restaurant, developed as an exercise in form design and client-side form validation.",
-            "previewVideo": "contactform.webm",
+            "previewWebm": "contactform.webm",
+            "previewMp4": "contactform.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/sign-up-form/",
             "gitUrl": "https://github.com/seanstephenbrian/sign-up-form",
             "stack": ["html", "css"]
@@ -138,7 +155,8 @@
         {
             "title": "pointillist etch-a-sketch",
             "description": "early javascript project using an art historical etch-a-sketch concept to explore event-driven DOM manipulation.",
-            "previewVideo": "etch.webm",
+            "previewWebm": "etch.webm",
+            "previewMp4": "etch.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/etch-a-sketch/",
             "gitUrl": "https://github.com/seanstephenbrian/etch-a-sketch",
             "stack": ["javascript", "css", "html"]
@@ -146,7 +164,8 @@
         {
             "title": "calculator",
             "description": "another early javascript project - a fully functional digital calculator with an experimental visual design.",
-            "previewVideo": "calc.webm",
+            "previewWebm": "calc.webm",
+            "previewMp4": "calc.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/calculator/",
             "gitUrl": "https://github.com/seanstephenbrian/calculator",
             "stack": ["javascript", "css", "html"]
