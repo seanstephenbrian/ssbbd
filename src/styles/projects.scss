@@ -211,10 +211,29 @@
         border-radius: 0;
         box-shadow: 3px 3px 0 var(--minimal-box-shadow);
         row-gap: 10px;
+        grid-template-areas:
+            "project-title project-thumbnail"
+            "project-description project-description"
+            "project-preview project-preview"
+            "project-links project-links"
+            "project-stack project-stack";
 
         .project-title {
             font-size: calc(0.7*var(--rvv));
             text-decoration: underline;
+        }
+
+        .project-thumbnail {
+            grid-area: project-thumbnail;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            img {
+                border: 1px solid black;
+                border-radius: 10%;
+                max-height: 60px;
+            }
         }
 
         .project-description {

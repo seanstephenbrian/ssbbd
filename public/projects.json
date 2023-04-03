@@ -2,6 +2,7 @@
     "projects": [
         {
             "title": "portfolio",
+            "thumbnail": "ssbbd.png",
             "description": "you're looking at it now! the desktop version features a dynamically generated background graphic inspired by the ground plan of hadrian's villa.",
             "previewWebm": "ssbbd.webm",
             "previewMp4": "ssbbd.mp4",
@@ -10,6 +11,7 @@
         },
         {
             "title": "where's bosch?",
+            "thumbnail": "bosch.png",
             "description": "'where's waldo?'-type web game built with react and firebase. the project features the 'garden of earthly delights' by early netherlandish artist hieronymus bosch.",
             "previewWebm": "bosch.webm",
             "previewMp4": "bosch.mp4",
@@ -19,6 +21,7 @@
         },
         {
             "title": "ArtCart",
+            "thumbnail": "artcart.png",
             "description": "a demo online store featuring shopping cart functionality, a searchable catalog, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
             "previewWebm": "artcart.webm",
             "previewMp4": "artcart.mp4",
@@ -28,6 +31,7 @@
         },
         {
             "title": "campaign website",
+            "thumbnail": "campaign.png",
             "description": "real informational website for a local political candidate, built from scratch using vanilla js and custom css.",
             "previewWebm": "campaign.webm",
             "previewMp4": "campaign.mp4",
@@ -37,6 +41,7 @@
         },
         {
             "title": "brassicaDB",
+            "thumbnail": "brassicadb.png",
             "description": "a fully searchable and editable vegetable-themed inventory site created with several back-end technologies.",
             "previewWebm": "brassicadb.webm",
             "previewMp4": "brassicadb.mp4",
@@ -46,6 +51,7 @@
         },
         {
             "title": "now // later",
+            "thumbnail": "nowlater.png",
             "description": "a streamlined to-do list web app with a clean, warm design inspired by the aesthetic of architect frank lloyd wright.",
             "previewWebm": "nowlater.webm",
             "previewMp4": "nowlater.mp4",
@@ -55,6 +61,7 @@
         },
         {
             "title": "graces",
+            "thumbnail": "graces.png",
             "description": "simple informational website for my own seasonal food business, built with react with an eye toward ease of maintenance.",
             "previewWebm": "graces.webm",
             "previewMp4": "graces.mp4",
@@ -64,6 +71,7 @@
         },
         {
             "title": "lead block sports",
+            "thumbnail": "leadblock.png",
             "description": "real, actively maintained sports blog website built entirely with vanilla js and custom css; this project will soon be refactored & expanded.",
             "previewWebm": "leadblock.webm",
             "previewMp4": "leadblock.mp4",
@@ -73,6 +81,7 @@
         },
         {
             "title": "battlesquares",
+            "thumbnail": "battlesquares.png",
             "description": "'battleship'-inspired web game demonstrating key concepts of OOP and test-driven development.",
             "previewWebm": "battlesquares.webm",
             "previewMp4": "battlesquares.mp4",
@@ -82,6 +91,7 @@
         },
         {
             "title": "memory game",
+            "thumbnail": "memory.png",
             "description": "simple react-based memory card game highlighting component state and lifecycle methods.",
             "previewWebm": "memory.webm",
             "previewMp4": "memory.mp4",
@@ -91,6 +101,7 @@
         },
         {
             "title": "cv generator",
+            "thumbnail": "cv.png",
             "description": "single-page react app for generating a fully formatted resume with user-chosen fonts and accent colors.",
             "previewWebm": "cv.webm",
             "previewMp4": "cv.mp4",
@@ -100,6 +111,7 @@
         },
         {
             "title": "how's the weather?",
+            "thumbnail": "weather.png",
             "description": "weather app powered by data from a third-party API; the gentle, airy aesthetic features paintings by j.m.w. turner.",
             "previewWebm": "weather.webm",
             "previewMp4": "weather.mp4",
@@ -109,6 +121,7 @@
         },
         {
             "title": "apicius cafe",
+            "thumbnail": "apicius.png",
             "description": "informational website for an imaginary restaurant featuring dynamic, event-driven DOM manipulation and a highly elaborated ancient rome-inspired theme.",
             "previewWebm": "apicius.webm",
             "previewMp4": "apicius.mp4",
@@ -118,6 +131,7 @@
         },
         {
             "title": "admin dashboard",
+            "thumbnail": "dashboard.png",
             "description": "design concept for an imaginary admin dashboard page, laid out primarily using css grid.",
             "previewWebm": "dashboard.webm",
             "previewMp4": "dashboard.mp4",
@@ -127,6 +141,7 @@
         },
         {
             "title": "tic-tac-toe",
+            "thumbnail": "tictactoe.png",
             "description": "simple tic-tac-toe web game with a striking visual design - an early experiment in crafting a dynamic and unconventional user experience.",
             "previewWebm": "tictactoe.webm",
             "previewMp4": "tictactoe.mp4",
@@ -136,6 +151,7 @@
         },
         {
             "title": "book log",
+            "thumbnail": "booklog.png",
             "description": "web app to log a user's reading activity and annual reading goal.",
             "previewWebm": "booklog.webm",
             "previewMp4": "booklog.mp4",
@@ -145,6 +161,7 @@
         },
         {
             "title": "contact form",
+            "thumbnail": "contactform.png",
             "description": "contact form for an imaginary restaurant, developed as an exercise in form design and client-side form validation.",
             "previewWebm": "contactform.webm",
             "previewMp4": "contactform.mp4",
@@ -154,6 +171,7 @@
         },
         {
             "title": "pointillist etch-a-sketch",
+            "thumbnail": "etch.png",
             "description": "early javascript project using an art historical etch-a-sketch concept to explore event-driven DOM manipulation.",
             "previewWebm": "etch.webm",
             "previewMp4": "etch.mp4",
@@ -163,6 +181,7 @@
         },
         {
             "title": "calculator",
+            "thumbnail": "calc.png",
             "description": "another early javascript project - a fully functional digital calculator with an experimental visual design.",
             "previewWebm": "calc.webm",
             "previewMp4": "calc.mp4",

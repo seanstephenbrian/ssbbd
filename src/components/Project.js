@@ -24,11 +24,28 @@ export default function Project(props) {
             {
                 projectInfo.liveUrl ?
                 <a className='project-title-link' href={projectInfo.liveUrl} target='_blank' rel='noopener noreferrer'>
-                    {projectInfo.title}
+                    {
+                        projectInfo.title === 'battlesquares' && currentView === 'minimal' ?
+                        'battle squares' :
+                        projectInfo.title
+                    }
                 </a> :
                 projectInfo.title
             }
             </div>
+            {
+                currentView === 'minimal' ?
+                <div className='project-thumbnail'>
+                    {
+                        projectInfo.thumbnail ?
+                        <img
+                            src={`./thumbnails/${projectInfo.thumbnail}`}
+                        /> :
+                        ''
+                    }
+                </div> :
+                ''
+            }
             <div className='project-description'>
                 {projectInfo.description}
             </div>
