@@ -22,9 +22,9 @@ function Site() {
     const [fullViewAllowed, setFullViewAllowed] = useState('initializing');
     // if the projects link button has been made visible,
     const [projectsLinkVisible, setProjectsLinkVisible] = useState(false);
-    // if the typewriter effect has completed:
+    // if the typewriter effect has completed,
     const [ranTypewriter, setRanTypewriter] = useState(false);
-    // the currently enabled view type:
+    // the currently enabled view type,
     const [currentView, setCurrentView] = useState();
     // and the current background gradient (only used in minimal view):
     const [minimalBackgroundStyles, setMinimalBackgroundStyles] = useState(generateMinimalBackground());

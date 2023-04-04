@@ -11,8 +11,12 @@ export default function Projects(props) {
 
     // store project data in state:
     const [projectData, setProjectData] = useState([]);
-    // store reference to all possible tags:
-    const [stackTags, setStackTags] = useState([
+
+    // store currently selected tag in state:
+    const [selectedTag, setSelectedTag] = useState('all');
+
+    // array containing all possible tags:
+    const stackTags = [
         'all',
         'css',
         'express',
@@ -26,8 +30,7 @@ export default function Projects(props) {
         'react',
         'sass',
         'webpack'
-    ]);
-    const [selectedTag, setSelectedTag] = useState('all');
+    ];
 
     // fetch project info from local json file on component mount:
     useEffect(() => {
