@@ -38,9 +38,9 @@ export default function Project(props) {
                 <div className='project-thumbnail'>
                     {
                         projectInfo.thumbnail ?
-                        <img
-                            src={`./thumbnails/${projectInfo.thumbnail}`}
-                        /> :
+                        <a href={projectInfo.liveUrl} target='_blank' rel='noopener noreferrer'>
+                            <img src={`./thumbnails/${projectInfo.thumbnail}`} />
+                        </a> :
                         ''
                     }
                 </div> :
@@ -52,24 +52,26 @@ export default function Project(props) {
             <div className='project-preview'>
             {
                 projectInfo.previewWebm && currentView === 'full' ?
-                <video 
-                    className='preview-video' 
-                    loop
-                    muted
-                    onLoadedData={() => {
-                        setIsLoading(false);
-                    }}
-                    onMouseEnter={(e) => {
-                        e.target.play();
-                    }}
-                    onMouseLeave={(e) => {
-                        e.target.pause();
-                    }}
-                    playsInline
-                >
-                    <source src={`./video/${projectInfo.previewWebm}`} type="video/webm" />
-                    <source src={`./video/${projectInfo.previewMp4}`} type="video/mp4" />
-                </video> :
+                <a href={projectInfo.liveUrl} target='_blank' rel='noopener noreferrer'>
+                    <video 
+                        className='preview-video' 
+                        loop
+                        muted
+                        onLoadedData={() => {
+                            setIsLoading(false);
+                        }}
+                        onMouseEnter={(e) => {
+                            e.target.play();
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.pause();
+                        }}
+                        playsInline
+                    >
+                        <source src={`./video/${projectInfo.previewWebm}`} type="video/webm" />
+                        <source src={`./video/${projectInfo.previewMp4}`} type="video/mp4" />
+                    </video>
+                </a> :
                 '' 
             }
             </div>
