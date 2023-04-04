@@ -51,3 +51,24 @@
 
     }
 }
+
+.drawings.minimal {
+    gap: 15vw;
+    padding-bottom: 50px;
+
+    .drawing {
+        height: 110px;
+    }
+
+    .arugula {
+        height: 60px;
+    }
+
+    .apple {
+        height: 70px;
+    }
+}
+
+.drawings.minimal.bottom {
+    padding-top: 0;
+}

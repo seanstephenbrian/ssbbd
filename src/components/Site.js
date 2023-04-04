@@ -14,7 +14,6 @@ import ToggleViewButton from './ToggleViewButton';
 import '../styles/main.scss';
 
 import VegDrawings from './VegDrawings';
-import TopDrawings from './TopDrawings';
 import ContactButton from './ContactButton';
 
 function Site() {
@@ -85,9 +84,8 @@ function Site() {
                         linkVisible={projectsLinkVisible}
                         ranTypewriter={ranTypewriter} 
                     />
-                    <TopDrawings />
                     <Projects currentView={currentView} />
-                    <VegDrawings />
+                    <VegDrawings context='full' />
                     <Contact />
                     <Footer />
                 </div>
@@ -116,8 +114,9 @@ function Site() {
                         ranTypewriter={ranTypewriter} 
                         currentView={currentView} 
                     />
-                    <VegDrawings />
+                    <VegDrawings context='minimal-top' />
                     <Projects currentView={currentView} />
+                    <VegDrawings context='minimal-bottom' />
                     <Contact currentView={currentView} />
                     <Footer currentView={currentView} />
                 </div>
