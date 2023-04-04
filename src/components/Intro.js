@@ -25,7 +25,7 @@ export default function Intro(props) {
 
     // conditions for intro text render...
     let introText;
-    // if it's not minimal mode AND the typewriter hasn't run, run the typewriter:
+    // if the typewriter effect has not yet run to completion, then run the typewriter:
     if (!ranTypewriter) {
         introText = (
             <Typewriter
@@ -56,12 +56,12 @@ export default function Intro(props) {
     } else {
         introText = (
             <div className='typewriter-wrapper'>
-                    <p>hello!</p>
-                    <p>my name is sean.</p>
-                    <p>i'm a software developer specializing in dynamic and imaginative digital experiences.</p>
-                    <p>i have also worked as a chef, farmer, and writer.</p>
-                    <p>below you'll find links to my recent and noteworthy work on the web.</p>
-                    <p>thanks for stopping by!</p>
+                <p>hello!</p>
+                <p>my name is sean.</p>
+                <p>i'm a software developer specializing in dynamic and imaginative digital experiences.</p>
+                <p>i have also worked as a chef, farmer, and writer.</p>
+                <p>below you'll find links to my recent and noteworthy work on the web.</p>
+                <p>thanks for stopping by!</p>
             </div>
         );
     }
