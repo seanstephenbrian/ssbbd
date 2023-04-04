@@ -26,7 +26,7 @@ export default function Intro(props) {
     // conditions for intro text render...
     let introText;
     // if it's not minimal mode AND the typewriter hasn't run, run the typewriter:
-    if (currentView !== 'minimal' && !ranTypewriter) {
+    if (!ranTypewriter) {
         introText = (
             <Typewriter
                 onInit={(typewriter) => {

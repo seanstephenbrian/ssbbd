@@ -116,6 +116,7 @@ function Site() {
                         ranTypewriter={ranTypewriter} 
                         currentView={currentView} 
                     />
+                    <VegDrawings />
                     <Projects currentView={currentView} />
                     <Contact currentView={currentView} />
                     <Footer currentView={currentView} />
