@@ -130,6 +130,34 @@
             border: 2px solid #6fff5f;
         }
     }
+
+    @media screen and (max-width: 500px) {
+        form {
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: repeat(5, 0.25fr) 2fr 1fr;
+            row-gap: 0px;
+            column-gap: 20px;
+            grid-template-areas:
+                "name-label name-label"
+                "name-input name-input"
+                "email-label email-label"
+                "email-input email-input"
+                "message-label message-label"
+                "message-input message-input"
+                "submit-button submit-button";
+
+            input,
+            textarea {
+                margin-bottom: 20px;
+                width: 70vw;
+            }
+
+            label {
+                justify-content: flex-start;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
 
 .contact.submission-confirmation {
