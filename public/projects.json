@@ -12,7 +12,7 @@
         {
             "title": "where's bosch?",
             "thumbnail": "bosch.png",
-            "description": "'where's waldo?'-inspired web game built with react and firebase, featuring hieronymus bosch's 'garden of earthly delights'",
+            "description": "'where's waldo?'-inspired web game built with react and firebase, featuring hieronymus bosch's 'garden of earthly delights'.",
             "previewWebm": "bosch.webm",
             "previewMp4": "bosch.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/wheres-bosch/",
@@ -92,7 +92,7 @@
         {
             "title": "memory game",
             "thumbnail": "memory.png",
-            "description": "simple react-based memory card game which makes use component state and lifecycle methods.",
+            "description": "simple react-based memory card game which makes use of component state and lifecycle methods.",
             "previewWebm": "memory.webm",
             "previewMp4": "memory.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/memory-game/",
@@ -122,7 +122,7 @@
         {
             "title": "apicius cafe",
             "thumbnail": "apicius.png",
-            "description": "informational website for an imaginary restaurant showcasing dynamic DOM manipulation and an ancient rome-inspired design concept.",
+            "description": "informational website for an imaginary restaurant showcasing dynamic DOM manipulation and an ancient rome-inspired css theme.",
             "previewWebm": "apicius.webm",
             "previewMp4": "apicius.mp4",
             "liveUrl": "https://seanstephenbrian.github.io/restaurant-page/",
