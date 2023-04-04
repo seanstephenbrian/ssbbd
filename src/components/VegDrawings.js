@@ -10,7 +10,7 @@ import Drawing5 from '../img/drawings/fennel.png';
 
 export default function VegDrawings(props) {
 
-    const { context } = props;
+    const { context, ranTypewriter } = props;
 
     if (context === 'full') {
         return (
@@ -22,9 +22,17 @@ export default function VegDrawings(props) {
                 <img className='drawing fennel' alt='' src={Drawing5} ></img>
             </div>
         )
-    } else if (context === 'minimal-top') {
+    } else if (context === 'minimal-top' && !ranTypewriter) {
         return (
-            <div className='drawings minimal'>
+            <div className='drawings minimal top-drawings'>
+                <img className='drawing delicata' alt='' src={Drawing1} ></img>
+                <img className='drawing apple apple-1' alt='' src={Drawing2} ></img>
+                <img className='drawing arugula' alt='' src={Drawing3 }></img>
+            </div>
+        )
+    } else if (context === 'minimal-top' && ranTypewriter) {
+        return (
+            <div className='drawings minimal top-drawings fade-in'>
                 <img className='drawing delicata' alt='' src={Drawing1} ></img>
                 <img className='drawing apple apple-1' alt='' src={Drawing2} ></img>
                 <img className='drawing arugula' alt='' src={Drawing3 }></img>
@@ -32,7 +40,7 @@ export default function VegDrawings(props) {
         )
     } else if (context === 'minimal-bottom') {
         return (
-            <div className='drawings minimal bottom'>
+            <div className='drawings minimal bottom-drawings'>
                 <img className='drawing apple apple-2' alt='' src={Drawing4} ></img>
                 <img className='drawing fennel' alt='' src={Drawing5} ></img>
             </div>

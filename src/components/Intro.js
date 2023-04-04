@@ -76,7 +76,7 @@ export default function Intro(props) {
             <button 
                 className='projects-link'   
                 onClick={() => {
-                    document.querySelector('#projects-anchor').scrollIntoView({ behavior: 'smooth' });
+                    document.querySelector('.projects-section-heading').scrollIntoView({ behavior: 'smooth' });
                 }}
             >
                 JUMP TO PROJECTS

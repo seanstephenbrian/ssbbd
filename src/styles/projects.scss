@@ -1,6 +1,6 @@
 .projects-section-heading {
-    padding: 20px;
-    padding-bottom: 5px;
+    margin-top: 100vh;
+    padding: 20px 20px 5px;
     border-radius: 20px;
     border: 2px solid black;
     color: black;
@@ -11,6 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.projects-section-heading.minimal {
+    margin-top: 0;
 }
 
 .stack-tags {

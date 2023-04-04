@@ -114,7 +114,7 @@ function Site() {
                         ranTypewriter={ranTypewriter} 
                         currentView={currentView} 
                     />
-                    <VegDrawings context='minimal-top' />
+                    <VegDrawings context='minimal-top' ranTypewriter={ranTypewriter} />
                     <Projects currentView={currentView} />
                     <VegDrawings context='minimal-bottom' />
                     <Contact currentView={currentView} />

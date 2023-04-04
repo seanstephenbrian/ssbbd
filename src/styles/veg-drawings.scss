@@ -6,6 +6,15 @@
     } 
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .drawings {
     padding: calc(2*var(--rvv)) 0 calc(3*var(--rvv));
     width: 100%;
@@ -53,14 +62,22 @@
 }
 
 .drawings.minimal {
-    gap: 15vw;
-    padding-bottom: 50px;
+    gap: 100px;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .drawings.minimal {
+        flex-direction: column;
+    }
 
     .drawing {
         height: 110px;
     }
 
     .arugula {
+        margin-top: 30px;
         height: 60px;
     }
 
@@ -69,6 +86,18 @@
     }
 }
 
-.drawings.minimal.bottom {
+.drawings.minimal.top-drawings {
+    opacity: 0;
+}
+
+.drawings.minimal.top-drawings.visible {
+    opacity: 1;
+}
+
+.drawings.minimal.top-drawings.fade-in {
+    animation: fade-in 2s ease-in forwards;
+}
+
+.drawings.minimal.bottom-drawings {
     padding-top: 0;
 }

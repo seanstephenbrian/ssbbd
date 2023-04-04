@@ -40,7 +40,6 @@ export default function Projects(props) {
 
     return (
         <>
-            <div id='projects-anchor' aria-hidden={true} style={{paddingTop: '50px'}}></div>
             <h1 className={`projects-section-heading ${currentView}`}>
                 PROJECTS
             </h1>
