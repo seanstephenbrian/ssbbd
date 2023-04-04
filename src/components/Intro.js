@@ -35,7 +35,7 @@ export default function Intro(props) {
                         .pauseFor(900)
                         .typeString('<p>my name is sean.</p>')
                         .pauseFor(900)
-                        .typeString(`<p>i'm a software developer specializing in dynamic and artful digital experiences.</p>`)
+                        .typeString(`<p>i'm a software developer specializing in dynamic and imaginative digital experiences.</p>`)
                         .pauseFor(900)
                         .typeString(`<p>i have also worked as a chef, farmer, and writer.</p>`)
                         .pauseFor(900)
