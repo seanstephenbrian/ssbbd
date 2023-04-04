@@ -70,7 +70,7 @@ export default function Projects(props) {
                 </section>
             </section>
             <section className={`projects ${currentView}`} id='projects'>
-                {projectData.map((project, index) => {
+                {projectData.map((project) => {
                     if (selectedTag === 'all') {
                         return (
                             <Project
@@ -90,6 +90,8 @@ export default function Projects(props) {
                                 updateFilter={setSelectedTag}
                             />
                         )
+                    } else {
+                        return;
                     }
                 })}
             </section>

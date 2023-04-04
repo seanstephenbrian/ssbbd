@@ -10,7 +10,7 @@ export default function ProjectThumbnail(props) {
             {
                 projectInfo.thumbnail ?
                 <a href={projectInfo.liveUrl} target='_blank' rel='noopener noreferrer'>
-                    <img src={`./thumbnails/${projectInfo.thumbnail}`} />
+                    <img src={`./thumbnails/${projectInfo.thumbnail}`} alt='' />
                 </a> :
                 ''
             }
