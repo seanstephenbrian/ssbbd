@@ -66,6 +66,19 @@
     padding-bottom: 100px;
 }
 
+
+.drawings.minimal.top-drawings {
+    opacity: 0;
+}
+
+.drawings.minimal.top-drawings.fade-in {
+    animation: fade-in 2s ease-in forwards;
+}
+
+.drawings.minimal.bottom-drawings {
+    padding: 20px 0 60px;
+}
+
 @media screen and (max-width: 500px) {
 
     .drawings.minimal {
@@ -77,27 +90,11 @@
     }
 
     .arugula {
-        margin-top: 30px;
+        margin: 40px 0 20px;
         height: 60px;
     }
 
     .apple {
         height: 70px;
     }
-}
-
-.drawings.minimal.top-drawings {
-    opacity: 0;
-}
-
-.drawings.minimal.top-drawings.visible {
-    opacity: 1;
-}
-
-.drawings.minimal.top-drawings.fade-in {
-    animation: fade-in 2s ease-in forwards;
-}
-
-.drawings.minimal.bottom-drawings {
-    padding-top: 0;
 }

@@ -32,10 +32,10 @@ export default function Projects(props) {
     // fetch project info from local json file on component mount:
     useEffect(() => {
         fetch('./projects.json')
-        .then(res => res.json())
-        .then((projectData) => {
-            setProjectData(projectData.projects);
-        });
+            .then(res => res.json())
+            .then((projectData) => {
+                setProjectData(projectData.projects);
+            });
     }, []);
 
     return (

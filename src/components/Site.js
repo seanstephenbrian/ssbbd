@@ -18,26 +18,24 @@ import ContactButton from './ContactButton';
 
 function Site() {
 
-    // track whether full view is permitted:
+    // use state variables to track whether full view is allowed,
     const [fullViewAllowed, setFullViewAllowed] = useState('initializing');
-    // track whether projects link button should be visible:
+    // if the projects link button has been made visible,
     const [projectsLinkVisible, setProjectsLinkVisible] = useState(false);
-    // track whether typewriter effect has already run:
+    // if the typewriter effect has completed:
     const [ranTypewriter, setRanTypewriter] = useState(false);
-    // and track whether the minimal view is currently enabled:
+    // the currently enabled view type:
     const [currentView, setCurrentView] = useState();
-
-    // minimal view background gradient:
+    // and the current background gradient (only used in minimal view):
     const [minimalBackgroundStyles, setMinimalBackgroundStyles] = useState(generateMinimalBackground());
+
+    // method to update the background gradient (again, only used for minimal view):
+    function updateBackgroundGradient(e) {
+        setMinimalBackgroundStyles(generateMinimalBackground());
+    }
 
     // check screen width on initial render to see if full view should be allowed:
     useEffect(() => {
-        // if ('performance' in window) {
-        //     window.addEventListener('load', () => {
-        //         const pageTime = performance.getEntriesByType('navigation')[0].toJSON();
-        //         console.log(pageTime.loadEventEnd);
-        //     }); 
-        // }
         if (window.screen.width > 500) {
             setFullViewAllowed(true);
             setCurrentView('full');
@@ -47,7 +45,7 @@ function Site() {
         }
     }, []);
 
-    // toggle view button render conditions -- only show the button if full view is allowed:
+    // these are the TOGGLE VIEW button render conditions -- only show the button if full view is allowed:
     let toggleViewButton;
     if (fullViewAllowed) {
         toggleViewButton = (
@@ -63,7 +61,7 @@ function Site() {
         toggleViewButton = '';
     }
 
-    // SITE RENDER CONDITIONS:
+    // GENERAL SITE RENDER CONDITIONS:
     // don't show anything if initializing...
     if (fullViewAllowed === 'initializing') {
         return;
@@ -93,11 +91,6 @@ function Site() {
         );
     // minimal view render conditions:
     } else if (currentView === 'minimal') {
-
-        function updateBackgroundGradient(e) {
-            setMinimalBackgroundStyles(generateMinimalBackground());
-        }
-
         return (
             <>
                 <Gradient backgroundStyles={minimalBackgroundStyles} />
