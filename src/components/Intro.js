@@ -58,7 +58,7 @@ export default function Intro(props) {
             <div className='typewriter-wrapper'>
                     <p>hello!</p>
                     <p>my name is sean.</p>
-                    <p>i'm a software developer specializing in dynamic and artful digital experiences.</p>
+                    <p>i'm a software developer specializing in dynamic and imaginative digital experiences.</p>
                     <p>i have also worked as a chef, farmer, and writer.</p>
                     <p>below you'll find links to my recent and noteworthy work on the web.</p>
                     <p>thanks for stopping by!</p>
