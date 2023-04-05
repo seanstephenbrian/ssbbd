@@ -1,0 +1,194 @@
+{
+    "projects": [
+        {
+            "title": "portfolio",
+            "thumbnail": "ssbbd.png",
+            "description": "you're looking at it now! the full (desktop) version features a dynamically generated background graphic based on the ground plan of hadrian's villa.",
+            "previewWebm": "ssbbd.webm",
+            "previewMp4": "ssbbd.mp4",
+            "gitUrl": "https://github.com/seanstephenbrian/ssbbd",
+            "stack": ["react", "javascript", "sass"]
+        },
+        {
+            "title": "where's bosch?",
+            "thumbnail": "bosch.png",
+            "description": "'where's waldo?'-inspired web game built with react and firebase, featuring hieronymus bosch's 'garden of earthly delights'.",
+            "previewWebm": "bosch.webm",
+            "previewMp4": "bosch.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/wheres-bosch/",
+            "gitUrl": "https://github.com/seanstephenbrian/wheres-bosch",
+            "stack": ["react", "javascript", "sass", "firebase"]
+        },
+        {
+            "title": "ArtCart",
+            "thumbnail": "artcart.png",
+            "description": "demo online store with shopping cart functionality, a searchable catalog, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
+            "previewWebm": "artcart.webm",
+            "previewMp4": "artcart.mp4",
+            "liveUrl": "",
+            "gitUrl": "https://github.com/seanstephenbrian/art-cart",
+            "stack": ["react", "javascript", "sass"]
+        },
+        {
+            "title": "campaign website",
+            "thumbnail": "campaign.png",
+            "description": "informational website for a real local political candidate, built from scratch using vanilla js and custom css.",
+            "previewWebm": "campaign.webm",
+            "previewMp4": "campaign.mp4",
+            "liveUrl": "https://www.johnmartin65.com/",
+            "gitUrl": "https://github.com/seanstephenbrian/campaign-website",
+            "stack": ["javascript", "css", "html"]
+        },
+        {
+            "title": "brassicaDB",
+            "thumbnail": "brassicadb.png",
+            "description": "searchable and editable vegetable-themed inventory site created with several back-end technologies.",
+            "previewWebm": "brassicadb.webm",
+            "previewMp4": "brassicadb.mp4",
+            "liveUrl": "https://brassicadb.up.railway.app/",
+            "gitUrl": "https://github.com/seanstephenbrian/brassicas",
+            "stack": ["express", "node", "mongoose", "pug", "css"]
+        },
+        {
+            "title": "now // later",
+            "thumbnail": "nowlater.png",
+            "description": "streamlined to-do list web app with a unique frank lloyd wright-inspired design.",
+            "previewWebm": "nowlater.webm",
+            "previewMp4": "nowlater.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/todo-list/",
+            "gitUrl": "https://github.com/seanstephenbrian/todo-list",
+            "stack": ["javascript", "css", "webpack"]
+        },
+        {
+            "title": "graces",
+            "thumbnail": "graces.png",
+            "description": "simple informational website for my own seasonal food business, built with react with an eye toward ease of maintenance.",
+            "previewWebm": "graces.webm",
+            "previewMp4": "graces.mp4",
+            "liveUrl": "https://graces.website/",
+            "gitUrl": "https://github.com/seanstephenbrian/graces",
+            "stack": ["react", "javascript", "sass"]
+        },
+        {
+            "title": "lead block sports",
+            "thumbnail": "leadblock.png",
+            "description": "sports blog website built entirely with vanilla js and custom css; this project will soon be refactored & expanded to allow the author to independently update the blog content.",
+            "previewWebm": "leadblock.webm",
+            "previewMp4": "leadblock.mp4",
+            "liveUrl": "https://www.leadblocksports.blog/",
+            "gitUrl": "https://github.com/seanstephenbrian/lead-block",
+            "stack": ["javascript", "css", "html"]
+        },
+        {
+            "title": "battlesquares",
+            "thumbnail": "battlesquares.png",
+            "description": "'battleship'-inspired web game exemplifying key concepts in OOP and test-driven development.",
+            "previewWebm": "battlesquares.webm",
+            "previewMp4": "battlesquares.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/battleship/",
+            "gitUrl": "https://github.com/seanstephenbrian/battleship",
+            "stack": ["javascript", "jest", "css", "webpack"]
+        },
+        {
+            "title": "memory game",
+            "thumbnail": "memory.png",
+            "description": "simple react-based memory card game which makes use of component state and lifecycle methods.",
+            "previewWebm": "memory.webm",
+            "previewMp4": "memory.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/memory-game/",
+            "gitUrl": "https://github.com/seanstephenbrian/memory-game",
+            "stack": ["react", "javascript", "css"]
+        },
+        {
+            "title": "cv generator",
+            "thumbnail": "cv.png",
+            "description": "single-page react app for building a custom resume with a user-selected font and accent color.",
+            "previewWebm": "cv.webm",
+            "previewMp4": "cv.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/cv-project/",
+            "gitUrl": "https://github.com/seanstephenbrian/cv-project",
+            "stack": ["react", "javascript", "css"]
+        },
+        {
+            "title": "how's the weather?",
+            "thumbnail": "weather.png",
+            "description": "weather app powered by data from a third-party API; the gentle aesthetic features paintings by j.m.w. turner.",
+            "previewWebm": "weather.webm",
+            "previewMp4": "weather.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/weather-app/",
+            "gitUrl": "https://github.com/seanstephenbrian/weather-app",
+            "stack": ["javascript", "css", "html"]
+        },
+        {
+            "title": "apicius cafe",
+            "thumbnail": "apicius.png",
+            "description": "informational website for an imaginary restaurant showcasing dynamic DOM manipulation and an ancient rome-inspired css theme.",
+            "previewWebm": "apicius.webm",
+            "previewMp4": "apicius.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/restaurant-page/",
+            "gitUrl": "https://github.com/seanstephenbrian/restaurant-page",
+            "stack": ["javascript", "css", "webpack"]
+        },
+        {
+            "title": "admin dashboard",
+            "thumbnail": "dashboard.png",
+            "description": "design concept for an admin dashboard page, laid out primarily using css grid.",
+            "previewWebm": "dashboard.webm",
+            "previewMp4": "dashboard.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/admin-dashboard/",
+            "gitUrl": "https://github.com/seanstephenbrian/admin-dashboard",
+            "stack": ["javascript", "css", "html"]
+        },
+        {
+            "title": "tic-tac-toe",
+            "thumbnail": "tictactoe.png",
+            "description": "simple tic-tac-toe web game with a unique visual design - an early experiment in crafting a dynamic and unconventional user experience.",
+            "previewWebm": "tictactoe.webm",
+            "previewMp4": "tictactoe.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/tic-tac-toe/",
+            "gitUrl": "https://github.com/seanstephenbrian/tic-tac-toe",
+            "stack": ["javascript", "css", "html"]
+        },
+        {
+            "title": "book log",
+            "thumbnail": "booklog.png",
+            "description": "web app to log a user's reading activity and annual reading goal.",
+            "previewWebm": "booklog.webm",
+            "previewMp4": "booklog.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/book-log/",
+            "gitUrl": "https://github.com/seanstephenbrian/book-log",
+            "stack": ["javascript", "css", "html"]
+        },
+        {
+            "title": "contact form",
+            "thumbnail": "contactform.png",
+            "description": "contact form for an imaginary restaurant, developed as an exercise in form design and client-side form validation.",
+            "previewWebm": "contactform.webm",
+            "previewMp4": "contactform.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/sign-up-form/",
+            "gitUrl": "https://github.com/seanstephenbrian/sign-up-form",
+            "stack": ["html", "css"]
+        },
+        {
+            "title": "pointillist etch-a-sketch",
+            "thumbnail": "etch.png",
+            "description": "early javascript project using an art historical etch-a-sketch concept to explore event-driven DOM manipulation.",
+            "previewWebm": "etch.webm",
+            "previewMp4": "etch.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/etch-a-sketch/",
+            "gitUrl": "https://github.com/seanstephenbrian/etch-a-sketch",
+            "stack": ["javascript", "css", "html"]
+        },
+        {
+            "title": "calculator",
+            "thumbnail": "calc.png",
+            "description": "another early javascript project - a fully functional digital calculator with an experimental visual design.",
+            "previewWebm": "calc.webm",
+            "previewMp4": "calc.mp4",
+            "liveUrl": "https://seanstephenbrian.github.io/calculator/",
+            "gitUrl": "https://github.com/seanstephenbrian/calculator",
+            "stack": ["javascript", "css", "html"]
+        }
+    ]
+}
+

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aab81150.css",
+    "main.js": "/static/js/main.dc396ca0.js",
+    "static/media/FiraCode-VariableFont_wght.ttf": "/static/media/FiraCode-VariableFont_wght.4938e54ab2f06530a084.ttf",
+    "static/media/arugula.png": "/static/media/arugula.da6793dcf51f884f82f8.png",
+    "static/media/helico-centrica.ttf": "/static/media/helico-centrica.4dcf3f7251ae815952fd.ttf",
+    "static/media/fennel.png": "/static/media/fennel.b483c05419f37497dc36.png",
+    "static/media/delicata.png": "/static/media/delicata.344968fb65be93380018.png",
+    "static/media/apple-2.png": "/static/media/apple-2.594a553c3486ee80279c.png",
+    "static/media/apple.png": "/static/media/apple.15bec7f98d733d427d1d.png",
+    "static/media/go-to-link.svg": "/static/media/go-to-link.e0bb05056a26607f3d35f70fbf2229ae.svg",
+    "index.html": "/index.html",
+    "static/media/email.svg": "/static/media/email.b58b5a3dfe01953035886692c0058072.svg",
+    "main.aab81150.css.map": "/static/css/main.aab81150.css.map",
+    "main.dc396ca0.js.map": "/static/js/main.dc396ca0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aab81150.css",
+    "static/js/main.dc396ca0.js"
+  ]
+}
