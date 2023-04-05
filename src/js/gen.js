@@ -44,7 +44,6 @@ function hex() {
         hexString = '#' + hexNumbers.substring(0, index) + 'f' + hexNumbers.substring(index + 1);
     }
     
-
     return hexString;
 }
 
