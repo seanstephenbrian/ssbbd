@@ -16,6 +16,7 @@ import '../styles/main.scss';
 
 import VegDrawings from './VegDrawings';
 import ContactButton from './ContactButton';
+import MinimalBackground from './MinimalBackground';
 
 function Site() {
 
@@ -94,8 +95,7 @@ function Site() {
     } else if (currentView === 'minimal') {
         return (
             <>
-                <Noise />
-                <Gradient backgroundStyles={minimalBackgroundStyles} />
+                <MinimalBackground minimalBackgroundStyles={minimalBackgroundStyles} />
                 <div 
                     className='site-wrapper'
                     onClick={updateBackgroundGradient}

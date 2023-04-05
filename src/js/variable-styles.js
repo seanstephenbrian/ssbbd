@@ -60,16 +60,7 @@ function generateMinimalBackground() {
     }
 }
 
-function generateBackgroundNoise() {
-    return {
-        background: Generate.noiseBackground(),
-        filter: Generate.noiseFilter(),
-        opacity: Generate.noiseOpacity()
-    }
-}
-
 export { 
     generateFullBackground,
-    generateMinimalBackground,
-    generateBackgroundNoise
+    generateMinimalBackground
 }
