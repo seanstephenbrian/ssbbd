@@ -9,7 +9,8 @@ export default function MinimalBackground(props) {
     return (
         <>
             <BackgroundGradient backgroundStyles={minimalBackgroundStyles} />
-            <BackgroundNoise />
+            <BackgroundNoise layer='one' />
+            <BackgroundNoise layer='two' />
         </>
     )
 

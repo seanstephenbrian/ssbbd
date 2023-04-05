@@ -12,6 +12,8 @@ import Noise5 from '../img/noise/noise5.svg';
 
 export default function BackgroundNoise(props) {
 
+    const { layer } = props;
+
     const [noiseNum, setNoiseNum] = useState(randomNum(6, 1));
     const [noiseSvg, setNoiseSvg] = useState();
 
@@ -25,7 +27,7 @@ export default function BackgroundNoise(props) {
 
     return (
         <div 
-            className='noise' 
+            className={`noise noise-${layer}`}
             style={{
                 backgroundColor: 'white',
                 background: `${noiseGradient()}, url(${noiseSvg})`,
