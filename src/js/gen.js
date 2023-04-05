@@ -3,15 +3,7 @@ function backgroundFilter() {
 }
 
 function backgroundGradient() {
-    const num = randomNum(3);
-    if (num === 1) {
-        return `linear-gradient(${randomNum(360)}deg, transparent, ${hex() + 'ff'}, ${hex() + 'ff'}), url('./noise.svg')`;
-    } else if (num === 2) {
-        return `linear-gradient(${randomNum(360)}deg, ${hex() + 'ff'}, transparent, ${hex() + 'ff'}), url('./noise.svg')`;
-    } else if (num === 3) {
-        return `linear-gradient(${randomNum(360)}deg, ${hex() + 'ff'}, ${hex() + 'ff'}, transparent), url('./noise.svg')`;
-    }
-    
+    return `linear-gradient(${randomNum(360)}deg, ${hex() + 'ff'}, ${hex() + 'ff'})`;
 }
 
 function border() {
@@ -44,8 +36,34 @@ function hex() {
         hexString = '#' + hexNumbers.substring(0, index) + 'f' + hexNumbers.substring(index + 1);
     }
     
-
     return hexString;
+}
+
+function noiseBackground() {
+    const noiseDeg = `${randomNum(360)}deg`;
+
+    let noiseSource;
+    const pattern = randomNum(5);
+    if (pattern === 1) noiseSource = 'noise1.svg';
+    if (pattern === 2) noiseSource = 'noise2.svg';
+    if (pattern === 3) noiseSource = 'noise3.svg';
+    if (pattern === 4) noiseSource = 'noise4.svg';
+    if (pattern === 5) noiseSource = 'noise5.svg';
+
+    const order = randomNum(3);
+    if (order === 1) {
+        return `linear-gradient(${noiseDeg}, transparent, blue), url(https://ssbbd.dev/noise/${noiseSource})`;
+    } else if (order === 2) {
+        return `linear-gradient(${noiseDeg}, blue, transparent), url(https://ssbbd.dev/noise/${noiseSource})`;
+    }
+}
+
+function noiseFilter() {
+    return `contrast(${randomNum(500, 200)}%) brightness(${randomNum(2000, 1000)}%)`;
+}
+
+function noiseOpacity() {
+    return `${randomNum(10, 5) / 10}`
 }
 
 function randomNum(max, min = 1) {
@@ -63,6 +81,9 @@ export {
     dropShadow,
     grayscale,
     hex,
+    noiseBackground,
+    noiseFilter,
+    noiseOpacity,
     randomNum,
     sepia
 }
