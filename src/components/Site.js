@@ -5,7 +5,8 @@ import { generateFullBackground, generateMinimalBackground } from '../js/variabl
 import Background from './Background';
 import Contact from './Contact';
 import Footer from './Footer';
-import Gradient from './Gradient';
+import Gradient from './BackgroundGradient';
+import Noise from './BackgroundNoise';
 import Intro from './Intro';
 import Name from './Name';
 import Projects from './Projects';
@@ -93,6 +94,7 @@ function Site() {
     } else if (currentView === 'minimal') {
         return (
             <>
+                <Noise />
                 <Gradient backgroundStyles={minimalBackgroundStyles} />
                 <div 
                     className='site-wrapper'
