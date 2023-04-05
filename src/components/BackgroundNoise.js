@@ -27,6 +27,7 @@ export default function BackgroundNoise(props) {
         <div 
             className='noise' 
             style={{
+                backgroundColor: 'white',
                 background: `${noiseGradient()}, url(${noiseSvg})`,
                 filter: noiseFilter(),
                 opacity: noiseOpacity()
