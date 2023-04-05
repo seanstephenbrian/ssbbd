@@ -1,9 +1,17 @@
 function backgroundFilter() {
-    return `brightness(${randomNum(90, 80)}%) opacity(${randomNum(90, 80)}%) contrast(${randomNum(200, 50)}%)`;
+    return `brightness(${randomNum(90, 80)}%) opacity(${randomNum(90, 80)}%) contrast(${randomNum(150, 50)}%)`;
 }
 
 function backgroundGradient() {
-    return `linear-gradient(${randomNum(360)}deg, ${hex() + 'ff'}, ${hex() + 'ff'})`;
+    const num = randomNum(3);
+    if (num === 1) {
+        return `linear-gradient(${randomNum(360)}deg, transparent, ${hex() + 'ff'}, ${hex() + 'ff'}), url('./noise.svg')`;
+    } else if (num === 2) {
+        return `linear-gradient(${randomNum(360)}deg, ${hex() + 'ff'}, transparent, ${hex() + 'ff'}), url('./noise.svg')`;
+    } else if (num === 3) {
+        return `linear-gradient(${randomNum(360)}deg, ${hex() + 'ff'}, ${hex() + 'ff'}, transparent), url('./noise.svg')`;
+    }
+    
 }
 
 function border() {
