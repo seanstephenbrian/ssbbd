@@ -5,7 +5,9 @@
     top: 0;
     left: 0;
     z-index: -1;
-    backdrop-filter: brightness(80%);
+    --backdrop-filter: brightness(80%);
+    backdrop-filter: var(--backdrop-filter);
+    -webkit-backdrop-filter: var(--backdrop-filter);
 }
 
 .noise {
