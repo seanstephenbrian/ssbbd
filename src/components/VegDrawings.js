@@ -41,6 +41,7 @@ export default function VegDrawings(props) {
     } else if (context === 'minimal-bottom') {
         return (
             <div className='drawings minimal bottom-drawings'>
+                <img className='drawing delicata' alt='' src={Drawing1} ></img>
                 <img className='drawing apple apple-2' alt='' src={Drawing4} ></img>
                 <img className='drawing fennel' alt='' src={Drawing5} ></img>
             </div>

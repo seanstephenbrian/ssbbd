@@ -23,7 +23,7 @@ export default function BackgroundNoise(props) {
         if (noiseNum === 3) setNoiseSvg(Noise3);
         if (noiseNum === 4) setNoiseSvg(Noise4);
         if (noiseNum === 5) setNoiseSvg(Noise5);
-    }, [noiseNum])
+    }, [noiseNum]);
 
     return (
         <div 

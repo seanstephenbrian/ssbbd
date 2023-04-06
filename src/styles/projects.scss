@@ -14,7 +14,14 @@
 }
 
 .projects-section-heading.minimal {
-    margin-top: 0;
+    margin-top: 75px;
+    background-color: var(--minimal-card-bg);
+}
+
+@media screen and (max-width: 500px) {
+    .projects-section-heading.minimal {
+        margin-top: 500px;
+    }
 }
 
 .stack-tags {
@@ -208,6 +215,7 @@
     padding-top: calc(0.7*var(--rvv));
 
     .project-card.minimal {
+        background-color: var(--minimal-card-bg);
         min-width: 0;
         max-width: 80vw;
         padding: 20px;

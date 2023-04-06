@@ -40,20 +40,32 @@ function hex() {
 }
 
 function noiseGradient() {
+
+    const hexOptions = [
+        'var(--minimal-bg-1)',
+        'var(--minimal-bg-2)',
+        'var(--minimal-bg-3)',
+        'var(--minimal-bg-4)',
+        'var(--minimal-bg-5)'
+    ];
+
+    const hex = hexOptions[randomNum(6) - 1];
+
     const order = randomNum(3);
+
     if (order === 1) {
-        return `linear-gradient(${randomNum(360)}deg, transparent, blue)`;
+        return `linear-gradient(${randomNum(360)}deg, transparent, ${hex})`;
     } else if (order === 2) {
-        return `linear-gradient(${randomNum(360)}deg, blue, transparent)`;
+        return `linear-gradient(${randomNum(360)}deg, ${hex}, transparent)`;
     }
 }
 
 function noiseFilter() {
-    return `contrast(${randomNum(500, 200)}%) brightness(${randomNum(2000, 1000)}%)`;
+    return `contrast(${randomNum(300, 200)}%) brightness(${randomNum(400, 300)}%)`;
 }
 
 function noiseOpacity() {
-    return `${randomNum(6, 2) / 10}`
+    return `${randomNum(9, 7) / 10}`
 }
 
 function randomNum(max, min = 1) {
