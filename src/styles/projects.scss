@@ -14,14 +14,8 @@
 }
 
 .projects-section-heading.minimal {
-    margin-top: 75px;
+    margin-top: 60px;
     background-color: var(--minimal-card-bg);
-}
-
-@media screen and (max-width: 500px) {
-    .projects-section-heading.minimal {
-        margin-top: 500px;
-    }
 }
 
 .stack-tags {

@@ -12,7 +12,8 @@ export default function Intro(props) {
         alertProjectsLinkVisible,
         currentView,
         linkVisible,
-        ranTypewriter } = props;
+        ranTypewriter,
+        noTypewriter } = props;
 
     // typewriter config:
     const typewriterConfig = {
@@ -26,7 +27,7 @@ export default function Intro(props) {
     // conditions for intro text render...
     let introText;
     // if the typewriter effect has not yet run to completion, then run the typewriter:
-    if (!ranTypewriter) {
+    if (!ranTypewriter && !noTypewriter) {
         introText = (
             <Typewriter
                 onInit={(typewriter) => {

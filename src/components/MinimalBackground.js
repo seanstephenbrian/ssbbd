@@ -11,7 +11,8 @@ export default function MinimalBackground(props) {
 
     return (
         <>
-            <BackgroundGradient />
+            <div className='minimal-bg-overlay'></div>
+            <BackgroundGradient style={minimalBackgroundStyles} />
             <BackgroundNoise layer='one' />
             <BackgroundNoise layer='two' />
         </>

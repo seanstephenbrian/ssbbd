@@ -93,10 +93,9 @@ function Site() {
                     {toggleViewButton}
                     <Name currentView={currentView} />
                     <Intro 
-                        alertRanTypewriter={() => setRanTypewriter(true)} 
                         linkVisible={projectsLinkVisible}
-                        ranTypewriter={ranTypewriter} 
                         currentView={currentView} 
+                        noTypewriter={true}
                     />
                     <Projects currentView={currentView} />
                     <VegDrawings context='minimal-bottom' />
