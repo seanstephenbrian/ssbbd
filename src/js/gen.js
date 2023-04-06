@@ -53,7 +53,7 @@ function noiseFilter() {
 }
 
 function noiseOpacity() {
-    return `${randomNum(10, 5) / 10}`
+    return `${randomNum(6, 2) / 10}`
 }
 
 function randomNum(max, min = 1) {
