@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    --backdrop-filter: brightness(80%);
+    --backdrop-filter: brightness(80%) contrast(2) blur(1px);
     backdrop-filter: var(--backdrop-filter);
     -webkit-backdrop-filter: var(--backdrop-filter);
 }

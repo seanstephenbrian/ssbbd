@@ -30,7 +30,7 @@ export default function BackgroundNoise(props) {
             className={`noise noise-${layer}`}
             style={{
                 backgroundColor: 'white',
-                background: `${noiseGradient()}, url(${noiseSvg})`,
+                background: `${noiseGradient(layer)}, url(${noiseSvg})`,
                 filter: noiseFilter(),
                 opacity: noiseOpacity()
             }}

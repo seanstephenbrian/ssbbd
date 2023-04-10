@@ -39,7 +39,7 @@ function hex() {
     return hexString;
 }
 
-function noiseGradient() {
+function noiseGradient(layer) {
 
     const hexOptions = [
         'var(--minimal-bg-1)',
