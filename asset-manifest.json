@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e17d90a2.css",
-    "main.js": "/static/js/main.528f2e23.js",
+    "main.css": "/static/css/main.2808532d.css",
+    "main.js": "/static/js/main.794e4e37.js",
     "static/media/FiraCode-VariableFont_wght.ttf": "/static/media/FiraCode-VariableFont_wght.4938e54ab2f06530a084.ttf",
     "static/media/arugula.png": "/static/media/arugula.da6793dcf51f884f82f8.png",
     "static/media/helico-centrica.ttf": "/static/media/helico-centrica.4dcf3f7251ae815952fd.ttf",
@@ -17,11 +17,11 @@
     "static/media/noise4.svg": "/static/media/noise4.b6e1500b1afa5bd2548bb484d511a611.svg",
     "static/media/noise5.svg": "/static/media/noise5.7ba04ba6bcf8d714e9e843f66b40cbf3.svg",
     "static/media/noise1.svg": "/static/media/noise1.f84f029202385160fa7f309aadfd3d20.svg",
-    "main.e17d90a2.css.map": "/static/css/main.e17d90a2.css.map",
-    "main.528f2e23.js.map": "/static/js/main.528f2e23.js.map"
+    "main.2808532d.css.map": "/static/css/main.2808532d.css.map",
+    "main.794e4e37.js.map": "/static/js/main.794e4e37.js.map"
   },
   "entrypoints": [
-    "static/css/main.e17d90a2.css",
-    "static/js/main.528f2e23.js"
+    "static/css/main.2808532d.css",
+    "static/js/main.794e4e37.js"
   ]
 }
