@@ -22,7 +22,7 @@
         {
             "title": "secret society",
             "thumbnail": "secret.png",
-            "description": "members-only web bulletin with secure user log-in/authentication functionality.",
+            "description": "members-only web bulletin with secure login & authentication functionality.",
             "previewWebm": "secret.webm",
             "previewMp4": "secret.mp4",
             "liveUrl": "https://secret-society.up.railway.app/",
