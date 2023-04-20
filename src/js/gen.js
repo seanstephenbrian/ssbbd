@@ -1,5 +1,5 @@
 function backgroundFilter() {
-    return `brightness(${randomNum(90, 80)}%) opacity(${randomNum(90, 80)}%) contrast(${randomNum(150, 50)}%)`;
+    return `opacity(${randomNum(50, 80)}%)`;
 }
 
 function backgroundGradient() {
@@ -60,14 +60,6 @@ function noiseGradient(layer) {
     }
 }
 
-function noiseFilter() {
-    return `contrast(${randomNum(300, 200)}%) brightness(${randomNum(400, 300)}%)`;
-}
-
-function noiseOpacity() {
-    return `${randomNum(9, 7) / 10}`
-}
-
 function randomNum(max, min = 1) {
     return Math.floor(Math.random() * (max - min) + min);
 }
@@ -84,8 +76,6 @@ export {
     grayscale,
     hex,
     noiseGradient,
-    noiseFilter,
-    noiseOpacity,
     randomNum,
     sepia
 }

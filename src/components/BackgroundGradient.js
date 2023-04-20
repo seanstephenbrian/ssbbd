@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Noise from '../components/BackgroundNoise';
-
 import '../styles/gradient.scss';
 
 export default function BackgroundGradient(props) {

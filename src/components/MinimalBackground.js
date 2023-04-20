@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import BackgroundGradient from './BackgroundGradient';
-import BackgroundNoise from './BackgroundNoise';
 
 import '../styles/noise.scss';
 
@@ -11,10 +10,7 @@ export default function MinimalBackground(props) {
 
     return (
         <>
-            <div className='minimal-bg-overlay'></div>
-            <BackgroundGradient style={minimalBackgroundStyles} />
-            <BackgroundNoise layer='one' />
-            <BackgroundNoise layer='two' />
+            <BackgroundGradient backgroundStyles={minimalBackgroundStyles} />
         </>
     )
 }
