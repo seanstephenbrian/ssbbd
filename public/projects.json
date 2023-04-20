@@ -20,6 +20,16 @@
             "stack": ["react", "javascript", "sass", "firebase"]
         },
         {
+            "title": "secret society",
+            "thumbnail": "secret.png",
+            "description": "secret society description",
+            "previewWebm": "secret.webm",
+            "previewMp4": "secret.mp4",
+            "liveUrl": "https://secret-society.up.railway.app/",
+            "gitUrl": "https://github.com/seanstephenbrian/secret-society",
+            "stack": ["express", "node", "mongoose", "pug", "css", "javascript"]
+        },
+        {
             "title": "ArtCart",
             "thumbnail": "artcart.png",
             "description": "demo online store with shopping cart functionality, a searchable catalog, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
