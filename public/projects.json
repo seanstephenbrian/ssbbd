@@ -35,7 +35,7 @@
             "description": "informational website for a real local political candidate, built from scratch using vanilla js and custom css.",
             "previewWebm": "campaign.webm",
             "previewMp4": "campaign.mp4",
-            "liveUrl": "https://www.johnmartin65.com/",
+            "liveUrl": "https://seanstephenbrian.github.io/campaign-website/",
             "gitUrl": "https://github.com/seanstephenbrian/campaign-website",
             "stack": ["javascript", "css", "html"]
         },
