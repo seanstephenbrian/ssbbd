@@ -4,6 +4,7 @@ import uniqid from 'uniqid';
 import '../styles/projects.scss';
 
 import Project from './Project';
+import UFODrawing from './UFODrawing';
 
 export default function Projects(props) {
 
@@ -43,9 +44,10 @@ export default function Projects(props) {
 
     return (
         <>
-            <h1 className={`projects-section-heading ${currentView}`}>
-                PROJECTS
-            </h1>
+            <div style={{position: 'relative'}}>
+                {currentView === 'full' ? <UFODrawing currentView={currentView} /> : ''}
+                <h1 className={`projects-section-heading ${currentView}`}>PROJECTS</h1>
+            </div>
             <section className={`stack-tags ${currentView}`}>
                 <h2>filter projects by tag</h2>
                 <section className='tag-list'>
