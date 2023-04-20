@@ -35,7 +35,7 @@
             "description": "demo online store with shopping cart functionality, a searchable catalog, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
             "previewWebm": "artcart.webm",
             "previewMp4": "artcart.mp4",
-            "liveUrl": "",
+            "liveUrl": "https://art-cart.up.railway.app/",
             "gitUrl": "https://github.com/seanstephenbrian/art-cart",
             "stack": ["react", "javascript", "sass"]
         },
