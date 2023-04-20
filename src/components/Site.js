@@ -4,17 +4,18 @@ import { generateFullBackground, generateMinimalBackground } from '../js/variabl
 
 import Background from './Background';
 import Contact from './Contact';
+import ContactButton from './ContactButton';
 import Footer from './Footer';
 import Intro from './Intro';
+import MinimalBackground from './MinimalBackground';
 import Name from './Name';
 import Projects from './Projects';
 import ToggleViewButton from './ToggleViewButton';
+import UFODrawing from './UFODrawing';
+import VegDrawings from './VegDrawings';
 
 import '../styles/main.scss';
 
-import VegDrawings from './VegDrawings';
-import ContactButton from './ContactButton';
-import MinimalBackground from './MinimalBackground';
 
 function Site() {
 
@@ -97,6 +98,7 @@ function Site() {
                         currentView={currentView} 
                         noTypewriter={true}
                     />
+                    <UFODrawing currentView={currentView} />
                     <Projects currentView={currentView} />
                     <VegDrawings context='minimal-bottom' />
                     <Contact currentView={currentView} />

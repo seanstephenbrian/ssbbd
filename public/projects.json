@@ -47,7 +47,7 @@
             "previewMp4": "brassicadb.mp4",
             "liveUrl": "https://brassicadb.up.railway.app/",
             "gitUrl": "https://github.com/seanstephenbrian/brassicas",
-            "stack": ["express", "node", "mongoose", "pug", "css"]
+            "stack": ["express", "node", "mongoose", "pug", "css", "javascript"]
         },
         {
             "title": "now // later",
