@@ -20,6 +20,16 @@
             "stack": ["react", "javascript", "sass", "firebase"]
         },
         {
+            "title": "secret society",
+            "thumbnail": "secret.png",
+            "description": "secret society description",
+            "previewWebm": "secret.webm",
+            "previewMp4": "secret.mp4",
+            "liveUrl": "https://secret-society.up.railway.app/",
+            "gitUrl": "https://github.com/seanstephenbrian/secret-society",
+            "stack": ["express", "node", "mongoose", "pug", "css", "javascript"]
+        },
+        {
             "title": "ArtCart",
             "thumbnail": "artcart.png",
             "description": "demo online store with shopping cart functionality, a searchable catalog, dynamic page routing, and a tongue-in-cheek contemporary art market theme.",
@@ -35,7 +45,7 @@
             "description": "informational website for a real local political candidate, built from scratch using vanilla js and custom css.",
             "previewWebm": "campaign.webm",
             "previewMp4": "campaign.mp4",
-            "liveUrl": "https://www.johnmartin65.com/",
+            "liveUrl": "https://seanstephenbrian.github.io/campaign-website/",
             "gitUrl": "https://github.com/seanstephenbrian/campaign-website",
             "stack": ["javascript", "css", "html"]
         },
@@ -47,7 +57,7 @@
             "previewMp4": "brassicadb.mp4",
             "liveUrl": "https://brassicadb.up.railway.app/",
             "gitUrl": "https://github.com/seanstephenbrian/brassicas",
-            "stack": ["express", "node", "mongoose", "pug", "css"]
+            "stack": ["express", "node", "mongoose", "pug", "css", "javascript"]
         },
         {
             "title": "now // later",
