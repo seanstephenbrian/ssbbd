@@ -10,6 +10,16 @@
             "stack": ["react", "javascript", "sass"]
         },
         {
+            "title": "lead block sports (full stack)",
+            "thumbnail": "",
+            "description": "sports blog platform built with the MERN stack; in addition to the main website, i created a separate admin dashboard to allow the author to independently update content.",
+            "previewWebm": "",
+            "previewMp4": "",
+            "liveUrl": "https://www.leadblocksports.blog/",
+            "gitUrl": "https://github.com/seanstephenbrian/lead-block",
+            "stack": ["express", "node", "react", "mongoose", "sass", "pug", "css", "javascript"]
+        },
+        {
             "title": "where's bosch?",
             "thumbnail": "bosch.png",
             "description": "'where's waldo?'-inspired web game built with react and firebase, featuring hieronymus bosch's 'garden of earthly delights'.",
@@ -78,16 +88,6 @@
             "liveUrl": "https://graces.website/",
             "gitUrl": "https://github.com/seanstephenbrian/graces",
             "stack": ["react", "javascript", "sass"]
-        },
-        {
-            "title": "lead block sports",
-            "thumbnail": "leadblock.png",
-            "description": "sports blog website built entirely with vanilla js and custom css; this project will soon be refactored & expanded to allow the author to independently update the blog content.",
-            "previewWebm": "leadblock.webm",
-            "previewMp4": "leadblock.mp4",
-            "liveUrl": "https://www.leadblocksports.blog/",
-            "gitUrl": "https://github.com/seanstephenbrian/lead-block",
-            "stack": ["javascript", "css", "html"]
         },
         {
             "title": "battlesquares",
