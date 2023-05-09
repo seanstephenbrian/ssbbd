@@ -12,7 +12,7 @@
         {
             "title": "lead block sports (full stack)",
             "thumbnail": "",
-            "description": "sports blog platform built with the MERN stack; in addition to the main website, i created a separate admin dashboard to allow the author to independently update content.",
+            "description": "sports blog platform built with the MERN stack; in addition to the main website, i created a separate admin dashboard to allow the author to interface with the API and independently update content.",
             "previewWebm": "",
             "previewMp4": "",
             "liveUrl": "https://www.leadblocksports.blog/",
