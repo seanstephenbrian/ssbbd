@@ -10,7 +10,7 @@
             "stack": ["react", "javascript", "sass"]
         },
         {
-            "title": "lead block sports (full stack blog API)",
+            "title": "lead block sports (blog API)",
             "thumbnail": "leadblock.png",
             "description": "sports blog platform built with the MERN stack; in addition to the main website, i created a separate admin dashboard to allow the author to interface with the API and independently update content.",
             "previewWebm": "leadblock.webm",
