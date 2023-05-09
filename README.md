@@ -1,6 +1,6 @@
-# [ssbbd.dev](https://ssbbd.dev)
+# [seanstephenbrian.com](https://seanstephenbrian.com)
 
-**ssbbd.dev** is my web portfolio!
+**seanstephenbrian.com** is my web portfolio!
 
 the full (desktop) version features a dynamically generated background graphic based on the ground plan of hadrian's villa
 (i worked on an archaeological excavation at hadrian's villa for a couple summers).
